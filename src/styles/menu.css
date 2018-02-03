@@ -1,0 +1,15 @@
+.main-menu{
+    background: black;
+    margin: 0 70px;
+    height: 45px;
+    border-radius: 5px;
+    margin-top: 25px
+}
+.main-menu .row{
+    color:white
+}
+.item-menu{
+    padding: 11px;
+    text-align: center;    
+    font-size: 15px
+}
