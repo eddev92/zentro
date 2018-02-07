@@ -7,8 +7,8 @@ import CoursesComponent from './components/courses';
 class App extends Component {
   render() {
     return (
-      // <HomeComponent />
-      <CoursesComponent />
+      <HomeComponent />
+      // <CoursesComponent />
 
     );
   }

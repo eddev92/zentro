@@ -5,6 +5,7 @@ class Menu extends Component{
     render() {
         return (
             <div className="main-menu">
+            <img src="images/logo.png" alt=""/>
                 <div className="row">
                     <div className="col-md-1 item-menu" style={{textAlign: 'right'}}>
                         Inicio
