@@ -1,0 +1,15 @@
+.overlay{
+    margin: 20px;
+}
+.text{
+    margin: 40px 0;
+    padding: 32px 56px;
+    padding-left: 0;
+}
+.py-4{
+    padding-top: 0 !important;
+}
+.py-4 p{
+    margin: 40px;
+    text-align: justify;
+}

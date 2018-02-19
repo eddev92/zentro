@@ -1,0 +1,16 @@
+.main-capacitacion{
+    margin: 140px 0;
+    min-height: 460px;
+}
+button.courses{
+    top: 73%;
+    position: absolute;
+    z-index: 9999;
+    right: 10%;
+}
+.modal-title{
+    margin: auto;
+}
+.modal.fade.show{
+    background: rgba(0, 0, 0, 0.7) !important;
+}

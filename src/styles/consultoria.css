@@ -3,3 +3,39 @@
     margin: 140px 0;
     min-height: 460px;
 }
+.nav-tabs {
+    border: 0;
+    padding: .7rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: -20px;
+    background-color: #2bbbad;
+    z-index: 2;
+    position: relative;
+    border-radius: 2px;
+}
+.nav-justified .nav-item {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    text-align: center;
+}
+.nav-tabs .nav-item.open .nav-link, .nav-tabs .nav-link.active {
+    background-color: rgba(255,255,255,.2);
+    color: #fff;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    border-radius: 2px;
+}
+a#element0,a#element1,a#element2,a#element3,a#element4{
+    padding: 31px;
+}
+.badge, .btn, .card:not([class*=card-outline-]), .chip, .jumbotron, .modal-dialog.cascading-modal .modal-c-tabs .nav-tabs, .modal-dialog.modal-notify .modal-header, .navbar, .pagination .active .page-link, .z-depth-1 {
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.26), 0 2px 10px 0 rgba(0,0,0,.12);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+.tab-content{
+    margin: 0 15px;
+}

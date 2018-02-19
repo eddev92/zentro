@@ -5,3 +5,6 @@ body{
   overflow-y: hidden;
   overflow-x: hidden;
 }
+.modal-body{
+  overflow-y: scroll;
+}

@@ -37,15 +37,19 @@
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
 }
-..carousel-fade .carousel-item {
+/* .carousel-fade .carousel-item {
     opacity: 0;
     -webkit-transition-duration: .6s;
     transition-duration: .6s;
     -webkit-transition-property: opacity;
     transition-property: opacity;
-}
+} */
+
 .carousel-indicators li::before{
     display: none !important;
+}
+#navbarSupportedContent a{
+    font-size: 0.9em;
 }
 .carousel-indicators li::after {
     display: none !important;
@@ -65,12 +69,6 @@ background-color: transparent !important;
     color: black;
     font-size: 0.7em;
     font-weight: 900;
-}
-button.courses{
-    top: 50%;
-    position: absolute;
-    z-index: 999999;
-    right: 50%;
 }
 .modal{
     display: block;
@@ -98,6 +96,12 @@ button.courses{
     z-index: 9999;
     top: 9%;
  }
+ .menu-content-aux{
+    margin: 0px 28%;
+    position: absolute;
+    z-index: 99;
+    top: 9%;
+ }
  .menu-content .mr-auto{
     margin: auto;
  }
@@ -109,3 +113,14 @@ button.courses{
     text-align: center;
     font-weight: 800;
  }
+
+
+.modal.fade.show{
+    display: show !important;
+}
+.modal-footer button{
+    margin: auto;
+}
+/* .modal-body{
+    overflow: scroll;
+} */
