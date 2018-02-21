@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import '../../../styles/consultory-item.css';
 
 const ConsultoryItem = ({ text, title, showIsos }) => (
-    <section className="py-4 text-center text-lg-center">
+    <section className="text-center text-lg-center">
                     <div className="row">
-                        <div className="col-lg-6 col-xl-5 pb-3">
+                        <div className="col-lg-6 col-xl-5">
                             <div className="view overlay hm-white-slight rounded z-depth-2">
                             <img src="https://mdbootstrap.com/img/Photos/Others/img%20(27).jpg" alt="Sample image for first version of blog listing"
                                 className="img-fluid" />

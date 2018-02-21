@@ -3,7 +3,7 @@
     min-height: 460px;
 }
 button.courses{
-    top: 73%;
+    top: 60%;
     position: absolute;
     z-index: 9999;
     right: 10%;
@@ -13,4 +13,24 @@ button.courses{
 }
 .modal.fade.show{
     background: rgba(0, 0, 0, 0.7) !important;
+}
+.info-capa{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid #e5e5e5;
+    padding: 36px;
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+    border-radius: 10px;
+    top: 22%;
+    margin-left: 25px;
+}
+.info-capa h1{
+    font-size: 1.5em;
+}
+.main-capacitacion img{
+    max-height: 100% !important;
+}
+b{
+    font-weight: 600;
 }

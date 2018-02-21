@@ -92,7 +92,7 @@ background-color: transparent !important;
  */
  .menu-content{
     margin: 0px 28%;
-    position: absolute;
+    position: fixed;
     z-index: 9999;
     top: 9%;
  }

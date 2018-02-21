@@ -25,7 +25,7 @@ class Consultoria extends Component{
                             <a className={active === 1 ? 'nav-link active show' : 'nav-link'} data-toggle="tab" role="tab" id={`element${active}`} onClick={this.selectTab.bind(this, 1)}>Tratamiento de aguas residuales</a>
                         </li>
                         <li class="nav-item">
-                            <a className={active === 2 ? 'nav-link active show' : 'nav-link'} data-toggle="tab" role="tab" onClick={this.selectTab.bind(this, 2)}>Implementación de métodos oficiales de análisis químicos (APHA, EPA, ISO, etc.): </a>
+                            <a className={active === 2 ? 'nav-link active show' : 'nav-link'} data-toggle="tab" role="tab" style={{padding: '19px'}} onClick={this.selectTab.bind(this, 2)}>Implementación de métodos oficiales de análisis químicos (APHA, EPA, ISO, etc.): </a>
                         </li>
                         <li class="nav-item">
                             <a className={active === 3 ? 'nav-link active show' : 'nav-link'} data-toggle="tab" role="tab" id={`element${active}`} onClick={this.selectTab.bind(this, 3)}>Desarrollo de métodos de análisis</a>
@@ -37,7 +37,9 @@ class Consultoria extends Component{
                 <div class="tab-content card">
                 {(!active) && <div className='tab-pane fade in active show' id="panel1" role="tabpanel">
                         <br />
-                        <p>Seleccione algún tipo de consultoría</p>
+                        <div className="select-consulty">
+                        <h1>SELECCIONE ALGÚN TIPO DE CONSULTORÍA</h1>
+                        </div>
                     </div>}
                     <div className={(active === 1) ? 'tab-pane fade in active show' : 'tab-pane fade'} role="tabpanel">
                         <br />

@@ -10,6 +10,8 @@
 }
 .main-button{
     padding-bottom: 15px;
+    margin-top: -33px;
+    margin-bottom: 20px;
 }
 .main-content h3{
     font-size: 1em;
@@ -34,4 +36,19 @@
 
 .aux{
     max-height: 396px;
+}
+.select-course{
+    margin: auto;
+    border: 1px solid #e9ecef;
+    padding: 43px;
+    margin-bottom: -50px;
+}
+.content{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-y: 90px;
+}
+.indice button.active{
+    background: #e5e5e5;
 }

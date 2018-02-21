@@ -39,3 +39,9 @@ a#element0,a#element1,a#element2,a#element3,a#element4{
 .tab-content{
     margin: 0 15px;
 }
+.select-consulty{
+    border: 2px solid #e5e5e5;
+    margin: 24px 250px;
+    padding: 76px;
+    text-align: center;
+}

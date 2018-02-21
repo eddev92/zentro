@@ -68,7 +68,6 @@ class HomeComponent extends Component{
                     </ul>
                 </div>
             </nav>
-            {/* <Menu/> */}
             <div className="content-logo">
             <img src="images/logo.png" className="logo" alt=""/>
             </div>
@@ -84,17 +83,13 @@ class HomeComponent extends Component{
                         
                     </div>
                     <div className={`carousel-item ${(sectionActive === 3) && 'active'}`}>
-    
+                    <Publicacion />
                     </div>
                     <div className={`carousel-item ${(sectionActive === 4) && 'active'}`}>
                         <img className="d-block w-100" src="images/menu5.jpg" alt="Third slide" />
                     </div>
                     <div className={`carousel-item ${(sectionActive === 5) && 'active'}`}>
-                        <img className="d-block w-100" src="images/menu6.jpg" alt="Third slide" />
-                    </div>
-                    <div className={`carousel-item ${(sectionActive === 6) && 'active'}`}>
-                        <img className="d-block w-100" src="images/menu7.jpg" alt="Third slide" />
-                        <ContactForm />
+                    <ContactForm />
                     </div>
                 </div>
                 {(sectionActive === 2) && <button type="button" className="btn btn-primary courses" onClick={this.openModal}>

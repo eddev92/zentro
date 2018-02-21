@@ -8,12 +8,14 @@ import Consultoria from './components/home/consultoria';
 import Capacitacion from './components/home/capacitacion';
 // import '../../../styles/capacitacion.css';
 import CourseContent from './components/shared/courses-content';
+import Publicacion from './components/home/publicacion';
 
 class App extends Component {
   state = {
     open: false,
     sectionActive: 0,
-    dropdownShow: false
+    dropdownShow: false,
+    openPublicaciones: false
 }
 openModal = () => {
   const {open} = this.state;
@@ -22,15 +24,23 @@ openModal = () => {
 }
 selectSection = (index) => {
     const {sectionActive, dropdownShow} = this.state;
-    if (dropdownShow) {
+    if (dropdownShow === true) {
         this.setState({dropdownShow: false})
     }
-    this.setState({ sectionActive: index, dropdownShow: sectionActive === 2 && true})
+    if (index === 3) {
+     return this.setState({dropdownShow: !dropdownShow})
+    }
+    this.setState({ sectionActive: index })
 }
 closeDropwdown = () => {
     const {dropdownShow} = this.state;
 
     this.setState({ dropdownShow: !dropdownShow})
+}
+openModalPublicaciones = (index) => {
+  const { openPublicaciones } = this.state;
+
+  this.setState({ openPublicaciones: !openPublicaciones })
 }
 render() {
     const { photoSelected, sectionActive, open, dropdownShow } = this.state;
@@ -52,16 +62,16 @@ render() {
                     <li className={(sectionActive === 1) ? 'nav-item active' : 'nav-item'} onClick={this.selectSection.bind(this, 1)}>
                         <a className="nav-link">Consultoría</a>
                     </li>
-                    <li className={(sectionActive === 2) ? 'nav-item dropdown show' : 'nav-item dropdown'} style={{ width: '116px'}} onClick={(dropdownShow) ? this.closeDropwdown : this.selectSection.bind(this, 2)}>
-                        <a className="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Capacitación</a>
-                        <div className={(dropdownShow) ? 'dropdown-menu dropdown-primary show' : 'dropdown-menu dropdown-primary'} aria-labelledby="navbarDropdownMenuLink">
-                            <a className="dropdown-item" href="#">Action</a>
-                            <a className="dropdown-item" href="#">Another action</a>
-                            <a className="dropdown-item" href="#">Something else here</a>
-                        </div>
+                    <li className={(sectionActive === 2) ? 'nav-item active' : 'nav-item'} onClick={this.selectSection.bind(this, 2)}>
+                        <a className="nav-link">Capacitación</a>
                     </li>
-                    <li className={(sectionActive === 3) ? 'nav-item active' : 'nav-item'} onClick={this.selectSection.bind(this, 3)}>
-                        <a className="nav-link">Publicación</a>
+                    <li className={(sectionActive === 3) ? 'nav-item dropdown show' : 'nav-item dropdown'} style={{ width: '102px'}} onClick={(dropdownShow) ? this.closeDropwdown : this.selectSection.bind(this, 3)}>
+                        <a className="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Publicación</a>
+                        <div className={(dropdownShow) ? 'dropdown-menu dropdown-primary show' : 'dropdown-menu dropdown-primary'} aria-labelledby="navbarDropdownMenuLink">
+                            <a className="dropdown-item" onClick={this.openModalPublicaciones.bind(this, 1)}>Artículos de investigación</a>
+                            <a className="dropdown-item" onClick={this.openModalPublicaciones.bind(this, 2)}>Congresos</a>
+                            <a className="dropdown-item" onClick={this.openModalPublicaciones.bind(this, 3)}>Presentaciones</a>
+                        </div>
                     </li>
 
                     <li className={(sectionActive === 4) ? 'nav-item active' : 'nav-item'} onClick={this.selectSection.bind(this, 4)}>
@@ -89,18 +99,15 @@ render() {
                 <Capacitacion />
                     
                 </div>
-                <div className={`carousel-item ${(sectionActive === 3) && 'active'}`}>
-
-                </div>
+                {/* <div className={`carousel-item ${(sectionActive === 3) && 'active'}`}>
+                  <Publicacion/>
+                </div> */}
                 <div className={`carousel-item ${(sectionActive === 4) && 'active'}`}>
                     <img className="d-block w-100" src="images/menu5.jpg" alt="Third slide" />
                 </div>
                 <div className={`carousel-item ${(sectionActive === 5) && 'active'}`}>
-                    <img className="d-block w-100" src="images/menu6.jpg" alt="Third slide" />
-                </div>
-                <div className={`carousel-item ${(sectionActive === 6) && 'active'}`}>
-                    <img className="d-block w-100" src="images/menu7.jpg" alt="Third slide" />
-                    <ContactForm />
+                    
+                <ContactForm />
                 </div>
             </div>
             {(sectionActive === 2 && open === false) && <button type="button" className="btn btn-primary courses" onClick={this.openModal}>
@@ -110,7 +117,7 @@ render() {
                         <div className="modal-dialog modal-lg" role="document">
                             <div className="modal-content">
                                 <div className="modal-header text-center">
-                                    <h5 className="modal-title" id="exampleModalLabel">CURSOS PRESENCIALES + IN HOUSE</h5>
+                                    <h5 className="modal-title" id="exampleModalLabel">CURSOS</h5>
                                 </div>
                                 <div className="modal-body">
                                     <CourseContent />
