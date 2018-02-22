@@ -1,0 +1,25 @@
+.inicio p{
+    background: rgba(255, 255, 255, 0.8);
+    padding: 34px 23px;
+    margin: 36px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+}
+.inicio{
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .9;
+    padding: 15px;
+    text-align: justify;
+}
+.inicio h1{
+    font-weight: 700;
+    text-align: center;
+    color: #3f51b5;
+}
+.inicio h4{
+    font-weight: 700;
+    text-align: center;
+    color: #3f51b5;
+}

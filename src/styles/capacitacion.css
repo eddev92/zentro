@@ -13,6 +13,7 @@ button.courses{
 }
 .modal.fade.show{
     background: rgba(0, 0, 0, 0.7) !important;
+    display: block;
 }
 .info-capa{
     position: absolute;

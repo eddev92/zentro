@@ -65,6 +65,7 @@
     width: 28rem;
     background-size: cover;
     background-position: center;
+    margin: auto;
 }
 .form-dark{
     position: absolute;

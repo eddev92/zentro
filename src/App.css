@@ -10,3 +10,9 @@ body{
   overflow-x: hidden;
   padding: 49px !important;
 }
+.modal-inicio{
+  padding: 0 !important;
+}
+.no-show{
+  z-index: -1;
+}

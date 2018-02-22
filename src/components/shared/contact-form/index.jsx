@@ -20,7 +20,7 @@ class ContactForm extends Component{
         const { active } = this.state;
 
         return (
-            <section className="form-dark">
+            <section className="form-dark col-md-5">
                     <div className="card card-image">
                         <div className="text-white rgba-stylish-strong z-depth-4 content-form">
                             <div className="text-center">
