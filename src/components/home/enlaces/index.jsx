@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import '../../../styles/enlaces.css';
+import Enlace from '../../shared/enlace';
 
 class Enlaces extends Component{
     render() {
         return (
             <div className="main-enlaces">
-                <h1>enlaces</h1>
+                <Enlace />
             </div>
         )
     }

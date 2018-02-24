@@ -21,7 +21,7 @@ body{
   top: 20%;
 }
 .navbar-dark .nav-item{
-  padding: 1px 22px;
+  /* padding: 1px 22px; */
   height: 41px;
 }
 .preloader {

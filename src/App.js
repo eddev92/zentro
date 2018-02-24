@@ -33,6 +33,9 @@ openModal = () => {
 }
 selectSection = (index) => {
     const {sectionActive, dropdownShow, showInicio, showInicioDrop} = this.state;
+    if(index >= 1) {
+      this.reset();
+    }
     if (dropdownShow === true) {
         this.setState({dropdownShow: false})
     }
@@ -121,7 +124,7 @@ render() {
                     <li className={(sectionActive === 2) ? 'nav-item active' : 'nav-item'} onClick={this.selectSection.bind(this, 2)}>
                         <a className="nav-link">Capacitación</a>
                     </li>
-                    <li className={(sectionActive === 3) ? 'nav-item dropdown show' : 'nav-item dropdown'} style={{ width: '147px'}} onClick={(dropdownShow) ? this.closeDropwdown : this.selectSection.bind(this, 3)}>
+                    <li className={(sectionActive === 3) ? 'nav-item dropdown show' : 'nav-item dropdown'} onClick={(dropdownShow) ? this.closeDropwdown : this.selectSection.bind(this, 3)}>
                         <a className="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Publicación</a>
                         <div className={(dropdownShow) ? 'dropdown-menu dropdown-primary show' : 'dropdown-menu dropdown-primary'} aria-labelledby="navbarDropdownMenuLink">
                             <a className="dropdown-item" onClick={this.openModalPublicaciones.bind(this, 1)}>Artículos de investigación</a>
@@ -151,8 +154,8 @@ render() {
                 <div className={`carousel-item ${(sectionActive === 1) && 'active'}`}>
                     <Consultoria />
                 </div>
-                <div className={`carousel-item ${(sectionActive === 2) && 'active'}`}>
-                <Capacitacion />
+                <div className={`carousel-item ${(sectionActive === 2) && 'active'}`} onMouseOver={this.reset}>
+                <Capacitacion/>
                     
                 </div>
                 {/* <div className={`carousel-item ${(sectionActive === 3) && 'active'}`}>

@@ -109,9 +109,9 @@ background-color: transparent !important;
     width: auto;
  }
  .menu-content .nav-item{
-    padding: 1px 21px;
+    /* padding: 1px 21px; */
     text-align: center;
-    width: 150px;
+    width: 110px;
  }
  .eslogan{
     position: absolute;
@@ -128,7 +128,7 @@ background-color: transparent !important;
 .nav-item.active{
     padding: 1px 21px;
     text-align: center;
-    width: 150px;
+    width: 131px;
 }
 .modal.fade.show{
     display: show !important;
