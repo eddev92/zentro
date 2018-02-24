@@ -3,17 +3,25 @@
     min-height: 460px;
 }
 button.courses{
-    top: 60%;
+    top: 77%;
     position: absolute;
     z-index: 9999;
     right: 10%;
+}
+button.courses.left{
+    left: 23px;
 }
 .modal-title{
     margin: auto;
 }
 .modal.fade.show{
-    background: rgba(0, 0, 0, 0.7) !important;
+    /* background: rgba(0, 0, 0, 0.7) !important; */
     display: block;
+    z-index: 9 !important;
+}
+.no-right .modal-dialog.modal-lg{
+    float: none !important;
+    top: 14%;
 }
 .info-capa{
     position: absolute;

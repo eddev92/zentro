@@ -1,19 +1,20 @@
 import React, { Component } from 'react';
 import '../../../styles/consultory-item.css';
+import CarouseImages from '../../../components/shared/carousel-images';
 
-const ConsultoryItem = ({ text, title, showIsos }) => (
+const ConsultoryItem = ({ text, title, showIsos, active }) => (
+    
     <section className="text-center text-lg-center">
                     <div className="row">
-                        <div className="col-lg-6 col-xl-5">
+                        {/* <div className="col-lg-7 col-xl-7 col-md-7">
                             <div className="view overlay hm-white-slight rounded z-depth-2">
-                            <img src="https://mdbootstrap.com/img/Photos/Others/img%20(27).jpg" alt="Sample image for first version of blog listing"
-                                className="img-fluid" />
+                            <CarouseImages/>
                             <a>
                                 <div className="mask"></div>
                             </a>
                             </div>
-                        </div>
-                        <div className="col-lg-6 col-xl-7 text">
+                        </div> */}
+                        <div className="col-sm-5 col-lg-5 col-xl-5 text">
                             <h3 className="mb-4 font-bold dark-grey-text">
                             <strong>{title}</strong>
                             </h3>

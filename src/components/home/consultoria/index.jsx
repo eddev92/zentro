@@ -6,12 +6,16 @@ import { CONSULTY_ITEM_1_CONTENT,
         CONSULTY_ITEM_3_CONTENT,
         CONSULTY_ITEM_4_CONTENT
 } from '../../../utils/constants';
+import CarouseImages from '../../../components/shared/carousel-images';
 
 class Consultoria extends Component{
     state = {
         active: 0
     }
     selectTab = (index) => {
+        if(index > 0) {
+            this.setState({index: 0})
+        }
         this.setState({active: index})
     }
     render() {
@@ -34,20 +38,21 @@ class Consultoria extends Component{
                             <a className={active === 4 ? 'nav-link active show' : 'nav-link'} data-toggle="tab" role="tab" id={`element${active}`} onClick={this.selectTab.bind(this, 4)}>Auditorías internas</a>
                         </li>
                     </ul>
-                <div class="tab-content card">
+                <div class="tab-content card row">
                 {(!active) && <div className='tab-pane fade in active show' id="panel1" role="tabpanel">
                         <br />
                         <div className="select-consulty">
                         <h1>SELECCIONE ALGÚN TIPO DE CONSULTORÍA</h1>
                         </div>
                     </div>}
+                    <CarouseImages active={active}/>
                     <div className={(active === 1) ? 'tab-pane fade in active show' : 'tab-pane fade'} role="tabpanel">
                         <br />
-                        <ConsultoryItem text={CONSULTY_ITEM_1_CONTENT} title="TRATAMIENTOS DE AGUAS RESIDUALES" />
+                        <ConsultoryItem text={CONSULTY_ITEM_1_CONTENT} title="TRATAMIENTOS DE AGUAS RESIDUALES" active={active}/>
                     </div>
                     <div className={(active === 2) ? 'tab-pane fade in active show' : 'tab-pane fade'} role="tabpanel">
                         <br/>
-                        <ConsultoryItem text={CONSULTY_ITEM_2_CONTENT} title="IMPLEMENTACIÓN DE MÉTODOS OFICIALES DE ANÁLISIS QUÍMICOS" />
+                        <ConsultoryItem text={CONSULTY_ITEM_2_CONTENT} title="IMPLEMENTACIÓN DE MÉTODOS OFICIALES DE ANÁLISIS QUÍMICOS" active={active}/>
                         <p></p>
                     </div>
                     <div className={(active === 3) ? 'tab-pane fade in active show' : 'tab-pane fade'} role="tabpanel">

@@ -46,7 +46,7 @@ class HomeComponent extends Component{
                         <li className={(sectionActive === 1) ? 'nav-item active' : 'nav-item'} onClick={this.selectSection.bind(this, 1)}>
                             <a className="nav-link">Consultoría</a>
                         </li>
-                        <li className={(sectionActive === 2) ? 'nav-item dropdown show' : 'nav-item dropdown'} style={{ width: '116px'}} onClick={(dropdownShow) ? this.closeDropwdown : this.selectSection.bind(this, 2)}>
+                        <li className={(sectionActive === 2) ? 'nav-item dropdown show' : 'nav-item dropdown'} style={{ width: '133px'}} onClick={(dropdownShow) ? this.closeDropwdown : this.selectSection.bind(this, 2)}>
                             <a className="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Capacitación</a>
                             <div className={(dropdownShow) ? 'dropdown-menu dropdown-primary show' : 'dropdown-menu dropdown-primary'} aria-labelledby="navbarDropdownMenuLink">
                                 <a className="dropdown-item" href="#">Action</a>

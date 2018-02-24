@@ -32,6 +32,7 @@
     position: relative;
     width: 100%;
     overflow: hidden;
+    max-height: 707px;
 }
 .carousel-fade .active.carousel-item-left, .carousel-fade .active.carousel-item-prev, .carousel-fade .carousel-item-next, .carousel-fade .carousel-item-prev, .carousel-fade .carousel-item.active {
     -webkit-transform: translate3d(0,0,0);
@@ -94,27 +95,41 @@ background-color: transparent !important;
     margin: 0px 28%;
     position: fixed;
     z-index: 9999;
+    width: 100%;
     top: 9%;
  }
  .menu-content-aux{
     margin: 0px 28%;
-    position: absolute;
+    position: fixed;
     z-index: 99;
     top: 9%;
+    width: 100%;
  }
  .menu-content .mr-auto{
-    margin: auto;
+    width: auto;
+ }
+ .menu-content .nav-item{
+    padding: 1px 21px;
+    text-align: center;
+    width: 150px;
  }
  .eslogan{
     position: absolute;
     z-index: 9;
     margin: 0;
-    padding: 22px;
+    font-size: 2em;
+    padding: 13px 22px;
     text-align: center;
+    font-style: italic;
     font-weight: 800;
+    padding-left: 79px;
  }
 
-
+.nav-item.active{
+    padding: 1px 21px;
+    text-align: center;
+    width: 150px;
+}
 .modal.fade.show{
     display: show !important;
 }

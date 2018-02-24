@@ -55,9 +55,7 @@ class CourseContent extends React.Component {
                         <button type="button" className={CoursePresential === 4 ? 'btn btn-outline-primary waves-effect col-12 active' : 'btn btn-outline-primary waves-effect col-12'} onClick={this.selectCourse.bind(this, 4)}>Sistemas de gestión</button>
                         
                         <button type="button" className={CoursePresential === 5 ? 'btn btn-outline-primary waves-effect col-12 active' : 'btn btn-outline-primary waves-effect col-12'} onClick={this.selectCourse.bind(this, 5)}>Microbiología</button>
-                        <div className="content-logo" style={{right: '37%'}}>
-                            <img src="images/logo.png" className="logo" alt=""/>
-                        </div>
+
                     </div>: null}
                     {typeCourse === 2 && <CourseInhouse />}
                     <div className={CoursePresential > 0 ? 'col-6 content final' : 'col-6 content inicial'} style={{backgroundImage: 'url(images/reader.jpg)'}}>
