@@ -13,45 +13,45 @@ const CarouseImages = ({active}) => {
         }
         break;
         case 1: images = {
-            img1: 'images/capacitacion.jpg',
-            img2: 'https://mdbootstrap.com/img/Photos/Others/img%20(27).jpg',
-            img3: 'https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg'
+            img3: 'images/62.png',
+            img2: 'images/43.png',
+            img1: 'images/42.jpg',
         }
         break;
         case 2: images = {
-            img1: 'https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg',
-            img2: 'https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg',
-            img3: 'https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg'
+            img1: 'images/18.jpg',
+            img2: 'images/30.jpg',
+            img3: 'images/31.jpg'
         }
         break;
         case 3: images = {
-            img1: 'images/contactos.jpg',
-            img2: 'https://mdbootstrap.com/img/Photos/Others/img%20(27).jpg',
-            img3: 'https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg'
+            img1: 'images/14.jpg',
+            img2: 'images/20.jpg',
+            img3: 'images/32.jpg'
         }
         break;
         case 4: images = {
-            img1: 'https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg',
-            img2: 'https://mdbootstrap.com/img/Photos/Slides/img%20(129).jpg',
-            img3: 'https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg'
+            img1: 'images/66.jpg',
+            img2: 'images/67.jpg',
+            img3: ''
         }
         break;
     }
     return (
-    <section  id="slides" className={active > 0 ? 'col-md-6 show' : 'col-md-6 hidden'}>
+    <section  id="slides" className={active > 0 ? 'col-md-10 show' : 'col-md-10 hidden'}>
         <div className="slides-container">
               <div className="slide active">
-                <img src={images.img1} alt="Fractales" className="img-responsive"/>
+                <img src={images.img1} alt="" className="img-responsive"/>
             
               </div>
               
               <div className="slide active">
-                <img src={images.img2} alt="Estereoquímica" className="img-responsive"/>
+                <img src={images.img2} alt="" className="img-responsive"/>
                  </div>
               
-              <div className="slide active">
-                <img src={images.img3} alt="Rotenona" className="img-responsive"/>
-                  </div>
+              {(images.img3) && <div className="slide active">
+                <img src={images.img3} alt="" className="img-responsive"/>
+                  </div>}
           </div>
           </section>
     );

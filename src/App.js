@@ -24,7 +24,8 @@ class App extends Component {
     auxModal: false,
     auxCapa: false,
     aux: false,
-    selected: false
+    selected: false,
+    codContentCarousel: -1
 }
 openModal = () => {
   const {open} = this.state;
@@ -92,7 +93,7 @@ reset = () => {
   this.setState({selected: false});
 }
 render() {
-    const { photoSelected, sectionActive, open, dropdownShow, showInicio, showInicioDrop, initIndex, auxModal, auxCapa, aux, selected } = this.state;
+    const { photoSelected, sectionActive, open, dropdownShow, showInicio, showInicioDrop, initIndex, auxModal, auxCapa, aux, selected, codContentCarousel } = this.state;
 
     return (
         <div id="carousel-thumb" className="carousel slide carousel-fade carousel-thumbnails" data-ride="carousel">
@@ -155,7 +156,7 @@ render() {
                     <Consultoria />
                 </div>
                 <div className={`carousel-item ${(sectionActive === 2) && 'active'}`} onMouseOver={this.reset}>
-                <Capacitacion/>
+                <Capacitacion index={codContentCarousel} />
                     
                 </div>
                 {/* <div className={`carousel-item ${(sectionActive === 3) && 'active'}`}>

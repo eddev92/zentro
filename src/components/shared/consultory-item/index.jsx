@@ -6,14 +6,6 @@ const ConsultoryItem = ({ text, title, showIsos, active }) => (
     
     <section className="text-center text-lg-center">
                     <div className="row">
-                        {/* <div className="col-lg-7 col-xl-7 col-md-7">
-                            <div className="view overlay hm-white-slight rounded z-depth-2">
-                            <CarouseImages/>
-                            <a>
-                                <div className="mask"></div>
-                            </a>
-                            </div>
-                        </div> */}
                         <div className="col-sm-5 col-lg-5 col-xl-5 text">
                             <h3 className="mb-4 font-bold dark-grey-text">
                             <strong>{title}</strong>
