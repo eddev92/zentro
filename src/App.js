@@ -76,14 +76,11 @@ console.log(initIndex)
   )
 }
 callFocus = (e) => {
-  const { aux, selected } = this.state;
-
   if (e) {
     this.setState({ aux: true, initIndex: 0, selected: true })
   }
 }
 hiddenMOdal = (e) => {
-  const { auxModal } = this.state;
   console.log('entro')
   if (e) {
     this.setState({ auxModal: false })
@@ -93,7 +90,7 @@ reset = () => {
   this.setState({selected: false});
 }
 render() {
-    const { photoSelected, sectionActive, open, dropdownShow, showInicio, showInicioDrop, initIndex, auxModal, auxCapa, aux, selected, codContentCarousel } = this.state;
+    const { sectionActive, open, dropdownShow, initIndex, aux, selected, codContentCarousel } = this.state;
 
     return (
         <div id="carousel-thumb" className="carousel slide carousel-fade carousel-thumbnails" data-ride="carousel">

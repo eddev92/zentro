@@ -1,6 +1,10 @@
 .main-capacitacion{
     margin: 140px 0;
     min-height: 460px;
+    padding: 0 30px;
+}
+.main-capacitacion img{
+    border-radius: 10px;
 }
 button.courses{
     top: 77%;

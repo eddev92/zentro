@@ -1,42 +1,42 @@
 import React, { Component } from 'react';
 import '../../../styles/carousel-image.css';
 
-const CarouseImages = ({active}) => {
+const CarouseImages = ({active, typeCourse}) => {
     console.log(active)
     let images;
-
-    switch (active) {
-        case 0: images = {
-            img1: 'images/capacitacion.jpg',
-            img2: 'images/contactos.jpg',
-            img3: 'images/capacitacion.jpg'
+        switch (active) {
+            case 0: images = {
+                img1: 'images/capacitacion.jpg',
+                img2: 'images/contactos.jpg',
+                img3: 'images/capacitacion.jpg'
+            }
+            break;
+            case 1: images = {
+                img3: 'images/62.png',
+                img2: 'images/43.png',
+                img1: 'images/42.jpg',
+            }
+            break;
+            case 2: images = {
+                img1: 'images/18.jpg',
+                img2: 'images/30.jpg',
+                img3: 'images/31.jpg'
+            }
+            break;
+            case 3: images = {
+                img1: 'images/14.jpg',
+                img2: 'images/20.jpg',
+                img3: 'images/32.jpg'
+            }
+            break;
+            case 4: images = {
+                img1: 'images/66.jpg',
+                img2: 'images/67.jpg',
+                img3: ''
+            }
+            break;
         }
-        break;
-        case 1: images = {
-            img3: 'images/62.png',
-            img2: 'images/43.png',
-            img1: 'images/42.jpg',
-        }
-        break;
-        case 2: images = {
-            img1: 'images/18.jpg',
-            img2: 'images/30.jpg',
-            img3: 'images/31.jpg'
-        }
-        break;
-        case 3: images = {
-            img1: 'images/14.jpg',
-            img2: 'images/20.jpg',
-            img3: 'images/32.jpg'
-        }
-        break;
-        case 4: images = {
-            img1: 'images/66.jpg',
-            img2: 'images/67.jpg',
-            img3: ''
-        }
-        break;
-    }
+    
     return (
     <section  id="slides" className={active > 0 ? 'col-md-10 show' : 'col-md-10 hidden'}>
         <div className="slides-container">

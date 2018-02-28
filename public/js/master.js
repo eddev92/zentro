@@ -10,7 +10,7 @@ jQuery( document ).ready( function( $ ) {
 	})
   
 	// SLIDER
-	$('#slides').superslides({
+	$('#slides, #slides2').superslides({
 	  animation: 'fade',
 	  play:4000, // change value if you want to increase or decrese speed
 	  animation_speed:600 // change time interval during slide change
