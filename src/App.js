@@ -8,6 +8,7 @@ import Capacitacion from './components/home/capacitacion';
 // import '../../../styles/capacitacion.css';
 import CourseContent from './components/shared/courses-content';
 import ContentModalInit from './components/shared/content-modal-inicio';
+import ContentPublication from './components/shared/publicaciones-content';
 import Publicacion from './components/home/publicacion';
 import Contactenos from './components/home/contactenos';
 import Galeria from './components/home/galery';
@@ -26,7 +27,9 @@ class App extends Component {
     auxCapa: false,
     aux: false,
     selected: false,
-    codContentCarousel: -1
+    codContentCarousel: -1,
+    publicacionIndex: false,
+    publicacionType: 0
 }
 openModal = () => {
   const {open} = this.state;
@@ -62,7 +65,7 @@ closeModal = () => {
 openModalPublicaciones = (index) => {
   const { openPublicaciones } = this.state;
 
-  this.setState({ openPublicaciones: !openPublicaciones })
+  this.setState({ openPublicaciones: true, publicacionType: index })
 }
 openModalInicio = (index) => {
   const { showInicio, selected } = this.state;
@@ -90,8 +93,18 @@ hiddenMOdal = (e) => {
 reset = () => {
   this.setState({selected: false});
 }
+closeModalPublicaciones = () => {
+  const { openPublicaciones } = this.state;
+
+  this.setState({ openPublicaciones: false })
+}
+renderModalPublicaciones() {
+  return (
+    <ContentPublication closeModalPublicacion={this.closeModalPublicaciones}/>
+  )
+}
 render() {
-    const { sectionActive, open, dropdownShow, initIndex, aux, selected, codContentCarousel } = this.state;
+    const { sectionActive, open, dropdownShow, initIndex, aux, selected, codContentCarousel, publicacionType } = this.state;
 
     return (
         <div id="carousel-thumb" className="carousel slide carousel-fade carousel-thumbnails" data-ride="carousel">
@@ -202,6 +215,7 @@ render() {
                             </div>
                         </div>}
                     </div> : null}
+                    {this.state.openPublicaciones && this.renderModalPublicaciones()}
         </div>
 
     );

@@ -34,3 +34,6 @@
 .main-galeria .no-show{
 display: none;
 }
+.item-galery{
+    padding: 24px 40px;
+}
