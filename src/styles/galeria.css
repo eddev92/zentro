@@ -1,0 +1,36 @@
+.main-galeria{
+    margin: 140px 0;
+    min-height: 460px;
+    text-align: center;
+}
+.accordion .card .card-header {
+    border-bottom: 0;
+    padding: 1rem 1.5rem;
+    background: 0 0;
+}
+.card-header:first-child {
+    border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+}
+.card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(0,0,0,.03);
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+.collapse.in{
+    display: block;
+    margin-top: 37px;
+}
+.main-galeria .row{
+    margin: 0 20px;
+}
+.main-galeria .card-body{
+    box-shadow: none;
+}
+.main-galeria h5{
+    width: 100%;
+    margin: auto;
+}
+.main-galeria .no-show{
+display: none;
+}

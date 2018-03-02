@@ -10,6 +10,7 @@ import CourseContent from './components/shared/courses-content';
 import ContentModalInit from './components/shared/content-modal-inicio';
 import Publicacion from './components/home/publicacion';
 import Contactenos from './components/home/contactenos';
+import Galeria from './components/home/galery';
 import Enlaces from './components/home/enlaces';
 
 class App extends Component {
@@ -134,6 +135,10 @@ render() {
                     <li className={(sectionActive === 4) ? 'nav-item active' : 'nav-item'} onClick={this.selectSection.bind(this, 4)}>
                         <a className="nav-link">Enlaces</a>
                     </li>
+                    
+                    <li className={(sectionActive === 6) ? 'nav-item active' : 'nav-item'} onClick={this.selectSection.bind(this, 6)}>
+                        <a className="nav-link">Galeria</a>
+                    </li>
                     <li className={(sectionActive === 5) ? 'nav-item active' : 'nav-item'} onClick={this.selectSection.bind(this, 5)}>
                         <a className="nav-link">Contáctenos</a>
                     </li>
@@ -161,6 +166,9 @@ render() {
                 </div> */}
                 <div className={`carousel-item ${(sectionActive === 4) && 'active'}`}>
                     <Enlaces />
+                </div>
+                <div className={`carousel-item ${(sectionActive === 6) && 'active'}`}>
+                    <Galeria />
                 </div>
                 <div className={`carousel-item ${(sectionActive === 5) && 'active'}`}>
                   <Contactenos/>

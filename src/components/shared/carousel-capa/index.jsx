@@ -32,7 +32,8 @@ const CarouselCapa = ({active}) => {
             case 3: images = {
                 img1: 'images/63.jpg',
                 img2: 'images/64.jpg',
-                img3: 'images/65.gif'
+                img3: 'images/65.gif',
+                img4: 'images/63.jpg',
             }
             break;
             case 4: images = {
@@ -61,6 +62,18 @@ const CarouselCapa = ({active}) => {
                 </li>}
                 {images.img6 && <li><img src={images.img6} alt=""/>
                 </li>}
+                {/* <li>
+  <img src="http://dominicushoeve.com/wp-content/uploads/ktz/latest-high-resolution-wallpaper-1920x1080-70558-pictures-high-resolution-wallpaper-30whtvl34j4r12m8b0c1sa.jpg" alt=""/>
+ </li>
+				<li>
+  <img src="http://youghaltennisclub.ie/wp-content/uploads/2014/06/Tennis-Wallpaper-High-Definition-700x300.jpg" alt=""/>
+</li>
+				<li>
+  <img src="http://welltechnically.com/wp-content/uploads/2013/08/android-wallpapers-700x300.jpg" alt=""/>
+</li>
+				<li>
+  <img src="http://welltechnically.com/wp-content/uploads/2013/09/android-widescreen-wallpaper-14165-hd-wallpapers-700x300.jpg" alt=""/>
+</li> */}
             </ul>
         </div>
     );
