@@ -32,7 +32,7 @@ class CarouselSimple extends Component {
             this.setState({index: index+3},() => {
                 this.increaseIndex();
             })
-        }, 3000)
+        }, 5000)
     }
     renderImages(galeryCourse) {
         if (!galeryCourse) {
@@ -45,18 +45,18 @@ class CarouselSimple extends Component {
             return (
                 <div className="row">
                     {(galeryCourse.img1 || galeryCourse.img2) && <div className={index === 0 ? 'row normal' : 'row hidden'}>
-                    {galeryCourse.img1 && <div className="col-md-6 item-galery">
+                    {galeryCourse.img1 && <div className="col-md-6 item-galery isLeftFloat">
                         <img src={galeryCourse.img1} alt=""/>
                     </div>}
-                    {galeryCourse.img2 && <div className="col-md-6 item-galery">
+                    {galeryCourse.img2 && <div className="col-md-6 item-galery iRightFloat">
                         <img src={galeryCourse.img2} alt=""/>
                     </div>}
                 </div>}
                 {(galeryCourse.img3 || galeryCourse.img4) && <div className={index === 3 && (galeryCourse.img3 || galeryCourse.img4) ? 'row normal' : 'row hidden'}>
-                {galeryCourse.img3 && <div className={(galeryCourse.img3 && galeryCourse.img4) ? 'col-md-6 item-galery' : 'col-md-6 item-galery position-center'}>
+                {galeryCourse.img3 && <div className={(galeryCourse.img3 && galeryCourse.img4) ? 'col-md-6 item-galery isLeftFloat' : 'col-md-6 item-galery position-center'}>
                         <img src={galeryCourse.img3} alt=""/>
                     </div>}
-                    {galeryCourse.img4 && <div className={(galeryCourse.img3 && galeryCourse.img4) ? 'col-md-6 item-galery' : 'col-md-6 item-galery position-center'}>
+                    {galeryCourse.img4 && <div className={(galeryCourse.img3 && galeryCourse.img4) ? 'col-md-6 item-galery iRightFloat' : 'col-md-6 item-galery position-center'}>
                         <img src={galeryCourse.img4} alt=""/>
                     </div>}
     
@@ -66,27 +66,27 @@ class CarouselSimple extends Component {
         } else {return (
             <div className="row">
                 {(galeryCourse.img1 || galeryCourse.img2) && <div className={index === 0 ? 'row normal' : 'row hidden'}>
-                {galeryCourse.img1 && <div className="col-md-6 item-galery">
+                {galeryCourse.img1 && <div className="col-md-6 item-galery isLeftFloat">
                     <img src={galeryCourse.img1} alt=""/>
                 </div>}
-                {galeryCourse.img2 && <div className="col-md-6 item-galery">
+                {galeryCourse.img2 && <div className="col-md-6 item-galery iRightFloat">
                     <img src={galeryCourse.img2} alt=""/>
                 </div>}
             </div>}
             {(galeryCourse.img3 || galeryCourse.img4) && <div className={index === 3 && (galeryCourse.img3 || galeryCourse.img4) ? 'row normal' : 'row hidden'}>
-            {galeryCourse.img3 && <div className={(galeryCourse.img3 && galeryCourse.img4) ? 'col-md-6 item-galery' : 'col-md-6 item-galery position-center'}>
+            {galeryCourse.img3 && <div className={(galeryCourse.img3 && galeryCourse.img4) ? 'col-md-6 item-galery isLeftFloat' : 'col-md-6 item-galery position-center'}>
                     <img src={galeryCourse.img3} alt=""/>
                 </div>}
-                {galeryCourse.img4 && <div className={(galeryCourse.img3 && galeryCourse.img4) ? 'col-md-6 item-galery' : 'col-md-6 item-galery position-center'}>
+                {galeryCourse.img4 && <div className={(galeryCourse.img3 && galeryCourse.img4) ? 'col-md-6 item-galery iRightFloat' : 'col-md-6 item-galery position-center'}>
                     <img src={galeryCourse.img4} alt=""/>
                 </div>}
 
             </div>}
             {(galeryCourse.img5 || galeryCourse.img6) && <div className={index === 6 && (galeryCourse.img5 || galeryCourse.img6) ? 'row normal' : 'row hidden'}>
-            {galeryCourse.img5 && <div className={(galeryCourse.img5 && galeryCourse.img6) ? 'col-md-6 item-galery' : 'col-md-6 item-galery position-center'}>
+            {galeryCourse.img5 && <div className={(galeryCourse.img5 && galeryCourse.img6) ? 'col-md-6 item-galery isLeftFloat' : 'col-md-6 item-galery position-center'}>
                     <img src={galeryCourse.img5} alt=""/>
                 </div>}
-                {galeryCourse.img6 && <div className={(galeryCourse.img5 && galeryCourse.img6) ? 'col-md-6 item-galery' : 'col-md-6 item-galery position-center'}>
+                {galeryCourse.img6 && <div className={(galeryCourse.img5 && galeryCourse.img6) ? 'col-md-6 item-galery iRightFloat' : 'col-md-6 item-galery position-center'}>
                     <img src={galeryCourse.img6} alt=""/>
                 </div>}
 

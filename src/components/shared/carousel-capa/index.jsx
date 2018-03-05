@@ -37,8 +37,10 @@ const CarouselCapa = ({active}) => {
             }
             break;
             case 4: images = {
-                img1: 'images/66.jpg',
-                img2: 'images/67.jpg'
+                img1: 'images/gestion1.jpg',
+                img2: 'images/gestion2.jpg',
+                img3: 'images/gestion3.jpg',
+                img4: 'images/gestion1.jpg',
             }
             break;
             case 5: images = {

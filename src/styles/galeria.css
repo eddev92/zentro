@@ -23,6 +23,7 @@
 }
 .main-galeria .row{
     margin: 0 20px;
+    width: 100%;
 }
 .main-galeria .card-body{
     box-shadow: none;
@@ -36,4 +37,5 @@ display: none;
 }
 .item-galery{
     padding: 24px 40px;
+    position: absolute;
 }

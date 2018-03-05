@@ -48,9 +48,16 @@
     transition: 0.7s all ease-in-out
 }
 .row.hidden{
-    display: none;
-    transition: 0.7s all ease-in-out
+    opacity:0;
+    transition: opacity 1s linear;
 }
 .position-center{
     margin: auto;
+    position: relative;
+}
+.iRightFloat{
+    right: 0;
+}
+.isLeftFloat{
+    left: 0;
 }

@@ -4,6 +4,8 @@ ul.li{
 }
 .main-item strong{
     font-size: .5em;
+    font-weight: 800;
+    color: white;
 }
 .title{
     text-align: center;
