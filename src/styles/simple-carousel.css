@@ -42,4 +42,15 @@
 	
 	75% {margin-left: -300%;}
 	100% {margin-left: -300%;}
-} 
+}
+.row.normal{
+    display: -webkit-inline-box;
+    transition: 0.7s all ease-in-out
+}
+.row.hidden{
+    display: none;
+    transition: 0.7s all ease-in-out
+}
+.position-center{
+    margin: auto;
+}

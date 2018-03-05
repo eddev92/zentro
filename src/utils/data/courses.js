@@ -41,27 +41,33 @@ const COURSES = [
         itemCourses: [
             {
                 id: 1,
-                title: 'Control y tratamiento de aguas residuales'
+                title: 'Control y tratamiento de aguas residuales',
+                url: 'http://zentro.pe/images/Trat_Aguas_Residuales.pdf'
             },
             {
                 id: 2,
-                title: 'Control y tratamiento y de aguas residuales por lodos activos.'
+                title: 'Control y tratamiento y de aguas residuales por lodos activos.',
+                url: 'http://zentro.pe/images/Trat_Aguas_Resid_x_Lod_Activ.pdf'
             },
             {
                 id: 3,
-                title: 'Muestreo y caracterización de aguas.'
+                title: 'Muestreo y caracterización de aguas.',
+                url: 'http://zentro.pe/images/Muestreo_y_Caract_Aguas.pdf'
             },
             {
                 id: 4,
-                title: 'Muestreo y caracterización de suelos.'
+                title: 'Muestreo y caracterización de suelos.',
+                url: 'http://zentro.pe/images/Muestreo_y_Caract_Suelos.pdf'
             },
             {
                 id: 5,
-                title: 'Generación y predicción del drenaje ácido de minas.'
+                title: 'Generación y predicción del drenaje ácido de minas.',
+                url: 'http://zentro.pe/images/Generac_y_Pred_Drenaj_Acid_Mina.pdf'
             },
             {
                 id: 6,
-                title: 'Caracterización y tratamiento del drenaje ácido de mina.'
+                title: 'Caracterización y tratamiento del drenaje ácido de mina.',
+                url: 'http://zentro.pe/images/Caract_y_Trat_Drenaj_Acid_Mina.pdf'
             }
         ]
     },

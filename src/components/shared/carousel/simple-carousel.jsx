@@ -1,146 +1,113 @@
 import React, { Component } from 'react';
 import '../../../styles/simple-carousel.css';
 
-const CarouselSimple = ({galeryCourse}) => {
-    console.log(galeryCourse)
-    let images = {
-        img1: 'images/capacitacion.jpg',
-        img2: 'images/contactos.jpg',
-        img3: 'images/capacitacion.jpg'
-    };
-        switch (galeryCourse) {
-            case 0: images = {
-                img1: 'images/capacitacion.jpg',
-                img2: 'images/contactos.jpg',
-                img3: 'images/capacitacion.jpg',
-                title: ''
+class CarouselSimple extends Component {
+    state = {
+        open: false,
+        index: 0,
+        img1Index: 1,
+        img2Index: 2,
+        images: {}
+    }
+    componentDidMount() {
+        this.increaseIndex();
+    }
+    increaseIndex() {
+        const { galeryCourse } = this.props;
+        const {index, images} = this.state;
+        console.log(galeryCourse)
+        setTimeout(() => {
+            if (index === 3 && galeryCourse.total === 4){
+                this.setState({index: 0})
+                return this.increaseIndex();
             }
-            break;
-            case 1: images = {
-                img1: 'images/19.png',
-                img2: 'images/20.jpg',
-                img3: 'images/21.jpg',
-            }
-            break;
-            case 2: images = {
-                img1: 'images/23.jpg',
-                img2: 'images/22.png',
-                img3: 'images/11.24',
-                title: ''
-            }
-            break;
-            case 3: images = {
-                img1: 'images/27.jpg',
-                img2: 'images/26.jpg',
-                img3: 'images/25.png',
-                title: ''
-            }
-            break;
-            case 4: images = {
-                img1: 'images/28A.jpg',
-                img2: 'images/28.jpg',
-                img3: 'images/30.jpg',
-                img4: 'images/29.jpg',
-                title: ''
-            }
-            break;
-            case 5: images = {
-                img1: 'images/31.jpg',
-                img2: 'images/32.jpg',
-                img3: 'images/33.jpg',
-                title: ''
-            }
-            break;
-            case 6: images = {
-                img1: 'images/34.png',
-                img2: 'images/35.jpg',
-                img3: 'images/36.jpg',
-                img3: 'images/37A.jpg',
-                title: ''
-            }
-            break;
-            case 7: images = {
-                img1: 'images/43.png',
-                img2: 'images/44.png',
-                img3: 'images/45.png',
-                title: ''
-            }
-            break;
-            case 8: images = {
-                img1: 'images/46.png',
-                img2: 'images/47.jpg',
-                img3: 'images/48.jpg',
-                title: ''
-            }
-            break;
-            case 9: images = {
-                img1: 'images/49A.png',
-                img2: 'images/49.jpg',
-                img3: 'images/50A.png',
-                img4: 'images/50.jpg',
-                img5: 'images/51.png',
-                img6: 'images/52.jpg',
-                title: ''
-            }
-            break;
-            case 10: images = {
-                img1: 'images/53A.png',
-                img2: 'images/53.jpg',
-                img3: 'images/54.jpg',
-                img4: 'images/55.png',
-                title: ''
-            }
-            break;
-            case 11: images = {
-                img1: 'images/56A.png',
-                img2: 'images/56.png',
-                img3: 'images/57.png',
-                img4: 'images/58A.png',
-                img5: 'images/58.jpg',
-                title: ''
-            }
-            break;
-            case 12: images = {
-                img1: 'images/59A.png',
-                img2: 'images/59.png',
-                img3: 'images/60.jpg',
-                img4: 'images/61.jpg',
-                img5: 'images/62.png',
-                title: ''
-            }
-            break;
+            if (index > 3 && galeryCourse.total === 5){
+                this.setState({index: 0})
+                return this.increaseIndex();
+            }    
+        if (index === galeryCourse.total){
+            this.setState({index: 0})
+            return this.increaseIndex();
         }
+            this.setState({index: index+3},() => {
+                this.increaseIndex();
+            })
+        }, 3000)
+    }
+    renderImages(galeryCourse) {
+        if (!galeryCourse) {
+            return null;
+        }
+        console.log((galeryCourse.total))
+        console.log((galeryCourse))
+        const { img1Index, img2Index, index } = this.state;
+        if (this.props.galeryCourse.total <= 4) {
+            return (
+                <div className="row">
+                    {(galeryCourse.img1 || galeryCourse.img2) && <div className={index === 0 ? 'row normal' : 'row hidden'}>
+                    {galeryCourse.img1 && <div className="col-md-6 item-galery">
+                        <img src={galeryCourse.img1} alt=""/>
+                    </div>}
+                    {galeryCourse.img2 && <div className="col-md-6 item-galery">
+                        <img src={galeryCourse.img2} alt=""/>
+                    </div>}
+                </div>}
+                {(galeryCourse.img3 || galeryCourse.img4) && <div className={index === 3 && (galeryCourse.img3 || galeryCourse.img4) ? 'row normal' : 'row hidden'}>
+                {galeryCourse.img3 && <div className={(galeryCourse.img3 && galeryCourse.img4) ? 'col-md-6 item-galery' : 'col-md-6 item-galery position-center'}>
+                        <img src={galeryCourse.img3} alt=""/>
+                    </div>}
+                    {galeryCourse.img4 && <div className={(galeryCourse.img3 && galeryCourse.img4) ? 'col-md-6 item-galery' : 'col-md-6 item-galery position-center'}>
+                        <img src={galeryCourse.img4} alt=""/>
+                    </div>}
     
+                </div>}
+                </div>
+            )
+        } else {return (
+            <div className="row">
+                {(galeryCourse.img1 || galeryCourse.img2) && <div className={index === 0 ? 'row normal' : 'row hidden'}>
+                {galeryCourse.img1 && <div className="col-md-6 item-galery">
+                    <img src={galeryCourse.img1} alt=""/>
+                </div>}
+                {galeryCourse.img2 && <div className="col-md-6 item-galery">
+                    <img src={galeryCourse.img2} alt=""/>
+                </div>}
+            </div>}
+            {(galeryCourse.img3 || galeryCourse.img4) && <div className={index === 3 && (galeryCourse.img3 || galeryCourse.img4) ? 'row normal' : 'row hidden'}>
+            {galeryCourse.img3 && <div className={(galeryCourse.img3 && galeryCourse.img4) ? 'col-md-6 item-galery' : 'col-md-6 item-galery position-center'}>
+                    <img src={galeryCourse.img3} alt=""/>
+                </div>}
+                {galeryCourse.img4 && <div className={(galeryCourse.img3 && galeryCourse.img4) ? 'col-md-6 item-galery' : 'col-md-6 item-galery position-center'}>
+                    <img src={galeryCourse.img4} alt=""/>
+                </div>}
+
+            </div>}
+            {(galeryCourse.img5 || galeryCourse.img6) && <div className={index === 6 && (galeryCourse.img5 || galeryCourse.img6) ? 'row normal' : 'row hidden'}>
+            {galeryCourse.img5 && <div className={(galeryCourse.img5 && galeryCourse.img6) ? 'col-md-6 item-galery' : 'col-md-6 item-galery position-center'}>
+                    <img src={galeryCourse.img5} alt=""/>
+                </div>}
+                {galeryCourse.img6 && <div className={(galeryCourse.img5 && galeryCourse.img6) ? 'col-md-6 item-galery' : 'col-md-6 item-galery position-center'}>
+                    <img src={galeryCourse.img6} alt=""/>
+                </div>}
+
+            </div>}
+            </div>
+        )
+
+        }
+    }
+
+render() {
+    const { galeryCourse } = this.props;
+    let items = [];
+    console.log(items)
     return (
         <div className="main">
-            <div className="row">
-                {images.img1 && <div className="col-md-6 item-galery">
-                    <img src={images.img1} alt=""/>
-                </div>}
-                {images.img2 && <div className="col-md-6 item-galery">
-                    <img src={images.img2} alt=""/>
-                </div>}
-            </div>
-            <div className="row">
-            {images.img3 && <div className="col-md-6 item-galery">
-                    <img src={images.img3} alt=""/>
-                </div>}
-                {images.img4 && <div className="col-md-6 item-galery">
-                    <img src={images.img4} alt=""/>
-                </div>}
-
-            </div>
-            <div className="row">
-            {images.img5 && <div className="col-md-6 item-galery">
-                    <img src={images.img5} alt=""/>
-                </div>}
-                {images.img6 && <div className="col-md-6 item-galery">
-                    <img src={images.img6} alt=""/>
-                </div>}
-
-            </div>
+        {this.renderImages(galeryCourse)}
+            
         </div>
     );
+    }
 }
 
 export default CarouselSimple;
