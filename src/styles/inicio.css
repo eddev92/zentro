@@ -51,9 +51,11 @@ img.active{
 }
 .row.red{
     margin-left: -2359px;
+    transition: all 1.4s ease-out;
 }
 .row.blue{
     margin-left: 2359px;
+    transition: all 1.4s ease-out;
 }
 .row.final{
     transition: all 1.4s ease-out;
