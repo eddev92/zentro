@@ -29,7 +29,17 @@ class App extends Component {
     selected: false,
     codContentCarousel: -1,
     publicacionIndex: false,
-    publicacionType: 0
+    publicacionType: 0,
+    showTitle: false
+}
+componentDidMount() {
+  this.showTitleWeb();
+}
+showTitleWeb = () => {
+  const { showTitle } = this.state;
+  setTimeout(() => {
+    this.setState({ showTitle: true });
+  }, 6000)
 }
 openModal = () => {
   const {open} = this.state;
@@ -38,6 +48,9 @@ openModal = () => {
 }
 selectSection = (index) => {
     const {sectionActive, dropdownShow, showInicio, showInicioDrop} = this.state;
+    if (index === 3) {
+      this.openModalPublicaciones();
+    }
     if(index >= 1) {
       this.reset();
     }
@@ -62,10 +75,10 @@ closeModal = () => {
 
   this.setState({ showInicio: !showInicio, auxModal: false, initIndex: 0})
 }
-openModalPublicaciones = (index) => {
+openModalPublicaciones = () => {
   const { openPublicaciones } = this.state;
 
-  this.setState({ openPublicaciones: true, publicacionType: index })
+  this.setState({ openPublicaciones: true })
 }
 openModalInicio = (index) => {
   const { showInicio, selected } = this.state;
@@ -104,14 +117,14 @@ renderModalPublicaciones() {
   )
 }
 render() {
-    const { sectionActive, open, dropdownShow, initIndex, aux, selected, codContentCarousel, publicacionType } = this.state;
+    const { sectionActive, open, dropdownShow, initIndex, aux, selected, codContentCarousel, publicacionType, showTitle } = this.state;
 
     return (
         <div id="carousel-thumb" className="carousel slide carousel-fade carousel-thumbnails" data-ride="carousel">
           {/* <div className="preloader">
           <img src="images/Preloader.gif" alt="Preloader" />
         </div> */}
-        <h3 className="eslogan container-fluid">Centro especializado en capacitación y análisis</h3>
+        {showTitle && <h3 className="eslogan container-fluid">Centro especializado en capacitación y análisis</h3>}
         <nav className={(open) ? 'navbar navbar-expand-lg navbar-dark indigo menu-content-aux' : 'navbar navbar-expand-lg navbar-dark indigo menu-content'}>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                 aria-expanded="false" aria-label="Toggle navigation"><span className="navbar-toggler-icon"/></button>
@@ -136,15 +149,17 @@ render() {
                     <li className={(sectionActive === 2) ? 'nav-item active' : 'nav-item'} onClick={this.selectSection.bind(this, 2)}>
                         <a className="nav-link">Capacitación</a>
                     </li>
-                    <li className={(sectionActive === 3) ? 'nav-item dropdown show' : 'nav-item dropdown'} onClick={(dropdownShow) ? this.closeDropwdown : this.selectSection.bind(this, 3)}>
+                    {/* <li className={(sectionActive === 3) ? 'nav-item dropdown show' : 'nav-item dropdown'} onClick={(dropdownShow) ? this.closeDropwdown : this.selectSection.bind(this, 3)}>
                         <a className="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Publicación</a>
                         <div className={(dropdownShow) ? 'dropdown-menu dropdown-primary show' : 'dropdown-menu dropdown-primary'} aria-labelledby="navbarDropdownMenuLink">
                             <a className="dropdown-item" onClick={this.openModalPublicaciones.bind(this, 1)}>Artículos de investigación</a>
                             <a className="dropdown-item" onClick={this.openModalPublicaciones.bind(this, 2)}>Congresos</a>
                             <a className="dropdown-item" onClick={this.openModalPublicaciones.bind(this, 3)}>Presentaciones</a>
                         </div>
+                    </li> */}
+                    <li className={(sectionActive === 3) ? 'nav-item active' : 'nav-item'} onClick={this.selectSection.bind(this, 3)}>
+                        <a className="nav-link">Publicación</a>
                     </li>
-
                     <li className={(sectionActive === 4) ? 'nav-item active' : 'nav-item'} onClick={this.selectSection.bind(this, 4)}>
                         <a className="nav-link">Enlaces</a>
                     </li>

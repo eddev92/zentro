@@ -3,7 +3,31 @@ import '../../../styles/inicio.css';
 
 class Inicio extends Component{
     state = {
-        sectionActive: 0
+        sectionActive: 0,
+        courseActive: 1,
+        showSubtitle: true
+    }
+    componentDidMount() {
+        this.loadCoursesInit();
+        this.hiddenSubmessage();
+    }
+    hiddenSubmessage = () => {
+        const { showSubtitle } = this.state;
+        setTimeout(() => {
+            this.setState({  showSubtitle: !showSubtitle });
+        }, 7000)
+    }
+    loadCoursesInit() {
+        const { courseActive } = this.state;
+        setTimeout(() => {
+            if (courseActive === 5) {
+                this.setState({ courseActive: 3 })
+                return this.loadCoursesInit()
+            }
+            this.setState({ courseActive: courseActive+2 }, () => {
+                this.loadCoursesInit();
+            })
+        }, 5500)
     }
     changeItem() {
         const {sectionActive} = this.state;
@@ -24,29 +48,53 @@ class Inicio extends Component{
             case 0: img = 'https://mdbootstrap.com/img/Photos/Slides/img%20(88).jpg'; break;
             case 1: img = 'https://mdbootstrap.com/img/Photos/Slides/img%20(121).jpg'; break;
         }
-        return <img src={img} />
+        return <img src={img} className="img-responsive"/>
     }
     renderCarousel() {
         const {sectionActive} = this.state;
-        
-        // setTimeout(() => {
-        //     this.changeItem();
-        //     }, 10000);
+
         return (
             <div>
-                <div className="selects">
-                 <img src="https://mdbootstrap.com/img/Photos/Others/Carousel-thumbs/img%20(31).jpg" className={(sectionActive === 0) ? 'active' : ''} onClick={this.selectImage.bind(this, 0)} />
-                 <img src="https://mdbootstrap.com/img/Photos/Others/Carousel-thumbs/img%20(121).jpg" className={(sectionActive === 1) ? 'active' : ''} onClick={this.selectImage.bind(this, 1)} />
-                </div>
                     {this.renderImage()}
             </div>
 
         )
     }
     render() {
+        const { courseActive, showSubtitle } = this.state;
+        console.log(courseActive)
         return (
             <div className="main-carousel">
-                {this.renderCarousel()}
+                {/* {this.renderCarousel()} */}
+                <div className="container-fluid" style={{backgroundImage: 'url(images/gestion3.jpg)'}}>
+                {showSubtitle && <div className="content-titleweb">
+                <h1 className="titleweb">Centro especializado en capacitación y análisis</h1>
+                </div>}
+
+                {/* {courseActive === 1 && <div className="row initial" style={{background: 'blue'}}>
+                    <div className="content-row">
+                        <h1>BIENVENIDO A ZENTRO</h1>
+                    </div>
+                    </div>} */}
+                    <div className={(courseActive === 3) ? 'row final' : 'row blue'} style={{background: 'blue'}}>
+                    <div className="content-row">
+                        <h1>titulo curso</h1>
+                        <p>parrafo contenido de curso 1 a dictarse proximamente</p>
+                        <span>fechas a dictarse</span>
+                        <span>horas</span>
+                        <span>persona de contacto</span>
+                    </div>
+                    </div>
+                    <div className={(courseActive === 5) ? 'row final' : 'row red'} style={{background: 'red'}}>
+                    <div className="content-row">
+                    <h1>titulo curso</h1>
+                        <p>parrafo contenido de curso 2 a dictarse proximamente</p>
+                        <span>fechas a dictarse</span>
+                        <span>horas</span>
+                        <span>persona de contacto</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         )
     }
