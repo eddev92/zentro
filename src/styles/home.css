@@ -149,15 +149,18 @@ background-color: transparent !important;
 .navbar-collapse{
     display: block;
     text-align: center;
+    height: 40px;
 }
 /* .modal-body{
     overflow: scroll;
 } */
 /*  media queries */
 
-  
-/* @media screen and (min-width: 893px) and (max-width: 1800px) {
-    .menu-content{
-      height: 56.96px;
+/* @media only screen and (max-width: 600px) {
+    .navbar-collapse{
+        display: none;
+    }
+    .menu-content .mr-auto{
+        display: table;
     }
   } */

@@ -47,8 +47,7 @@ img.active{
     background-size: cover;
 }
 .content-row{
-    margin: calc(20vh - -24px);
-    margin-left: 0;
+    margin: calc(20vh - -24px) auto;
 }
 .row.red{
     margin-left: -2359px;
