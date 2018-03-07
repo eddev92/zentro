@@ -132,6 +132,7 @@ background-color: transparent !important;
     font-style: italic;
     font-weight: 800;
     padding-left: 79px;
+    margin-left: 23px;
  }
 
 .nav-item.active{
@@ -147,6 +148,7 @@ background-color: transparent !important;
 }
 .navbar-collapse{
     display: block;
+    text-align: center;
 }
 /* .modal-body{
     overflow: scroll;
