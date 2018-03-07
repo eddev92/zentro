@@ -1,6 +1,6 @@
 
 .main-consultoria{
-    margin: 140px 0;
+    margin: 180px 0 0;
     min-height: 460px;
 }
 .nav-tabs {
@@ -41,7 +41,7 @@ a#element0,a#element1,a#element2,a#element3,a#element4{
 }
 .select-consulty{
     border: 2px solid #e5e5e5;
-    margin: 24px 250px;
+    margin: 24px auto;
     padding: 76px;
     text-align: center;
 }

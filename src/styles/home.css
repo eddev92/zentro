@@ -32,7 +32,7 @@
     position: relative;
     width: 100%;
     overflow: hidden;
-    max-height: 707px;
+    /* max-height: 707px; */
 }
 .carousel-fade .active.carousel-item-left, .carousel-fade .active.carousel-item-prev, .carousel-fade .carousel-item-next, .carousel-fade .carousel-item-prev, .carousel-fade .carousel-item.active {
     -webkit-transform: translate3d(0,0,0);
@@ -49,8 +49,15 @@
 .carousel-indicators li::before{
     display: none !important;
 }
+.dropdown-menu.show{
+    right: 0;
+    display: -webkit-inline-box;
+    margin: 0 auto;
+}
 #navbarSupportedContent a{
     font-size: 0.9em;
+    font-size: 0.9em;
+    width: auto;
 }
 .carousel-indicators li::after {
     display: none !important;
@@ -76,8 +83,8 @@ background-color: transparent !important;
 }
 .content-logo img{
     z-index: 99;
-    height: 130px;
-    width: 138px;
+    height: 122px;
+    width: 129px;
 }
 .content-logo{
     position: absolute;
@@ -86,17 +93,16 @@ background-color: transparent !important;
     border-radius: 100%;
     width: auto;
     height: auto;
-    padding: 15px 12px 0;
+    padding: 11px 12px 0;
     margin: 0;
 }
 /* 
  */
  .menu-content{
-    margin: 0px 28%;
-    position: fixed;
     z-index: 9999;
     width: 100%;
-    top: 9%;
+    margin-top: calc(20vh - 30px);
+    position: absolute;
  }
  .menu-content-aux{
     margin: 0px 28%;
@@ -107,16 +113,19 @@ background-color: transparent !important;
  }
  .menu-content .mr-auto{
     width: auto;
+    margin: 0 auto;
+    display: -webkit-inline-box;
  }
  .menu-content .nav-item{
     /* padding: 1px 21px; */
     text-align: center;
+    width: 100px;
     /* width: 110px; */
  }
  .eslogan{
     position: absolute;
     z-index: 9;
-    margin: 0;
+    margin: 23px 0;
     font-size: 2em;
     padding: 13px 22px;
     text-align: center;
@@ -136,6 +145,17 @@ background-color: transparent !important;
 .modal-footer button{
     margin: auto;
 }
+.navbar-collapse{
+    display: block;
+}
 /* .modal-body{
     overflow: scroll;
 } */
+/*  media queries */
+
+  
+/* @media screen and (min-width: 893px) and (max-width: 1800px) {
+    .menu-content{
+      height: 56.96px;
+    }
+  } */

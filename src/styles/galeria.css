@@ -1,5 +1,5 @@
 .main-galeria{
-    margin: 140px 0;
+    margin: 190px 0 0;
     min-height: 460px;
     text-align: center;
 }
@@ -22,7 +22,7 @@
     margin-top: 37px;
 }
 .main-galeria .row{
-    margin: 0 20px;
+    margin: auto;
     width: 100%;
 }
 .main-galeria .card-body{

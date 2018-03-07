@@ -41,7 +41,7 @@ class Consultoria extends Component{
                 <div class="tab-content card row">
                 {(!active) && <div className='tab-pane fade in active show' id="panel1" role="tabpanel">
                         <br />
-                        <div className="select-consulty">
+                        <div className="select-consulty container">
                         <h1>SELECCIONE ALGÚN TIPO DE CONSULTORÍA</h1>
                         </div>
                     </div>}

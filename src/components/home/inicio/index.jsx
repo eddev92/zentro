@@ -70,12 +70,6 @@ class Inicio extends Component{
                 {showSubtitle && <div className="content-titleweb">
                 <h1 className="titleweb">Centro especializado en capacitación y análisis</h1>
                 </div>}
-
-                {/* {courseActive === 1 && <div className="row initial" style={{background: 'blue'}}>
-                    <div className="content-row">
-                        <h1>BIENVENIDO A ZENTRO</h1>
-                    </div>
-                    </div>} */}
                     <div className={(courseActive === 3) ? 'row final' : 'row blue'} style={{background: 'blue'}}>
                     <div className="content-row">
                         <h1>titulo curso</h1>

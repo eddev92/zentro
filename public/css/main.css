@@ -1,3 +1,8 @@
 .ain-course .reader{
     background-image:url(images/reader.jpg);
 }
+/* @media only screen and (min-width: 320px) and (max-width: 900px) {
+    #root.carousel-inner{
+        max-height: 100% !important;
+    }
+  } */
