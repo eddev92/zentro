@@ -3,6 +3,9 @@
     min-height: 460px;
     text-align: center;
 }
+.main-galeria img{
+    max-height: 410px;
+}
 .accordion .card .card-header {
     border-bottom: 0;
     padding: 1rem 1.5rem;

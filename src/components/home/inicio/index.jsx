@@ -71,7 +71,7 @@ class Inicio extends Component{
                 <h1 className="titleweb">Centro especializado en capacitación y análisis</h1>
                 </div>}
                     <div className={(courseActive === 3) ? 'row final' : 'row blue'} style={{background: 'blue'}}>
-                    <div className="content-row">
+                    <div className="content-row col-xs-12 col-md-10">
                         <h1>titulo curso</h1>
                         <p>parrafo contenido de curso 1 a dictarse proximamente</p>
                         <span>fechas a dictarse</span>
@@ -80,7 +80,7 @@ class Inicio extends Component{
                     </div>
                     </div>
                     <div className={(courseActive === 5) ? 'row final' : 'row red'} style={{background: 'red'}}>
-                    <div className="content-row">
+                    <div className="content-row col-xs-12 col-md-10">
                     <h1>titulo curso</h1>
                         <p>parrafo contenido de curso 2 a dictarse proximamente</p>
                         <span>fechas a dictarse</span>

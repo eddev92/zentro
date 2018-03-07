@@ -54,7 +54,7 @@ class Capacitacion extends Component{
             <div className="main-capacitacion row">
             {/* <img src="images/capacitacion.jpg" alt=""/> */}
             {this.renderCarousel()}
-            <div className="info-capa col-5">
+            <div className="info-capa col-xs-12 col-md-5">
                 <h1>Los cursos de capacitación son desarrollados por expertos en cada tema, siendo el objetivo principal de <b>ZENTRO</b> que el 
                 participante adquiera las competencias específicas que le permitan un mejor desarrollo en su área de trabajo.</h1>
             </div>

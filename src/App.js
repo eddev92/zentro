@@ -47,7 +47,7 @@ openModal = () => {
   this.setState({ open: !open})
 }
 selectSection = (index) => {
-    const {sectionActive, dropdownShow, showInicio, showInicioDrop} = this.state;
+    const {sectionActive, dropdownShow, showInicio, showInicioDrop, selected} = this.state;
     if (index === 3) {
       this.openModalPublicaciones();
     }
@@ -58,7 +58,7 @@ selectSection = (index) => {
         this.setState({dropdownShow: false})
     }
     if (index === 0) {
-      return this.setState({ sectionActive: index, showInicioDrop: !showInicioDrop})
+      return this.setState({ sectionActive: index, showInicioDrop: !showInicioDrop, selected: !selected})
     }
     if (index === 3) {
      return this.setState({dropdownShow: !dropdownShow, auxModal: false, initIndex: 0})

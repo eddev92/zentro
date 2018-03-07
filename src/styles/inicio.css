@@ -48,6 +48,7 @@ img.active{
 }
 .content-row{
     margin: calc(20vh - -24px);
+    margin-left: 0;
 }
 .row.red{
     margin-left: -2359px;
