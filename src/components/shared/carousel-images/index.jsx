@@ -38,7 +38,7 @@ const CarouseImages = ({active, typeCourse}) => {
         }
     
     return (
-    <section  id="slides" className={active > 0 ? 'col-md-10 show' : 'col-md-10 hidden'}>
+    <section  id="slides" className={active > 0 ? 'col-md-5 show' : 'col-md-5 hidden'}>
         <div className="slides-container">
               <div className="slide active">
                 <img src={images.img1} alt="" className="img-responsive"/>

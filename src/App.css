@@ -49,3 +49,25 @@ body{
   color: black !important;
 }
 
+
+@media screen and (max-width: 950px) {
+  button.courses{
+      top: 89% !important;
+  }
+  .info-capa{
+    left: 0 !important;
+  }
+}
+@media screen and (max-width: 670px) {
+  .navbar-dark .nav-item.width-normal{
+    font-size: 12.5px !important;
+    width: 62px !important;
+  }
+  .menu-content{
+    padding-left: 0 !important;
+  }
+  .galeria-item, .enlaces-item, .inicio-item{
+    font-size: 12.5px;
+    width: 40px !important;
+  }
+}

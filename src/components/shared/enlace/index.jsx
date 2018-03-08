@@ -29,10 +29,20 @@ const Enlace = () => {
             title: 'Environmental Protection Agency',
             url: 'https://www.epa.gov/',
             textButtom: 'IR AL ENLACE'
+        },
+        {
+            title: 'Boletín de seguridad: Prof Loayza',
+            url: 'http://quimica.unmsm.edu.pe/index.php/boletin',
+            textButtom: 'IR AL ENLACE'
+        },
+        {
+            title: 'Noticias',
+            url: 'http://www.ecolab.com.pe/noticias.php',
+            textButtom: 'IR AL ENLACE'
         }
     ]
     const row1 = row01.map(e => 
-        <div class="card text-center col-xs-12 col-sm-6 col-md-6" style={{width: '22rem', boxShadow: 'none'}}>
+        <div class="card text-center col-xs-12 col-sm-12 col-md-6" style={{width: '22rem', boxShadow: 'none'}}>
             <div class="card-header success-color white-text">
                 Featured
             </div>

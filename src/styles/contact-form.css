@@ -61,8 +61,8 @@
     transform-origin: 100% 100%; 
 } 
 .form-dark .card-image{
-    background-image: url('https://mdbootstrap.com/img/Photos/Others/pricing-table7.jpg');
     width: 28rem;
+    background: rgba(255, 255, 255, 0.7);
     background-size: cover;
     background-position: center;
     margin: auto;
@@ -70,7 +70,7 @@
 .form-dark{
     position: absolute;
     z-index: 99999999;
-    top: 6%;
+    top: 10%;
     right: 3%;
 }
 .content-form{
@@ -98,4 +98,48 @@
 }
 .form-dark input{
     padding: 5px;
+}
+.message-contact2 {
+  font-size: 1.4em;
+  z-index: 9999;
+  position: absolute;
+  right: 46%;
+  font-weight:700;
+  color: black;
+  font-size: 2em;
+  background:rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+  box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+  padding: 25px;
+    top: 60%;
+}
+@media screen and (max-width: 852px) {
+  .form-dark{
+    margin-top: calc(100vh - 732px);
+    position: relative;
+    width: 100%;
+    right: 0;
+  }
+  .message-contact{
+    top: 5% !important;
+    right: 0 !important;
+    font-size: 1.3em !important;
+    text-align: center !important;
+  }
+  .message-contact2{
+    top: 24% !important;
+    right: 0 !important;
+    font-size: 1.3em !important;
+    text-align: center !important;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .form-dark{
+    margin-top: calc(100vh - 700px);
+    position: relative;
+    width: 100%;
+    right: 0;
+  }
 }

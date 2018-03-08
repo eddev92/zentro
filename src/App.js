@@ -133,7 +133,7 @@ render() {
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
 
                 <ul className="navbar-nav mr-auto">
-                    <li className={(sectionActive === 0) ? 'nav-item active' : 'nav-item'} onClick={this.selectSection.bind(this, 0)} onMouseOut={this.hiddenMOdal} onMouseOver={this.callFocus}>
+                    <li className={(sectionActive === 0) ? 'nav-item active inicio-item' : 'nav-item inicio-item'} onClick={this.selectSection.bind(this, 0)} onMouseOut={this.hiddenMOdal} onMouseOver={this.callFocus}>
                         <a className="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Inicio</a>
                         <div className={(selected && sectionActive === 0) ? 'dropdown-menu dropdown-primary show' : 'dropdown-menu dropdown-primary'} aria-labelledby="navbarDropdownMenuLink">
                             <a className="dropdown-item" onClick={this.openModalInicio.bind(this, 1)}>¿Quiénes somos?</a>
@@ -143,10 +143,10 @@ render() {
                             <a className="dropdown-item" onClick={this.openModalInicio.bind(this, 5)}>Por qué elegir ZENTRO?</a>
                         </div>
                     </li>
-                    <li className={(sectionActive === 1) ? 'nav-item active' : 'nav-item'} onClick={this.selectSection.bind(this, 1)}>
+                    <li className={(sectionActive === 1) ? 'nav-item active width-normal' : 'nav-item width-normal'} onClick={this.selectSection.bind(this, 1)}>
                         <a className="nav-link">Consultoría</a>
                     </li>
-                    <li className={(sectionActive === 2) ? 'nav-item active' : 'nav-item'} onClick={this.selectSection.bind(this, 2)}>
+                    <li className={(sectionActive === 2) ? 'nav-item active width-normal' : 'nav-item width-normal'} onClick={this.selectSection.bind(this, 2)}>
                         <a className="nav-link">Capacitación</a>
                     </li>
                     {/* <li className={(sectionActive === 3) ? 'nav-item dropdown show' : 'nav-item dropdown'} onClick={(dropdownShow) ? this.closeDropwdown : this.selectSection.bind(this, 3)}>
@@ -157,17 +157,17 @@ render() {
                             <a className="dropdown-item" onClick={this.openModalPublicaciones.bind(this, 3)}>Presentaciones</a>
                         </div>
                     </li> */}
-                    <li className={(sectionActive === 3) ? 'nav-item active' : 'nav-item'} onClick={this.selectSection.bind(this, 3)}>
+                    <li className={(sectionActive === 3) ? 'nav-item active width-normal' : 'nav-item width-normal'} onClick={this.selectSection.bind(this, 3)}>
                         <a className="nav-link">Publicación</a>
                     </li>
-                    <li className={(sectionActive === 4) ? 'nav-item active' : 'nav-item'} onClick={this.selectSection.bind(this, 4)}>
+                    <li className={(sectionActive === 4) ? 'nav-item active enlaces-item' : 'nav-item enlaces-item'} onClick={this.selectSection.bind(this, 4)}>
                         <a className="nav-link">Enlaces</a>
                     </li>
                     
-                    <li className={(sectionActive === 6) ? 'nav-item active' : 'nav-item'} onClick={this.selectSection.bind(this, 6)}>
+                    <li className={(sectionActive === 6) ? 'nav-item active galeria-item' : 'nav-item galeria-item'} onClick={this.selectSection.bind(this, 6)}>
                         <a className="nav-link">Galeria</a>
                     </li>
-                    <li className={(sectionActive === 5) ? 'nav-item active' : 'nav-item'} onClick={this.selectSection.bind(this, 5)}>
+                    <li className={(sectionActive === 5) ? 'nav-item active width-normal' : 'nav-item width-normal'} onClick={this.selectSection.bind(this, 5)}>
                         <a className="nav-link">Contáctenos</a>
                     </li>
 

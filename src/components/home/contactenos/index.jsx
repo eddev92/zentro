@@ -8,7 +8,8 @@ class Contactenos extends Component{
             <div className="main-contactenos">
             <img src="images/contactos.jpg" alt=""/>
             <div className="row">
-            <p className="col-md-6">Escríbenos y nos pondremos en contacto<br/> contigo lo mas pronto posible.</p>
+            <p className="col-xs-12 col-md-6 message-contact">Escríbenos y nos pondremos en contacto<br/> contigo lo mas pronto posible.</p>
+            <p className="col-xs-12 col-md-6 message-contact2 ">Telefonos: 975 400 169<br/>Email: informes@zentro.pe</p>
             <ContactForm />
                 </div>
             </div>

@@ -51,7 +51,6 @@
 }
 .dropdown-menu.show{
     right: 0;
-    display: -webkit-inline-box;
     margin: 0 auto;
 }
 #navbarSupportedContent a{
@@ -155,12 +154,3 @@ background-color: transparent !important;
     overflow: scroll;
 } */
 /*  media queries */
-
-/* @media only screen and (max-width: 600px) {
-    .navbar-collapse{
-        display: none;
-    }
-    .menu-content .mr-auto{
-        display: table;
-    }
-  } */

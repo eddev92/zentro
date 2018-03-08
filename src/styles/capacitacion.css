@@ -48,3 +48,22 @@ button.courses.left{
 b{
     font-weight: 600;
 }
+
+@media screen and (max-width: 852px) {
+    .main-capacitacion{
+        padding: 0;
+    }
+    .main-capacitacion .modal.show .modal-dialog, .modal-dialog.modal-lg{
+        float: none !important;
+    }
+    .main-item p{
+        font-size: 13px !important;
+        text-align: center !important;
+    }
+    .main-item ul li{
+        font-size: 13px !important;
+    }
+    .main-item ul{
+        padding-left: 5px !important;
+    }
+}

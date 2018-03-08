@@ -5,7 +5,7 @@
 /* .main-contactenos img{
     max-height: 100%;
 } */
-.main-contactenos p{
+.message-contact{
     z-index: 9999;
     position: absolute;
     top: 19%;
