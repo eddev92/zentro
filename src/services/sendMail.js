@@ -6,6 +6,7 @@ export default class sendMailServices {
        return axios.post('js/sendMail/sendMail.php', params)
             .then(res => {
                 console.log(res, 'envio contacto')
+                return res.data;
             })
     }
 }
