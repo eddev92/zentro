@@ -1,9 +1,10 @@
 .ain-course .reader{
     background-image:url(images/reader.jpg);
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
     h3.eslogan{
-        font-size: 1em;
+        font-size: 1.2em;
         margin-left: 23px;
+        margin-top: 5%;
     }
   }

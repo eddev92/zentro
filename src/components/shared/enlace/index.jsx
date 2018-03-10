@@ -9,7 +9,7 @@ const Enlace = () => {
             textButtom: 'IR AL ENLACE'
         },
         {
-            title: 'Soc qca del Perú',
+            title: 'Sociedad Química del Perú',
             url: 'http://sqperu.org.pe/s',
             textButtom: 'IR AL ENLACE'
         }
@@ -31,13 +31,8 @@ const Enlace = () => {
             textButtom: 'IR AL ENLACE'
         },
         {
-            title: 'Boletín de seguridad: Prof Loayza',
+            title: 'Boletines de Seguridad',
             url: 'http://quimica.unmsm.edu.pe/index.php/boletin',
-            textButtom: 'IR AL ENLACE'
-        },
-        {
-            title: 'Noticias',
-            url: 'http://www.ecolab.com.pe/noticias.php',
             textButtom: 'IR AL ENLACE'
         }
     ]

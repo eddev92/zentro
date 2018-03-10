@@ -29,7 +29,7 @@ class Consultoria extends Component{
                             <a className={active === 1 ? 'nav-link active show' : 'nav-link'} data-toggle="tab" role="tab" id={`element${active}`} onClick={this.selectTab.bind(this, 1)}>Tratamiento de aguas residuales</a>
                         </li>
                         <li class="nav-item">
-                            <a className={active === 2 ? 'nav-link active show' : 'nav-link'} data-toggle="tab" role="tab" style={{padding: '19px'}} onClick={this.selectTab.bind(this, 2)}>Implementación de métodos oficiales de análisis químicos (APHA, EPA, ISO, etc.): </a>
+                            <a className={active === 2 ? 'nav-link active show' : 'nav-link'} data-toggle="tab" role="tab" style={{padding: '19px'}} onClick={this.selectTab.bind(this, 2)}>Implementación de métodos oficiales de análisis químicos (APHA, EPA, ISO, etc.)</a>
                         </li>
                         <li class="nav-item">
                             <a className={active === 3 ? 'nav-link active show' : 'nav-link'} data-toggle="tab" role="tab" id={`element${active}`} onClick={this.selectTab.bind(this, 3)}>Desarrollo de métodos de análisis</a>

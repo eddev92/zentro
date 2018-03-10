@@ -123,9 +123,11 @@ background-color: transparent !important;
  }
  .eslogan{
     position: absolute;
+    font-family: "Times New Roman", Times, serif;
     z-index: 9;
-    margin: 23px 0;
-    font-size: 2em;
+    margin: auto 0;
+    color: #B2ADA2;
+    font-size: 2.5em;
     padding: 13px 22px;
     text-align: center;
     font-style: italic;

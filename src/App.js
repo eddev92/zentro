@@ -46,24 +46,25 @@ openModal = () => {
 
   this.setState({ open: !open})
 }
-selectSection = (index) => {
+selectSection(index) {
     const {sectionActive, dropdownShow, showInicio, showInicioDrop, selected} = this.state;
-    if (index === 3) {
-      this.openModalPublicaciones();
-    }
-    if(index >= 1) {
-      this.reset();
-    }
+    // if (index === 3) {
+    //   this.openModalPublicaciones();
+    // }
+    // if(index >= 1) {
+    //   this.reset();
+    // }
     if (dropdownShow === true) {
         this.setState({dropdownShow: false})
     }
     if (index === 0) {
-      return this.setState({ sectionActive: index, showInicioDrop: !showInicioDrop, selected: !selected})
+     return this.setState({ sectionActive: index, showInicioDrop: !showInicioDrop, selected: !selected})
     }
     if (index === 3) {
-     return this.setState({dropdownShow: !dropdownShow, auxModal: false, initIndex: 0})
+     return this.setState({sectionActive: index, dropdownShow: !dropdownShow, auxModal: false, initIndex: 0})
     }
     this.setState({ sectionActive: index, auxModal: false, initIndex: 0 })
+    this.reset();
 }
 closeDropwdown = () => {
     const {dropdownShow} = this.state;
@@ -189,9 +190,9 @@ render() {
                 <Capacitacion index={codContentCarousel} />
                     
                 </div>
-                {/* <div className={`carousel-item ${(sectionActive === 3) && 'active'}`}>
+                <div className={`carousel-item ${(sectionActive === 3) && 'active'}`}>
                   <Publicacion/>
-                </div> */}
+                </div>
                 <div className={`carousel-item ${(sectionActive === 4) && 'active'}`}>
                     <Enlaces />
                 </div>
@@ -230,7 +231,7 @@ render() {
                             </div>
                         </div>}
                     </div> : null}
-                    {this.state.openPublicaciones && this.renderModalPublicaciones()}
+                    {/* {this.state.openPublicaciones && this.renderModalPublicaciones()} */}
         </div>
 
     );

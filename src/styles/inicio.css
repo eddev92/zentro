@@ -61,8 +61,9 @@ img.active{
     transition: all 1.4s ease-out;
 }
 .titleweb{
-    color: black;
+    color: #B2ADA2;
     font-size: 3em;
+    font-family: "Times New Roman", Times, serif;
     font-style: italic;
     font-weight: 800;
     text-align: center;
@@ -73,7 +74,7 @@ img.active{
     margin: calc(28vh - 20px);
     margin-left: 0;
     background: white;
-    opacity: 0.7;
+    opacity: 0.9;
     padding: 18px;
 
 }
