@@ -14,7 +14,7 @@ const ConsultoryItem = ({ text, title, showIsos, active }) => (
 
                             {(showIsos) && <div className="isos row">
                                 <a className="btn btn-success btn-md col-xs-12 col-md-4 mb-3">ISO 9000</a>
-                                <a className="btn btn-success btn-md col-xs-12 col-md-4 mb-3">ISO 17025</a>
+                                <a className="btn btn-success btn-md col-xs-12 col-md-3 mb-3">ISO 17025</a>
                                 <a className="btn btn-success btn-md col-xs-12 col-md-4 mb-3">ISO 17020</a>
                             </div>}
                         </div>

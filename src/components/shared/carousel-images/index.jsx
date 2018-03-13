@@ -30,7 +30,7 @@ const CarouseImages = ({active, typeCourse}) => {
             }
             break;
             case 4: images = {
-                img1: 'images/66.jpg',
+                img1: 'images/66.png',
                 img2: 'images/67.jpg',
                 img3: ''
             }

@@ -8,13 +8,15 @@
     border-radius: 10px;
 }
 button.courses{
-    top: 77%;
+    top: 90%;
     position: absolute;
     z-index: 9999;
     right: 10%;
 }
 button.courses.left{
-    left: 23px;
+    right: 3%;
+    top: 93%;
+    padding: 11px;
 }
 .modal-title{
     margin: auto;

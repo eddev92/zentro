@@ -1,26 +1,30 @@
 .slider.capa {
-    width: 60%;
-    margin: auto;
-    overflow: hidden;
+	width: auto;
+    /* margin: auto; */
+    overflow-x: hidden;
+    text-align: center;
 }
 
 .slider.capa ul {
 	display: flex;
 	padding: 0;
-	width: 100%;
+	width: 400%;
 	
 	animation: cambio 20s infinite alternate linear;
 }
 
 .slider.capa li {
-	width: 100%;
+	/* width: 100%; */
     list-style: none;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .slider.capa img {
     width: auto;
-    max-height: 350px;
+    /* max-height: 350px; */
+	height: 100%;
+	height: 100%;
+    margin: 0 calc(20vh - 60px);
 }
 
 @keyframes cambio {
