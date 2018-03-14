@@ -5,13 +5,31 @@ import CourseItem from '../../shared/course-item';
 import CourseInhouse from '../../shared/courses-content/course-inhouse';
 import Carousel from '../../../components/shared/carousel';
 import CarouselCapa from '../../../components/shared/carousel-capa';
+import CoursesContentServices from '../../../services/courses-content';
+import ContentCoursePresential from '../../shared/detail-course';
 
-class CourseContent extends React.Component {
+class CourseContent extends Component {
     state = {
         typeCourse: 0,
         couseSelected: false,
         CoursePresential: 0,
-        courseSelected: {}
+        courseSelected: {},
+        courseContentAQ: 0,
+        courses: []
+    }
+    componentDidMount() {
+        this.loadCourses();
+    }
+    loadCourses() {
+        const service = new CoursesContentServices();
+
+        service.getCoursesPresentials()
+            .then(res => {
+                this.setState({ courses: res });
+                console.log(res)
+            }).catch(error => {
+                console.log(error)
+            })
     }
     selectTypeCourse = (index) => {
         if(index === 2){
@@ -26,17 +44,30 @@ class CourseContent extends React.Component {
         const element = COURSES.find(e => e.id === course);
         return element;
     }
+    selectCourseAQ = (index) => {
+        this.setState({ courseContentAQ: index });
+    }
     renderContentCourse() {
-        const { CoursePresential } = this.state;
+        const { CoursePresential, courses } = this.state;
         console.log(CoursePresential)
         const courseSelected = this.validateCourseSelected(CoursePresential);
         console.log(courseSelected)
         return (
-            <CourseItem item={courseSelected} />
+            <CourseItem item={courseSelected} courses={courses} selectCourseAQ={this.selectCourseAQ} />
         )
     }
+    renderContentCoursePresential() {
+        const { courseContentAQ, courses } = this.state;
+
+        return <ContentCoursePresential index={courseContentAQ} courses={courses} />
+    }
     render() {
-        const { couseSelected, typeCourse, CoursePresential } = this.state;
+        const { couseSelected, typeCourse, CoursePresential, courses, courseContentAQ } = this.state;
+        console.log(courses)
+        console.log(courseContentAQ)
+        if(courseContentAQ > 0) {
+            return this.renderContentCoursePresential();
+        }
     return (
         <div className="main-content row aux">
             <div className="main-button container text-center">

@@ -27,10 +27,6 @@ const COURSES = [
             {
                 id: 6,
                 title: 'Análisis y caracterización de suelos.'
-            },
-            {
-                id: 7,
-                title: 'Análisis clásicos e instrumentales para alimentos.'
             }
         ]
     },

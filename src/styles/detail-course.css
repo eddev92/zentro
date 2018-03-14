@@ -1,0 +1,17 @@
+.main-content-course h2{
+    text-align: center;
+    color: black;
+}
+.main-content-course p {
+    margin-bottom: 25px !important;
+}
+.objetivos, .temario,.main-content-course p{
+    margin: auto;
+}
+.btn-content-course{
+    text-align: center;
+    margin: auto;
+}
+.footer-buttons-courses button{
+    width: 60%;
+}

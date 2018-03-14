@@ -48,7 +48,10 @@
     font-weight: 600;
 }
 .btn-download{
-    background-color: #3f51b5!important;
+    background-color: #3f51b5 !important;
+}
+.btn-download:hover{
+    background-color: #000 !important;
 }
 
 @media only screen and (max-width: 600px) {
