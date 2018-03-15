@@ -41,4 +41,5 @@ display: none;
 .item-galery{
     padding: 24px 40px;
     position: absolute;
+    text-align: center;
 }

@@ -49,15 +49,20 @@
 }
 .row.hidden{
     opacity:0;
-    transition: opacity 1s linear;
+	transition: opacity 1s linear;
+	position: absolute;
 }
 .position-center{
     margin: auto;
-    position: relative;
+	position: relative !important;
 }
 .iRightFloat{
     right: 0;
 }
 .isLeftFloat{
     left: 0;
+}
+.max-h{
+	max-height: 250px;
+	/* width: auto !important; */
 }

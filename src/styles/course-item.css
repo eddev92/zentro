@@ -21,14 +21,15 @@ ul.li{
     padding: 14px;
 }
 .main-body li{
-    font-size: .4em;
+    font-size: .39em;
+    margin-bottom: 10px;
 }
 .main-body{
-    margin: 15px;
+    margin: 0 15px;
     background: white;
     opacity: 0.8;
     border-radius: 10px;
-    padding: 20px;
+    padding: 0 20px;
 }
 a.link-pdf{
     color: black;

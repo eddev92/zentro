@@ -56,7 +56,9 @@ body{
   color: black !important;
 }
 
-
+.modal-full-height .main-body ul li a:hover{
+  color:#3f51b5;
+}
 @media screen and (max-width: 950px) {
   button.courses{
       top: 89% !important;
@@ -65,7 +67,7 @@ body{
     left: 0 !important;
   }
 }
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1050px) {
   .modal-full-height.modal-bottom {
       max-width: 100%;
       top: 37%;

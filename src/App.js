@@ -205,7 +205,7 @@ render() {
             </div>
             
             {(sectionActive === 2) && <button type="button" className={open ? 'btn btn-primary courses left' : 'btn btn-primary courses'} onClick={this.openModal}>
-                                    {open ? 'Cerrar cursos' : 'Ver cursos'}
+                                    {open ? 'Cerrar' : 'Ver cursos'}
                         </button>}
                     {(sectionActive === 2) ? <div className={(open) ? 'modal fade show right' : 'modal fade right'} id="exampleModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModal" aria-hidden="true">
                         <div className="modal-dialog modal-full-height modal-bottom modal-notify modal-danger" role="document">

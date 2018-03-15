@@ -3,6 +3,8 @@
         "idCourse": 1,
         "title": "Análisis volumétricos de minerales",
         "content": "El análisis químico volumétrico es fundamental para el análisis de minerales, porque nos permite hallar de manera muy exacta la ley de los elementos en la muestra. Este curso proporciona los fundamentos teóricos y prácticos necesarios para desempeñarse con éxito en el análisis volumétrico de este tipo de muestras, dando especial énfasis a la parte experimental. A través de las prácticas de laboratorio seleccionadas, el participante consolida su formación teórica en volumetría, además de realizar el tratamiento de la muestra y la eliminación de interferentes. Finalmente, también se le proporcionará una herramienta (los diagramas de Pourbaix), que le ayudará en el análisis de los métodos volumétricos oficiales.",
+        "content2": "",
+        "content3": "",
         "objetives": [
             {
                 "text": "Emplear correctamente las técnicas generales del análisis volumétrico"
@@ -63,6 +65,7 @@
         "title": "Análisis volumétricos de aguas",
         "content": "La volumetría es una técnica analítica muy antigua pero muy vigente en los laboratorios químicos, se aplica en una diversidad de matrices y entre ellas tenemos a las aguas que pueden ser: potable, residuales, de río, de calderos entre otras.",
         "content2": "En este curso, el participante adquirirá las bases teóricas necesarias para tener un óptimo desempeño en el análisis volumétrico, se entrenará en el manejo correcto del material de vidrio, el uso de indicadores químicos, la identificación y eliminación de interferentes, haciendo uso de los diagramas de Pourbaix, que además le servirán como herramienta, para entender la metodología utilizada en el laboratorio.",
+        "content3": "",
         "objetives": [
             {
                 "text": "Establecer las bases teóricas de la volumetría."
@@ -123,6 +126,7 @@
         "title": "Análisis instrumental por absorción atómica en minerales.",
         "content": "El uso de la espectroscopía de absorción atómica en las muestras minerales tiene amplia aplicación en estos días, tanto en los laboratorios de las minas como en los de servicio, ya que mediante esta técnica se determinan bajos niveles de concentración (ppm) de una variedad de metales.",
         "content2": "Con este curso el participante inicia reconociendo todos los componentes de un espectrofotómetro de absorción atómica con flama para luego colocar los parámetros instrumentales teniendo en cuenta la sensibilidad requerida. Se construyen luego curvas de calibración en los rangos de trabajo adecuados y se hace énfasis también en la detección y compensación o eliminación de los interferentes.",
+        "content3": "",
         "objetives": [
             {
                 "text": "Establecer los fundamentos de la Absorción Atómica (AA)."
@@ -263,6 +267,8 @@
         "idCourse": 5,
         "title": "Análisis instrumental por absorción molecular UV/Vis en aguas",
         "content": "El presente curso proporciona la teoría fundamental para comprender la espectrofotometría de absorción molecular. Da las herramientas necesarias para realizar una evaluación periódica para chequear la exactitud de longitudes de onda y de absorbancias del instrumento. Así como también mediante la realización de prácticas dirigidas el participante desarrollará métodos oficiales (APHA) de metales y aniones para desempeñarse con éxito en un laboratorio de análisis de aguas. El curso también proporcionará a los participantes los elementos necesarios para el desarrollo y aplicación de la calidad analítica total en el reporte de resultados.",
+        "content2": "",
+        "content3": "",
         "objetives": [
             {
                 "text": "Establecer los fundamentos de la absorción molecular."
