@@ -29,11 +29,11 @@ const COURSES = [
                 title: 'Análisis instrumental por absorción molecular UV/Vis en aguas.',
                 url: 'http://zentro.pe/images/5_Analisis Inst UV Vis Aguas.pdf'
             },
-            {
-                id: 6,
-                title: 'Análisis y caracterización de suelos.',
-                url: 'http://zentro.pe/images/5_Analisis Inst UV Vis Aguas.pdf'
-            }
+            // {
+            //     id: 6,
+            //     title: 'Análisis y caracterización de suelos.',
+            //     url: 'http://zentro.pe/images/5_Analisis Inst UV Vis Aguas.pdf'
+            // }
         ]
     },
     {

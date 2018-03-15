@@ -13,6 +13,7 @@ import Publicacion from './components/home/publicacion';
 import Contactenos from './components/home/contactenos';
 import Galeria from './components/home/galery';
 import Enlaces from './components/home/enlaces';
+import Footer from './components/footer';
 
 class App extends Component {
   state = {
@@ -232,6 +233,7 @@ render() {
                         </div>}
                     </div> : null}
                     {/* {this.state.openPublicaciones && this.renderModalPublicaciones()} */}
+                    <Footer />
         </div>
 
     );

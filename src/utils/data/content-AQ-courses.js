@@ -327,70 +327,71 @@ const CoursesAQ = [
             }
         ]
     },
-    {
-        "idCourse": 6,
-        "title": "Análisis instrumental por absorción molecular UV/Vis en aguas",
-        "url": 'http://zentro.pe/images/5_Analisis Inst UV Vis Aguas.pdf',
-        "content": "El presente curso proporciona la teoría fundamental para comprender la espectrofotometría de absorción molecular. Da las herramientas necesarias para realizar una evaluación periódica para chequear la exactitud de longitudes de onda y de absorbancias del instrumento. Así como también mediante la realización de prácticas dirigidas el participante desarrollará métodos oficiales (APHA) de metales y aniones para desempeñarse con éxito en un laboratorio de análisis de aguas. El curso también proporcionará a los participantes los elementos necesarios para el desarrollo y aplicación de la calidad analítica total en el reporte de resultados.",
-        "objetives": [
-            {
-                "text": "Establecer los fundamentos de la absorción molecular."
-            },
-            {
-                "text": "Reconocer los principales componentes del espectrofotómetro uv/vis y realizar su operación analítica de rutina y verificar el desempeño del instrumento."
-            },
-            {
-                "text": "Realizar análisis cualitativo y cuantitativo de metales y aniones aplicando el control de calidad analítico adecuado para el reporte de los resultados."
-            }
-        ],
-        "temary": [
-            {
-                "text": "1. Fundamento de la espectroscopía de absorción uv/vis",
-                "laboratories": [
-                    {
-                        "text": "Espectro Electromagnético: interacción entre la radiación electromagnética y la materia. Espectroscopía de absorción, conceptos: absorbancia, transmitancia, absortividad molar. Ley de Lambert y Beer: desviaciones positivas y negativas. Relación entre la absorbancia y concentración. Preparación de muestras."
-                    }
-                ]
-            },
-            {
-                "text": "2. Instrumentación",
-                "laboratories": [
-                    {
-                        "text": "Componentes principales de un espectrofotómetro: fuente de radiación: lámpara de deuterio y de tungsteno, monocromador, detectores: fotomultiplicador. Celdas de muestra: cuarzo, vidrio, plástico. Espectrofotómetro de haz simple y haz doble: ventajas y desventajas."
-                    }
-                ]
-            },
-            {
-                "text": "3. Laboratorio",
-                "laboratories": [
-                    {
-                        "text": "Manejo del espectrofotómetro."
-                    },
-                    {
-                        "text": "Características de los espectros en absorción molecular."
-                    },
-                    {
-                        "text": "Análisis de Fe."
-                    },
-                    {
-                        "text": "Espectroscopia de derivadas: análisis de fósforo."
-                    },
-                    {
-                        "text": "Método rápido de análisis de nitrato."
-                    },
-                    {
-                        "text": "Análisis de sulfato."
-                    },
-                    {
-                        "text": "Control de calidad analítico."
-                    },
-                    {
-                        "text": "Reporte de resultados."
-                    }
-                ]
-            }
-        ]
-    },
+    // {
+    //     "idCourse": 6,
+    //     "title": "Análisis instrumental por absorción molecular UV/Vis en aguas",
+    //     "url": 'http://zentro.pe/images/5_Analisis Inst UV Vis Aguas.pdf',
+    //     "content": "El presente curso proporciona la teoría fundamental para comprender la espectrofotometría de absorción molecular. Da las herramientas necesarias para realizar una evaluación periódica para chequear la exactitud de longitudes de onda y de absorbancias del instrumento. Así como también mediante la realización de prácticas dirigidas el participante desarrollará métodos oficiales (APHA) de metales y aniones para desempeñarse con éxito en un laboratorio de análisis de aguas. El curso también proporcionará a los participantes los elementos necesarios para el desarrollo y aplicación de la calidad analítica total en el reporte de resultados.",
+    //     "objetives": [
+    //         {
+    //             "text": "Establecer los fundamentos de la absorción molecular."
+    //         },
+    //         {
+    //             "text": "Reconocer los principales componentes del espectrofotómetro uv/vis y realizar su operación analítica de rutina y verificar el desempeño del instrumento."
+    //         },
+    //         {
+    //             "text": "Realizar análisis cualitativo y cuantitativo de metales y aniones aplicando el control de calidad analítico adecuado para el reporte de los resultados."
+    //         }
+    //     ],
+    //     "temary": [
+    //         {
+    //             "text": "1. Fundamento de la espectroscopía de absorción uv/vis",
+    //             "laboratories": [
+    //                 {
+    //                     "text": "Espectro Electromagnético: interacción entre la radiación electromagnética y la materia. Espectroscopía de absorción, conceptos: absorbancia, transmitancia, absortividad molar. Ley de Lambert y Beer: desviaciones positivas y negativas. Relación entre la absorbancia y concentración. Preparación de muestras."
+    //                 }
+    //             ]
+    //         },
+    //         {
+    //             "text": "2. Instrumentación",
+    //             "laboratories": [
+    //                 {
+    //                     "text": "Componentes principales de un espectrofotómetro: fuente de radiación: lámpara de deuterio y de tungsteno, monocromador, detectores: fotomultiplicador. Celdas de muestra: cuarzo, vidrio, plástico. Espectrofotómetro de haz simple y haz doble: ventajas y desventajas."
+    //                 }
+    //             ]
+    //         },
+    //         {
+    //             "text": "3. Laboratorio",
+    //             "laboratories": [
+    //                 {
+    //                     "text": "Manejo del espectrofotómetro."
+    //                 },
+    //                 {
+    //                     "text": "Características de los espectros en absorción molecular."
+    //                 },
+    //                 {
+    //                     "text": "Análisis de Fe."
+    //                 },
+    //                 {
+    //                     "text": "Espectroscopia de derivadas: análisis de fósforo."
+    //                 },
+    //                 {
+    //                     "text": "Método rápido de análisis de nitrato."
+    //                 },
+    //                 {
+    //                     "text": "Análisis de sulfato."
+    //                 },
+    //                 {
+    //                     "text": "Control de calidad analítico."
+    //                 },
+    //                 {
+    //                     "text": "Reporte de resultados."
+    //                 }
+    //             ]
+    //         }
+    //     ]
+    // },
+    
     {
         "idCourse": 7,
         "title": "Tratamiento de aguas residuales industriales",

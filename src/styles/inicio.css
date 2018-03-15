@@ -3,7 +3,7 @@ img{
     max-height: 540px;
 }
 .main-carousel{
-    margin: 140px 0 0;
+    margin: 150px 0 0;
     padding-top: 50px;
 }
 .selects img{
@@ -41,7 +41,6 @@ img.active{
     min-height: calc(100vh - 300px);
 }
 .main-carousel .container-fluid{
-    display: -webkit-inline-box;
     padding: 0;
     min-height: 450px;
     background-size: cover;
