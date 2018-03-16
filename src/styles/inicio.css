@@ -58,6 +58,7 @@ img.active{
 }
 .row.final{
     transition: all 1.4s ease-out;
+    display: -webkit-inline-box;
 }
 .titleweb{
     color: #B2ADA2;
@@ -80,5 +81,31 @@ img.active{
 @media only screen and (max-width: 600px){
     .titleweb{
         font-size: 1.5em;
+    }
+}
+.courseFuture{
+    height: auto;
+    background: rgba(255, 255, 255, 0.7);
+    margin: 0 4% 0;
+}
+.backG{
+    background: rgba(255, 255, 255, 0.7);
+}
+.text-black{
+    color: black !important;
+}
+.content-row h1, .row.final h2{
+    font-weight: 700;
+    color: #3f51b5 !important;
+}
+.course-content-init{
+    margin: 17% auto 0;
+}
+@media screen and (max-width: 700px) {
+    .row.final{
+        display: block !important;
+    }
+    .row.final h1{
+        font-size: 1.8em;
     }
 }

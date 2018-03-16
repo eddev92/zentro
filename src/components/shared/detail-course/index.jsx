@@ -32,7 +32,7 @@ const ContentCoursePresential = ({ index, courses, closeContent }) => {
             {course.content2}
         </p>}
         {course.content3 && <p className="col-md-10">
-            El análisis químico volumétrico es fundamental para el análisis de minerales, porque nos permite hallar de manera muy exacta la ley de los elementos en la muestra. Este curso proporciona los fundamentos teóricos y prácticos necesarios para desempeñarse con éxito en el análisis volumétrico de este tipo de muestras, dando especial énfasis a la parte experimental. A través de las prácticas de laboratorio seleccionadas, el participante consolida su formación teórica en volumetría, además de realizar el tratamiento de la muestra y la eliminación de interferentes. Finalmente, también se le proporcionará una herramienta (los diagramas de Pourbaix), que le ayudará en el análisis de los métodos volumétricos oficiales.
+            {course.content3}
         </p>}
             <div className="row objetivos col-md-6">
                 <h4>Objetivos:</h4>
@@ -59,7 +59,7 @@ const ContentCoursePresential = ({ index, courses, closeContent }) => {
                 </div>
             </div>
         </div>
-        
+
     );
 }
 

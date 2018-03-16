@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import '../../../styles/inicio.css';
+import InitCourseContent from '../../shared/content-init-course';
 
 class Inicio extends Component{
     state = {
         sectionActive: 0,
         courseActive: 1,
-        showSubtitle: true
+        showSubtitle: true,
+        showDetail: false,
+        courseIndex: 0
     }
     componentDidMount() {
         this.loadCoursesInit();
@@ -38,7 +41,7 @@ class Inicio extends Component{
     }
     selectImage = (index) => {
 
-        this.setState({ sectionActive: index })        
+        this.setState({ sectionActive: index })
     }
     renderImage = () => {
         const {sectionActive} = this.state;
@@ -49,6 +52,23 @@ class Inicio extends Component{
             case 1: img = 'https://mdbootstrap.com/img/Photos/Slides/img%20(121).jpg'; break;
         }
         return <img src={img} className="img-responsive"/>
+    }
+    renderCourseDetail() {
+        const { courseIndex } = this.state;
+
+        return <InitCourseContent index={courseIndex} goBack={this.goBack}/>
+    }
+    goBack = () => {
+        const { courseIndex } = this.state;
+
+        this.setState({ courseIndex: 0 });
+
+    }
+    showDetailCourseInit = (index) => {
+        const { courseIndex, showDetail } = this.state;
+
+        this.setState({ courseIndex: index, showDetail: !showDetail });
+
     }
     renderCarousel() {
         const {sectionActive} = this.state;
@@ -61,33 +81,49 @@ class Inicio extends Component{
         )
     }
     render() {
-        const { courseActive, showSubtitle } = this.state;
+        const { courseActive, showSubtitle, showDetail, courseIndex } = this.state;
         console.log(courseActive)
         return (
             <div className="main-carousel">
-                {/* {this.renderCarousel()} */}
                 <div className="container-fluid" style={{backgroundImage: 'url(images/gestion3.jpg)'}}>
-                {showSubtitle && <div className="content-titleweb">
-                <h1 className="titleweb">Centro especializado en capacitación y análisis</h1>
+                    {showSubtitle && <div className="content-titleweb">
+                    <h1 className="titleweb">Centro especializado en capacitación y análisis</h1>
                 </div>}
-                    <div className={(courseActive === 3) ? 'row final' : 'row blue'} style={{background: 'blue', height: '100%'}}>
-                    <div className="content-row col-xs-12 col-md-10">
-                        <h1>titulo curso</h1>
-                        <p>parrafo contenido de curso 1 a dictarse proximamente</p>
-                        <span>fechas a dictarse</span>
-                        <span>horas</span>
-                        <span>persona de contacto</span>
-                    </div>
-                    </div>
-                    <div className={(courseActive === 5) ? 'row final' : 'row red'} style={{background: 'red', height: '100%'}}>
-                    <div className="content-row col-xs-12 col-md-10">
-                    <h1>titulo curso</h1>
-                        <p>parrafo contenido de curso 2 a dictarse proximamente</p>
-                        <span>fechas a dictarse</span>
-                        <span>horas</span>
-                        <span>persona de contacto</span>
+                {courseIndex < 1 ?
+                <div>
+                    <div className={(courseActive === 3) ? 'row final' : 'row blue'} style={{height: '100%'}}>
+                        <div className="content-row col-xs-12 col-md-10 backG">
+                            <h3>Curso teórico - práctico de</h3>
+                            <h1>ANÁLISIS VOLUMÉTRICOS DE MINERALES</h1>
+                            <button type="button" className="btn btn-primary courses-content" onClick={this.showDetailCourseInit.bind(this, 1)}>
+                            Ver detalle
+                            </button>
                         </div>
                     </div>
+                    <div className={(courseActive === 5) ? 'row final' : 'row red'} style={{height: '100%'}}>
+                        <div className="col-xs-12 col-md-5 courseFuture">
+                        <div className="course-content-init">
+                            <h2 className="text-black">Próximamente...</h2>
+                            <h3>Curso teórico - práctico de</h3>
+                            <h2 className="text-black">ANÁLISIS INSTRUMENTAL POR ABSORCIÓN MOLECULAR UV / VIS EN AGUAS</h2>
+                            <button type="button" className="btn btn-primary courses-content" onClick={this.showDetailCourseInit.bind(this, 2)}>
+                                Ver detalle
+                                </button>
+                        </div>
+                        </div>
+                        <div className="col-xs-12 col-md-5 courseFuture">
+                        <div className="course-content-init">
+                            <h2 className="text-black">Próximamente...</h2>
+                            <h3>Curso teórico - práctico de</h3>
+                            <h2 className="text-black">TRATAMIENTO DE AGUAS RESIDUALES INDUSTRIALES</h2>
+                            <button type="button" className="btn btn-primary courses-content" onClick={this.showDetailCourseInit.bind(this, 3)}>
+                                Ver detalle
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                : this.renderCourseDetail()}
                 </div>
             </div>
         )

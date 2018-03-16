@@ -31,10 +31,11 @@ class ContactForm extends Component{
             name: '',
             mail: '',
             enterprise: '',
-            phone: ''
+            phone: '',
+            message: ''
         }
         const service = new sendMailServices();
-  
+
         service.sendMailContact(model)
        .then(response =>{
           console.log(model)
@@ -85,6 +86,9 @@ class ContactForm extends Component{
                             </div>
                             <div className="md-form">
                                 <input type="text" class="form-control" id="phone" value={model.phone} onChange={this.handleChange.bind(this, 'phone')} placeholder="Teléfono" />
+                            </div>
+                            <div className="md-form">
+                                <textarea type="text" class="form-control" id="message" value={model.message} onChange={this.handleChange.bind(this, 'message')} placeholder="Mensaje" />
                             </div>
                                 <div className="text-center mb-3 col-md-12">
                                     <button type="button" className="btn btn-success btn-rounded z-depth-1" onClick={this.sendMail}>{sendMail ? 'Enviado' : 'Contactar'}</button>
