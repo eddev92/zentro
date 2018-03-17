@@ -6,7 +6,7 @@
     padding: 45px 56px;
     padding-left: 0;
     position: absolute;
-    top: 0;
+    top: 4%;
     right: 0;
 }
 .py-4{
@@ -18,7 +18,7 @@
 }
 .isos a{
     padding: 18px !important;
-    font-size: 1em !important;
+    font-size: 0.79em !important;
 }
 .isos{
     margin-top:30px;

@@ -87,7 +87,7 @@ const getContentCourseInit = ( index ) => {
             duration: '24 h',
             sponsor: 'Sociedad Química del Perú',
             url: 'http://zentro.pe/images/5_Analisis Inst UV Vis Aguas.pdf',
-            content: "El presente curso proporciona la teoría fundamental para comprender la espectrofotometría de absorción molecular. Da las herramientas necesarias para realizar una evaluación periódica para chequear la exactitud de longitudes de onda y de absorbancias del instrumento. Así como también mediante la realización de prácticas dirigidas el participante desarrollará métodos oficiales (APHA) de metales y aniones para desempeñarse con éxito en un laboratorio de análisis de aguas. El curso también proporcionará a los participantes los elementos necesarios para el desarrollo y aplicación de la calidad analítica total en el reporte de resultados.",
+            content: "El presente curso proporciona la teoría fundamental para comprender la espectrofotometría de absorción molecular. Da las herramientas necesarias para realizar una evaluación periódica, para chequear la exactitud de longitudes de onda y de absorbancias del instrumento. Así como también mediante la realización de prácticas dirigidas el participante desarrollará métodos oficiales (APHA) de metales y aniones para desempeñarse con éxito en un laboratorio de análisis de aguas. El curso también proporcionará a los participantes los elementos necesarios para el desarrollo y aplicación de la calidad analítica total en el reporte de resultados.",
             objetives: [
                 {
                     text: "Establecer los fundamentos de la absorción molecular."
@@ -96,7 +96,7 @@ const getContentCourseInit = ( index ) => {
                     text: "Reconocer los principales componentes del espectrofotómetro uv/vis y realizar su operación analítica de rutina y verificar el desempeño del instrumento."
                 },
                 {
-                    text: "Realizar análisis cualitativo y cuantitativo de metales y aniones aplicando el control de calidad analítico adecuado para el reporte de los resultados."
+                    text: "Realizar análisis cuantitativo de metales y aniones, aplicando el control de calidad analítico adecuado para el reporte de los resultados."
                 }
             ],
             temary: [

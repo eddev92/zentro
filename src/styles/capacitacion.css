@@ -6,6 +6,9 @@
 }
 .main-capacitacion img{
     border-radius: 10px;
+    width: 90%;
+    max-height: 460px;
+    margin: auto;
 }
 button.courses{
     top: 90%;

@@ -21,7 +21,7 @@ const COURSES = [
             },
             {
                 id: 4,
-                title: 'Análisis instrumental por absorción atómicaen alimentos y cosméticos.',
+                title: 'Análisis instrumental por absorción atómica en alimentos y cosméticos.',
                 url: 'http://zentro.pe/images/4_Análisis Instrumental por AA en Alimentos y Cosméticos.pdf'
             },
             {

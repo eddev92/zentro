@@ -206,7 +206,7 @@ const CoursesAQ = [
     },
     {
         "idCourse": 4,
-        "title": "Análisis instrumental por absorción atómicaen alimentos y cosméticos",
+        "title": "Análisis instrumental por absorción atómica en alimentos y cosméticos",
         "url": 'http://zentro.pe/images/4_Análisis Instrumental por AA en Alimentos y Cosméticos.pdf',
         "content": "Los metales en los alimentos se clasifican como nutrientes, micro y macro,  (Cu, Zn, Mn, etc.) y contaminantes (Pb, Cd, Hg, etc) y ya sea si estos se consumen directamente o previamente procesados, es necesario hallar las concentraciones presentes ya por la baja presencia y/o ausencia de micro y macro nutrientes metálicos, lo cual es causa de enfermedades, así como la presencia de los contaminantes metálicos que ocasionan toxicidad.",
         "content2": "Por otro lado, desde hace muchísimos años los seres humanos usan maquillaje para mejorar la apariencia personal, en épocas pasadas se usaban compuestos químicos tóxicos como el HgS para el brillo de los labios o el As2S3 para la sombra de los ojos, por poner unos ejemplos, hoy en día la calidad de los productos ha mejorado enormemente, pero se carece de una normativa técnica al respecto en nuestro país. Ya que la piel y las uñas son una barrera para que metales tóxicos pasen a nuestro organismo, es necesario que se realicen análisis químicos de metales en trazas para ver el nivel de toxicidad de estos productos.",
@@ -267,7 +267,7 @@ const CoursesAQ = [
         "idCourse": 5,
         "title": "Análisis instrumental por absorción molecular UV/Vis en aguas",
         "url": 'http://zentro.pe/images/5_Analisis Inst UV Vis Aguas.pdf',
-        "content": "El presente curso proporciona la teoría fundamental para comprender la espectrofotometría de absorción molecular. Da las herramientas necesarias para realizar una evaluación periódica para chequear la exactitud de longitudes de onda y de absorbancias del instrumento. Así como también mediante la realización de prácticas dirigidas el participante desarrollará métodos oficiales (APHA) de metales y aniones para desempeñarse con éxito en un laboratorio de análisis de aguas. El curso también proporcionará a los participantes los elementos necesarios para el desarrollo y aplicación de la calidad analítica total en el reporte de resultados.",
+        "content": "El presente curso proporciona la teoría fundamental para comprender la espectrofotometría de absorción molecular. Da las herramientas necesarias para realizar una evaluación periódica, para chequear la exactitud de longitudes de onda y de absorbancias del instrumento. Así como también mediante la realización de prácticas dirigidas el participante desarrollará métodos oficiales (APHA) de metales y aniones para desempeñarse con éxito en un laboratorio de análisis de aguas. El curso también proporcionará a los participantes los elementos necesarios para el desarrollo y aplicación de la calidad analítica total en el reporte de resultados.",
         "objetives": [
             {
                 "text": "Establecer los fundamentos de la absorción molecular."
@@ -276,7 +276,7 @@ const CoursesAQ = [
                 "text": "Reconocer los principales componentes del espectrofotómetro uv/vis y realizar su operación analítica de rutina y verificar el desempeño del instrumento."
             },
             {
-                "text": "Realizar análisis cualitativo y cuantitativo de metales y aniones aplicando el control de calidad analítico adecuado para el reporte de los resultados."
+                "text": "Realizar análisis cuantitativo de metales y aniones, aplicando el control de calidad analítico adecuado para el reporte de los resultados."
             }
         ],
         "temary": [
@@ -411,20 +411,10 @@ const CoursesAQ = [
         ],
         "temary": [
             {
-                "text": "1. Introducción a los diagramas de Pourbaix",
-                "laboratories": [
-                    {
-                        "text": "Espectro Electromagnético: interacción entre la radiación electromagnética y la materia. Espectroscopía de absorción, conceptos: absorbancia, transmitancia, absortividad molar. Ley de Lambert y Beer: desviaciones positivas y negativas. Relación entre la absorbancia y concentración. Preparación de muestras."
-                    }
-                ]
+                "text": "1. Introducción a los diagramas de Pourbaix"
             },
             {
-                "text": "2. Taller de diagramas de Pourbaix",
-                "laboratories": [
-                    {
-                        "text": "Componentes principales de un espectrofotómetro: fuente de radiación: lámpara de deuterio y de tungsteno, monocromador, detectores: fotomultiplicador. Celdas de muestra: cuarzo, vidrio, plástico. Espectrofotómetro de haz simple y haz doble: ventajas y desventajas."
-                    }
-                ]
+                "text": "2. Taller de diagramas de Pourbaix"
             },
             {
                 "text": "3. Análisis químico de las aguas residuales"
@@ -517,7 +507,7 @@ const CoursesAQ = [
                 "text": "Evaluar los procedimientos de muestreo, para diferentes matrices de agua."
             },
             {
-                "text": "Realizar adecuada y correctamente un proceso de muestreo de agua, usando la normativa internacional y justificándola de los diagramas de Pourbaix."
+                "text": "Realizar adecuada y correctamente un proceso de muestreo de agua, usando la normativa internacional y justificándola con los diagramas de Pourbaix."
             },
             {
                 "text": "Realizar el análisis químico de una determinada muestra de agua, utilizando la normativa internacional e interpretando estas metodologías, ayudándose con los diagramas de Pourbaix."
@@ -560,7 +550,7 @@ const CoursesAQ = [
                 "text": "Evaluar los procedimientos de muestreo, para suelos contaminados y no contaminados."
             },
             {
-                "text": "Realizar adecuada y correctamente un proceso de muestreo de suelo, usando la normativa internacional y justificándola de los diagramas de Pourbaix."
+                "text": "Realizar adecuada y correctamente un proceso de muestreo de suelo, usando la normativa internacional y justificándola con los diagramas de Pourbaix."
             },
             {
                 "text": "Realizar el análisis químico de una determinada muestra de suelo, utilizando la normativa internacional e interpretando los resultados, ayudándose con los diagramas de Pourbaix."
@@ -595,7 +585,7 @@ const CoursesAQ = [
                         "text": "Determinación de: pH, ORP, CE."
                     },
                     {
-                        "text": "Clasificación de las características de una muestra de suelo, con los datos de las determinaciones anteriormente realizadas."
+                        "text": "Clasificación de las características de una muestra de suelo con los datos de las determinaciones anteriormente realizadas."
                     }
                 ]
             }
@@ -612,7 +602,7 @@ const CoursesAQ = [
                 "text": "Analizar el proceso de formación y evolución del drenaje ácido de mina, utilizando los diagramas de Pourbaix. "
             },
             {
-                "text": "Realizar una adecuada y correcta predicción de la generación ácida de mina, utilizando la normativa internacional y justificándola de los diagramas de Pourbaix."
+                "text": "Realizar una adecuada y correcta predicción de la generación ácida de mina, utilizando la normativa internacional y justificándola con los diagramas de Pourbaix."
             },
             {
                 "text": "Realizar el análisis químico de una determinada muestra de drenaje ácido, utilizando la normativa internacional y evaluar el estadío de ésta."
@@ -620,7 +610,7 @@ const CoursesAQ = [
         ],
         "temary": [
             {
-                "text": "1. 1. Introducción a los diagramas de Pourbaix"
+                "text": "1. Introducción a los diagramas de Pourbaix"
             },
             {
                 "text": "2. Definición del drenaje ácido"
@@ -664,7 +654,7 @@ const CoursesAQ = [
         "title": "Caracterización y tratamiento del drenaje ácido de mina",
         "url": 'http://zentro.pe/images/6 Caract y Trat Drenaj Acid Mina.pdf',
         "content": "Todas las empresas mineras tienen problemas con los drenajes ácidos producidos por las canchas de relaves, los sitios de beneficio de mineral a tajo abierto y subterráneo, etc., y en nuestro país, la normativa es cada vez más exigente en cuanto a las aguas residuales de esta industria minero – metalúrgica.",
-        "content2": "El presente curso, proporcionará las pautas científicas, para entender las diferentes tecnologías de tratamiento para estos drenajes ácidos, así como también las variables de proceso, ayudándonos con los diagramas de Pourbaix y además se utilizará la metodología internacional, para caracterizar esta agua residual ácida y así definir cual tratamiento emplear.",
+        "content2": "El presente curso proporcionará las pautas científicas, para entender las diferentes tecnologías de tratamiento para estos drenajes ácidos, así como también las variables de proceso, ayudándonos con los diagramas de Pourbaix y además se utilizará la metodología internacional, para caracterizar esta agua residual ácida y así definir cual tratamiento emplear.",
         "objetives": [
             {
                 "text": "Evaluar y tratar un drenaje ácido de mina, utilizando los diagramas de Pourbaix."
@@ -693,13 +683,13 @@ const CoursesAQ = [
                 "text": "5. Tecnologías para el tratamiento del drenaje ácido de mina"
             },
             {
-                "text": "6. Laboratorio",
+                "text": "6. Laboratorio:",
                 "laboratories": [
                     {
                         "text": "Determinación de pH, ORP y CE en un drenaje ácido de mina."
                     },
                     {
-                        "text": "Análisis de la acidez, alcalinidad, sulfatos, hierro y manganeso, en un drenaje ácido de mina."
+                        "text": "Análisis de la acidez, alcalinidad, sulfatos, hierro y manganeso en un drenaje ácido de mina."
                     },
                     {
                         "text": "Tratamiento del drenaje ácido de mina por oxidación y precipitación, utilizando los diagramas de Pourbaix."

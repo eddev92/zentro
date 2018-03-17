@@ -54,8 +54,7 @@
     margin: 0 auto;
 }
 #navbarSupportedContent a{
-    font-size: 0.9em;
-    font-size: 0.9em;
+    font-size: 0.8em;
     width: auto;
 }
 .carousel-indicators li::after {
@@ -82,8 +81,8 @@ background-color: transparent !important;
 }
 .content-logo img{
     z-index: 99;
-    height: 122px;
-    width: 129px;
+    height: 102px;
+    width: 109px;
 }
 .content-logo{
     position: absolute;
