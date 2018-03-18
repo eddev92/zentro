@@ -46,7 +46,6 @@ class Inicio extends Component{
     renderImage = () => {
         const {sectionActive} = this.state;
         let img = '';
-        console.log(sectionActive)
         switch (sectionActive) {
             case 0: img = 'https://mdbootstrap.com/img/Photos/Slides/img%20(88).jpg'; break;
             case 1: img = 'https://mdbootstrap.com/img/Photos/Slides/img%20(121).jpg'; break;
@@ -82,7 +81,7 @@ class Inicio extends Component{
     }
     render() {
         const { courseActive, showSubtitle, showDetail, courseIndex } = this.state;
-        console.log(courseActive)
+
         return (
             <div className="main-carousel">
                 <div className="container-fluid" style={{backgroundImage: 'url(images/gestion3.jpg)'}}>

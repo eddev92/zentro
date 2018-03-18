@@ -77,3 +77,14 @@
 	75% {margin-left: -300%;}
 	100% {margin-left: -300%;}
 } */
+
+.carousel-linus div.show{
+    position: absolute;
+opacity: 1;
+transition: 0.7s all ease-out;
+}
+.carousel-linus div.hidden{
+	position: absolute;
+	opacity: 0;
+	transition: 0.7s all ease-out;
+}

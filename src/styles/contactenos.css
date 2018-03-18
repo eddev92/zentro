@@ -1,11 +1,9 @@
 .main-contactenos{
-        margin: 190px 0 0;
-        min-height: 460px;
-        background-position-y: -190px;
+    margin: 150px 0 0;
+    min-height: 425px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-/* .main-contactenos img{
-    max-height: 100%;
-} */
 .message-contact{
     z-index: 9999;
     position: absolute;
@@ -13,7 +11,7 @@
     right: 46%;
     font-weight:700;
     color: black;
-    font-size: 2em;
+    font-size: 1.7em;
     background:rgba(255, 255, 255, 0.7);
     border-radius: 10px;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);

@@ -49,7 +49,6 @@ class ContactForm extends Component{
             alert('Error al enviar mensaje, inténtelo nuevamente.')
             console.log(error);
     });
-        console.log(model)
     }
     changeMessage() {
      setTimeout(() => {
@@ -58,7 +57,6 @@ class ContactForm extends Component{
     }
     activeLabel = (index) => {
         const { active, indexInput } = this.state;
-        console.log(index)
         this.setState({ active: index });
     }
     desactiveLabel = () => {

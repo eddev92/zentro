@@ -15,7 +15,6 @@ class CarouselSimple extends Component {
     increaseIndex() {
         const { galeryCourse } = this.props;
         const {index, images} = this.state;
-        console.log(galeryCourse)
         setTimeout(() => {
             if (index === 3 && galeryCourse.total === 4){
                 this.setState({index: 0})
@@ -38,8 +37,6 @@ class CarouselSimple extends Component {
         if (!galeryCourse) {
             return null;
         }
-        console.log((galeryCourse.total))
-        console.log((galeryCourse))
         const { img1Index, img2Index, index } = this.state;
         if (this.props.galeryCourse.total <= 4) {
             return (
@@ -100,7 +97,6 @@ class CarouselSimple extends Component {
 render() {
     const { galeryCourse } = this.props;
     let items = [];
-    console.log(items)
     return (
         <div className="main">
         {this.renderImages(galeryCourse)}

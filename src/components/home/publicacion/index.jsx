@@ -15,13 +15,11 @@ class Publicacion extends Component {
         service.getPublicaciones()
             .then(res => {
                 this.setState({ publicaciones: res })
-                console.log(res)
             }).catch(error => {
                 console.log(error)
             })
     }
     renderItems = () => {
-        console.log(this.state.publicaciones)
         const result = this.state.publicaciones.map(item => 
             
                     <div className="card card-image col-xs-12 col-md-6">

@@ -16,10 +16,7 @@ const getLaboratories = (laboratories = []) => {
     return result;
 }
 const ContentCoursePresential = ({ index, courses, closeContent }) => {
-    console.log(index)
-    console.log(courses)
     const course = getContentCourse(index, courses);
-    console.log(course)
     const objetives = course && course.objetives.map(e => <li>{e.text}</li>)
     const temas = course && course.temary.map(e => (e.laboratories) ? <li>{e.text}<ul>{getLaboratories(e.laboratories)}</ul></li> : <li>{e.text}</li>)
     return (

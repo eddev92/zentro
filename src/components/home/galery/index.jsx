@@ -25,7 +25,6 @@ class Galeria extends Component{
             img2: 'images/contactos.jpg',
             img3: 'images/capacitacion.jpg'
         };
-        console.log(galeryCourse)
             switch (galeryCourse) {
                 case 0: images = {
                     img1: 'images/capacitacion.jpg',

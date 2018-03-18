@@ -5,13 +5,25 @@ body{
   overflow-y: hidden;
   overflow-x: hidden !important;
 }
+p{
+  text-align: justify !important;
+}
 .modal-body{
-  max-height: 400px;
+  max-height: 308px;
   overflow-x: hidden;
   padding: 49px !important;
 }
+.modal-full-height .modal-body{
+  max-height: 369px;
+  padding: 20px 49px 61px !important;
+}
+
+.modal-full-height .modal-body img{
+  border-radius: 10px;
+}
 .modal-inicio{
   padding: 0 !important;
+  max-height: 370px !important;
 }
 .no-show{
   z-index: -1;
@@ -22,6 +34,9 @@ body{
 .navbar-dark .nav-item{
   /* padding: 1px 22px; */
   height: 41px;
+}
+.modal-full-height .modal-content{
+  min-height: 460px;
 }
 .preloader {
 	display: block;

@@ -222,7 +222,6 @@ const getLaboratories = (laboratories = []) => {
     return result;
 }
 const InitCourseContent = ({index, goBack}) => {
-    console.log(index)
     const content = getContentCourseInit(index)
     const objetives = content && content.objetives.map(e => <li>{e.text}</li>)
     const temas = content && content.temary.map(e => (e.laboratories) ? <li>{e.text}<ul>{getLaboratories(e.laboratories)}</ul></li> : <li>{e.text}</li>)

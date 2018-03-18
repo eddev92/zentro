@@ -13,7 +13,7 @@ ul.li{
     margin: 10px;
 }
 .main-item p{
-    font-size: .4em;
+    font-size: .35em;
     margin: 15px;
     background: white;
     opacity: 0.8;
@@ -21,11 +21,11 @@ ul.li{
     padding: 14px;
 }
 .main-body li{
-    font-size: .39em;
+    font-size: .35em;
     margin-bottom: 10px;
 }
 .main-body{
-    margin: 0 15px;
+    margin: 0;
     background: white;
     opacity: 0.8;
     border-radius: 10px;

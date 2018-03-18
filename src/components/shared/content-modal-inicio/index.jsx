@@ -73,8 +73,6 @@ class ContentModalInit extends React.Component {
     }
     render() {
         let result = this.getContent(this.props.indexContent || 0)
-        console.log(this.props.indexContent)
-        console.log(result)
         if (this.props.indexContent === 0 || this.props.indexContent === null) {
             return null;
             ;

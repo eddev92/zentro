@@ -50,9 +50,7 @@ class CourseContent extends Component {
     }
     renderContentCourse() {
         const { CoursePresential, courses } = this.state;
-        console.log(CoursePresential)
         const courseSelected = this.validateCourseSelected(CoursePresential);
-        console.log(courseSelected)
         return (
             <CourseItem item={courseSelected} courses={courses} selectCourseAQ={this.selectCourseAQ} />
         )
@@ -94,8 +92,6 @@ class CourseContent extends Component {
     }
     render() {
         const { couseSelected, typeCourse, CoursePresential, courses, courseContentAQ } = this.state;
-        console.log(courses)
-        console.log(courseContentAQ)
         const height = true;
         const buttonBack = true;
         if(courseContentAQ > 0) {
@@ -111,7 +107,7 @@ class CourseContent extends Component {
                     
                     {typeCourse === 0 && <div className="select-course text-center"><h1>SELECCIONE UN TIPO DE CURSO</h1></div>}
                         {typeCourse > 0 && <div className="row" style={{width: '100%', margin: 'auto'}}>
-                            {typeCourse === 1 ? <div className={typeCourse === 1 ? (CoursePresential > 0) ? 'col-xs-12 col-md-4 indice' :'col-xs-12 col-md-12 indice' : 'col-xs-12 col-md-6 indice'}>
+                            {typeCourse === 1 ? <div className={typeCourse === 1 ? (CoursePresential > 0) ? 'col-xs-12 col-md-3 indice' :'col-xs-12 col-md-12 indice' : 'col-xs-12 col-md-6 indice'}>
                                 <h3 className="text-center">CURSOS PRESENCIALES</h3>
                                 {CoursePresential === 0 && <p>Estos son cursos de capacitación donde se brinda al participante el fundamento teórico y la aplicación práctica mediante clases de laboratorio y desarrollo de talleres</p>}
                                 {!(CoursePresential > 0) && <CarouselSimple galeryCourse={images} height={height}/>}
@@ -134,7 +130,7 @@ class CourseContent extends Component {
                             <div className={CoursePresential > 0 ? 'col-xs-12 col-md-4 content final' : 'col-xs-12 col-md-4 content inicial'}>
                                  <h1>{this.renderContentCourse()}</h1>
                             </div>
-                            {CoursePresential > 0 && <div className="col-md-4">
+                            {CoursePresential > 0 && <div className="col-md-5">
                                 <CarouselCapa active={CoursePresential}/>
                             </div>}
                         </div>}

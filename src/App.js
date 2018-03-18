@@ -84,12 +84,10 @@ openModalPublicaciones = () => {
 }
 openModalInicio = (index) => {
   const { showInicio, selected } = this.state;
-  console.log(index)
   this.setState({ showInicio: !showInicio, initIndex: index, selected: !selected })
 }
 renderContentInit() {
   const { initIndex } = this.state;
-console.log(initIndex)
   return (
     <ContentModalInit indexContent={initIndex}/>
   )
@@ -100,7 +98,6 @@ callFocus = (e) => {
   }
 }
 hiddenMOdal = (e) => {
-  console.log('entro')
   if (e) {
     this.setState({ auxModal: false })
   }

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import '../../../styles/courses-content.css';
 
 const Carousel = ({active}) => {
-    console.log(active)
     let images;
         switch (active) {
             case 0: images = {
