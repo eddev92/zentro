@@ -7,8 +7,10 @@ class Contactenos extends Component{
         return (
             <div className="main-contactenos" style={{backgroundImage: 'url(images/contactos.jpg)'}}>
             <div className="row">
-            <p className="col-xs-12 col-md-6 message-contact">Escríbenos y nos pondremos en contacto<br/> contigo lo más pronto posible.</p>
-            <p className="col-xs-12 col-md-6 message-contact2">Teléfono: 980 568 753<br/>Email: <a href="mailto: informes@zentro.pe">informes@zentro.pe</a></p>
+            <div className="col-xs-12 col-md-5">
+                <p className="col-xs-12 col-md-12 message-contact">Escríbenos y nos pondremos en contacto<br/> contigo lo más pronto posible.</p>
+                <p className="col-xs-12 col-md-12 message-contact2">Teléfono: 980 568 753<br/>Email: <a href="mailto: informes@zentro.pe">informes@zentro.pe</a></p>
+            </div>
             <ContactForm />
                 </div>
             </div>

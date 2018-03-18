@@ -6,14 +6,11 @@
 }
 .message-contact{
     z-index: 9999;
-    position: absolute;
-    top: 10%;
-    right: 46%;
     font-weight:700;
     color: black;
-    font-size: 1.7em;
+    font-size: 1.5em;
     background:rgba(255, 255, 255, 0.7);
-    border-radius: 10px;
+    border-radius: 0;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
     box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
     padding: 25px;

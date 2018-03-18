@@ -1,6 +1,9 @@
 .main-content-course h2{
     text-align: center;
-    color: black;
+    color: #4285F4;
+    font-style: oblique;
+    text-decoration: underline;
+    font-size: 1.5em;
 }
 .main-content-course p {
     margin-bottom: 25px !important;

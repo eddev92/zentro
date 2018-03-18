@@ -182,12 +182,15 @@
 }
 /* slides 2 */
 
-@media screen and (max-width: 769px) {
-    .text{
+@media screen and (max-width: 740px) {
+    .main-consultoria .text{
         margin-top: calc(100vh - 912px);
     position: relative;
     padding: 0;
-    margin: auto;
+    margin: auto 6%;
 
-    }
+	}
+	#slides img{
+		width: 70% !important;
+	}
 }
