@@ -297,7 +297,7 @@ const CoursesAQ = [
                 ]
             },
             {
-                "text": "3. Laboratorio",
+                "text": "3. Laboratorio:",
                 "laboratories": [
                     {
                         "text": "Manejo del espectrofotómetro."
@@ -420,13 +420,13 @@ const CoursesAQ = [
                 "text": "3. Análisis químico de las aguas residuales"
             },
             {
-                "text": "5. Introducción al tratamiento de aguas residuales" 
+                "text": "4. Introducción al tratamiento de aguas residuales" 
             },
             {
-                "text": "6. Tratamiento terciario de aguas residuales industriales"
+                "text": "5. Tratamiento terciario de aguas residuales industriales"
             },
             {
-                "text": "7. Laboratorio:",
+                "text": "5. Laboratorio:",
                 "laboratories": [
                     {
                         "text": "Análisis de: demanda química de oxígeno, demanda bioquímica de oxígeno, cianuro libre, cianuro total, cianuro WAD"
@@ -524,7 +524,7 @@ const CoursesAQ = [
                 "text": "3. Análisis químico del agua"
             },
             {
-                "text": "4. Laboratorio",
+                "text": "4. Laboratorio:",
                 "laboratories": [
                     {
                         "text": "Muestreo de agua en campo"
@@ -570,7 +570,7 @@ const CoursesAQ = [
                 "text": "4. Análisis químico de suelo"
             },
             {
-                "text": "5. Laboratorio",
+                "text": "5. Laboratorio:",
                 "laboratories": [
                     {
                         "text": "Muestreo de suelo"

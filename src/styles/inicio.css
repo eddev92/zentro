@@ -77,6 +77,20 @@ img.active{
     padding: 18px;
 
 }
+@media only screen and (max-width: 700px){
+    .courseFuture{
+        font-size: 0.4em !important;
+        top: -2%;
+        margin: 0 !important;
+        width: 100% !important;
+    }
+    .courseFuture button{
+        font-size: 1.4em;
+    }
+    .courseFuture h3{
+        font-size: 2.5em;
+    }
+}
 @media only screen and (max-width: 600px){
     .titleweb{
         font-size: 1.5em;
@@ -84,6 +98,7 @@ img.active{
 }
 .courseFuture{
     height: auto;
+    width: 40%;
     background: rgba(255, 255, 255, 0.7);
     margin: 0 4% 0;
 }

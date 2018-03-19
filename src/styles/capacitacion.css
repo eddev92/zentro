@@ -53,7 +53,9 @@ button.courses.left{
 b{
     font-weight: 600;
 }
-
+.main-content-course{
+    font-size: 0.9em;
+}
 @media screen and (max-width: 852px) {
     .main-capacitacion{
         padding: 0;

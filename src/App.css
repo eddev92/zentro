@@ -80,6 +80,7 @@ p{
   }
   .info-capa{
     left: 0 !important;
+    font-size: 0.8em;
   }
 }
 @media screen and (max-width: 1050px) {

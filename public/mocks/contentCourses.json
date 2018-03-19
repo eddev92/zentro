@@ -39,7 +39,7 @@
                 "text": "6. Fundamentos de los métodos volumétricos: neutralización, precipitación, formación de complejos y oxido reducción"
             },
             {
-                "text": "7. Laboratorio",
+                "text": "7. Laboratorio:",
                 "laboratories": [
                     {
                         "text": "Preparación y tratamiento preliminar de las muestras"
@@ -100,7 +100,7 @@
                 "text": "6. Volumetría redox"
             },
             {
-                "text": "7. Laboratorio",
+                "text": "7. Laboratorio:",
                 "laboratories": [
                     {
                         "text": "Preparación de soluciones ácido – base y su estandarización"
@@ -298,7 +298,7 @@
                 ]
             },
             {
-                "text": "3. Laboratorio",
+                "text": "3. Laboratorio:",
                 "laboratories": [
                     {
                         "text": "Manejo del espectrofotómetro."

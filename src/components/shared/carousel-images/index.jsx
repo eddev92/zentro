@@ -11,9 +11,9 @@ const CarouseImages = ({active, typeCourse}) => {
             }
             break;
             case 1: images = {
-                img3: 'images/62.png',
+                img1: 'images/62.png',
                 img2: 'images/43.png',
-                img1: 'images/42.jpg',
+                img3: 'images/42.jpg',
             }
             break;
             case 2: images = {
@@ -31,7 +31,7 @@ const CarouseImages = ({active, typeCourse}) => {
             case 4: images = {
                 img1: 'images/66.png',
                 img2: 'images/67.jpg',
-                img3: ''
+                img3: 'images/66.png'
             }
             break;
         }
