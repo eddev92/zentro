@@ -15,12 +15,12 @@ const getContentCourseInit = ( index ) => {
         case 1:
         content = {
             title: 'Curso teórico - práctico de',
-            subtitle: 'ANÁLISIS VOLUMÉTRICOS DE MINERALES',
+            subtitle: 'ANÁLISIS VOLUMÉTRICO DE MINERALES',
             dates: '12 de abril del 2018',
             schedules: '8:00 - 14:00',
             duration: '24 h',
             sponsor: 'Sociedad Química del Perú',
-            url: 'http://zentro.pe/images/1_Análisis Volumétricos de Minerales.pdf',
+            url: 'http://zentro.pe/images/1 Anal Vol Miner.pdf',
             content: "El análisis químico volumétrico es fundamental para el análisis de minerales, porque nos permite hallar de manera muy exacta la ley de los elementos en la muestra. Este curso proporciona los fundamentos teóricos y prácticos necesarios para desempeñarse con éxito en el análisis volumétrico de este tipo de muestras, dando especial énfasis a la parte experimental. A través de las prácticas de laboratorio seleccionadas, el participante consolida su formación teórica en volumetría, además de realizar el tratamiento de la muestra y la eliminación de interferentes. Finalmente, también se le proporcionará una herramienta (los diagramas de Pourbaix), que le ayudará en el análisis de los métodos volumétricos oficiales.",
             objetives: [
                 {
@@ -86,7 +86,7 @@ const getContentCourseInit = ( index ) => {
             schedules: '8:00 - 14:00',
             duration: '24 h',
             sponsor: 'Sociedad Química del Perú',
-            url: 'http://zentro.pe/images/5_Analisis Inst UV Vis Aguas.pdf',
+            url: 'http://zentro.pe/images/5 Anal Inst Abs Molec Uv vis Aguas.pdf',
             content: "El presente curso proporciona la teoría fundamental para comprender la espectrofotometría de absorción molecular. Da las herramientas necesarias para realizar una evaluación periódica, para chequear la exactitud de longitudes de onda y de absorbancias del instrumento. Así como también mediante la realización de prácticas dirigidas el participante desarrollará métodos oficiales (APHA) de metales y aniones para desempeñarse con éxito en un laboratorio de análisis de aguas. El curso también proporcionará a los participantes los elementos necesarios para el desarrollo y aplicación de la calidad analítica total en el reporte de resultados.",
             objetives: [
                 {
@@ -152,6 +152,7 @@ const getContentCourseInit = ( index ) => {
         content = {
             title: 'Curso teórico - práctico de',
             subtitle: 'TRATAMIENTO DE AGUAS RESIDUALES INDUSTRIALES',
+            url: 'http://zentro.pe/images/1 Trat Aguas Resid.pdf',
             dates: '12 de Mayo del 2018',
             schedules: '8:00 - 14:00',
             duration: '24 h',
@@ -265,7 +266,7 @@ const InitCourseContent = ({index, goBack}) => {
         </div>
         <div className="col-6">
             <button type="button" className="btn btn-primary">
-            <a href="" download="" style={{color: 'white'}}>Descargar</a>
+            <a href={content.url} download={content.url} style={{color: 'white'}}>Descargar</a>
             </button>
         </div>
     </div>

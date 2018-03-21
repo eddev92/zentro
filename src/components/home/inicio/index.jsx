@@ -79,12 +79,24 @@ class Inicio extends Component{
 
         )
     }
+    getImageBackground(index) {
+        let img;
+        switch (index) {
+            case 1: img = 'actual.jpg';
+            break;
+            case 2: img = 'prox1.jpg';
+            break;
+            case 3: img = 'prox2.jpg';
+            break;
+        }
+        return img;
+    }
     render() {
         const { courseActive, showSubtitle, showDetail, courseIndex } = this.state;
-
+        const img = (courseIndex != 0 ) ? this.getImageBackground(courseIndex) : 'Inicio.png'
         return (
             <div className="main-carousel">
-                <div className="container-fluid" style={{backgroundImage: 'url(images/gestion3.jpg)'}}>
+                <div className={(courseIndex === 0) ? 'container-fluid' : 'container-fluid withCover'} style={{backgroundImage: `url(images/${img})`}}>
                     {showSubtitle && <div className="content-titleweb">
                     <h1 className="titleweb">Centro especializado en capacitación y análisis</h1>
                 </div>}
@@ -93,7 +105,7 @@ class Inicio extends Component{
                     <div className={(courseActive === 3) ? 'row final' : 'row blue'} style={{height: '100%'}}>
                         <div className="content-row col-xs-12 col-md-10 backG">
                             <h3>Curso teórico - práctico de</h3>
-                            <h1>ANÁLISIS VOLUMÉTRICOS DE MINERALES</h1>
+                            <h1>ANÁLISIS VOLUMÉTRICO DE MINERALES</h1>
                             <button type="button" className="btn btn-primary courses-content" onClick={this.showDetailCourseInit.bind(this, 1)}>
                             Ver detalle
                             </button>

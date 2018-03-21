@@ -6,28 +6,28 @@ const COURSES = [
         itemCourses: [
             {
                 id: 1,
-                title: 'Análisis volumétricos de minerales.',
-                url: 'http://zentro.pe/images/1_Análisis Volumétricos de Minerales.pdf'
+                title: 'Análisis volumétrico de minerales.',
+                url: 'http://zentro.pe/images/1 Anal Vol Miner.pdf'
             },
             {
                 id: 2,
-                title: 'Análisis volumétricos de aguas.',
-                url: 'http://zentro.pe/images/2_Análisis Volumétricos de Aguas.pdf'
+                title: 'Análisis volumétrico de aguas.',
+                url: 'http://zentro.pe/images/2 Anal Vol Aguas.pdf'
             },
             {
                 id: 3,
                 title: 'Análisis instrumental por absorción atómica en minerales.',
-                url: 'http://zentro.pe/images/3_Análisis Instrumental por AA en Minerales.pdf'
+                url: 'http://zentro.pe/images/3 Anal Inst AA Miner.pdf'
             },
             {
                 id: 4,
                 title: 'Análisis instrumental por absorción atómica en alimentos y cosméticos.',
-                url: 'http://zentro.pe/images/4_Análisis Instrumental por AA en Alimentos y Cosméticos.pdf'
+                url: 'http://zentro.pe/images/4 Anal Inst AA Alim y Cosmet.pdf'
             },
             {
                 id: 5,
                 title: 'Análisis instrumental por absorción molecular UV/Vis en aguas.',
-                url: 'http://zentro.pe/images/5_Analisis Inst UV Vis Aguas.pdf'
+                url: 'http://zentro.pe/images/5 Anal Inst Abs Molec Uv vis Aguas.pdf'
             },
             // {
             //     id: 6,
@@ -105,7 +105,7 @@ const COURSES = [
             },
             {
                 id: 17,
-                title: 'Análisis volumétricos de aguas.',
+                title: 'Análisis volumétrico de aguas.',
                 subtitle: 'Sistemas de gestión ambiental, de seguridad, salud ocupacional y técnicas de auditoría de sistemas de gestión ',
                 schedules: '18 horas. Teoría y taller'
             }

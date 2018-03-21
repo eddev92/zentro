@@ -1,8 +1,8 @@
 const CoursesAQ = [
     {
         "idCourse": 1,
-        "title": "Análisis volumétricos de minerales",
-        "url": 'http://zentro.pe/images/1_Análisis Volumétricos de Minerales.pdf',
+        "title": "Análisis volumétrico de minerales",
+        "url": 'http://zentro.pe/images/1 Anal Vol Miner.pdf',
         "content": "El análisis químico volumétrico es fundamental para el análisis de minerales, porque nos permite hallar de manera muy exacta la ley de los elementos en la muestra. Este curso proporciona los fundamentos teóricos y prácticos necesarios para desempeñarse con éxito en el análisis volumétrico de este tipo de muestras, dando especial énfasis a la parte experimental. A través de las prácticas de laboratorio seleccionadas, el participante consolida su formación teórica en volumetría, además de realizar el tratamiento de la muestra y la eliminación de interferentes. Finalmente, también se le proporcionará una herramienta (los diagramas de Pourbaix), que le ayudará en el análisis de los métodos volumétricos oficiales.",
         "objetives": [
             {
@@ -61,8 +61,8 @@ const CoursesAQ = [
     },
     {
         "idCourse": 2,
-        "title": "Análisis volumétricos de aguas",
-        "url": 'http://zentro.pe/images/2_Análisis Volumétricos de Aguas.pdf',
+        "title": "Análisis volumétrico de aguas",
+        "url": 'http://zentro.pe/images/2 Anal Vol Aguas.pdf',
         "content": "La volumetría es una técnica analítica muy antigua pero muy vigente en los laboratorios químicos, se aplica en una diversidad de matrices y entre ellas tenemos a las aguas que pueden ser: potable, residuales, de río, de calderos entre otras.",
         "content2": "En este curso, el participante adquirirá las bases teóricas necesarias para tener un óptimo desempeño en el análisis volumétrico, se entrenará en el manejo correcto del material de vidrio, el uso de indicadores químicos, la identificación y eliminación de interferentes, haciendo uso de los diagramas de Pourbaix, que además le servirán como herramienta, para entender la metodología utilizada en el laboratorio.",
         "objetives": [
@@ -123,7 +123,7 @@ const CoursesAQ = [
     {
         "idCourse": 3,
         "title": "Análisis instrumental por absorción atómica en minerales",
-        "url": 'http://zentro.pe/images/3_Análisis Instrumental por AA en Minerales.pdf',
+        "url": 'http://zentro.pe/images/3 Anal Inst AA Miner.pdf',
         "content": "El uso de la espectroscopía de absorción atómica en las muestras minerales tiene amplia aplicación en estos días, tanto en los laboratorios de las minas como en los de servicio, ya que mediante esta técnica se determinan bajos niveles de concentración (ppm) de una variedad de metales.",
         "content2": "Con este curso el participante inicia reconociendo todos los componentes de un espectrofotómetro de absorción atómica con flama para luego colocar los parámetros instrumentales teniendo en cuenta la sensibilidad requerida. Se construyen luego curvas de calibración en los rangos de trabajo adecuados y se hace énfasis también en la detección y compensación o eliminación de los interferentes.",
         "objetives": [
@@ -207,7 +207,7 @@ const CoursesAQ = [
     {
         "idCourse": 4,
         "title": "Análisis instrumental por absorción atómica en alimentos y cosméticos",
-        "url": 'http://zentro.pe/images/4_Análisis Instrumental por AA en Alimentos y Cosméticos.pdf',
+        "url": 'http://zentro.pe/images/4 Anal Inst AA Alim y Cosmet.pdf',
         "content": "Los metales en los alimentos se clasifican como nutrientes, micro y macro,  (Cu, Zn, Mn, etc.) y contaminantes (Pb, Cd, Hg, etc) y ya sea si estos se consumen directamente o previamente procesados, es necesario hallar las concentraciones presentes ya por la baja presencia y/o ausencia de micro y macro nutrientes metálicos, lo cual es causa de enfermedades, así como la presencia de los contaminantes metálicos que ocasionan toxicidad.",
         "content2": "Por otro lado, desde hace muchísimos años los seres humanos usan maquillaje para mejorar la apariencia personal, en épocas pasadas se usaban compuestos químicos tóxicos como el HgS para el brillo de los labios o el As2S3 para la sombra de los ojos, por poner unos ejemplos, hoy en día la calidad de los productos ha mejorado enormemente, pero se carece de una normativa técnica al respecto en nuestro país. Ya que la piel y las uñas son una barrera para que metales tóxicos pasen a nuestro organismo, es necesario que se realicen análisis químicos de metales en trazas para ver el nivel de toxicidad de estos productos.",
         "content3": "Este curso hará que el participante se familiarice con el tratamiento de muestras de matrices diversas en alimentos y en cosméticos, para establecer los parámetros instrumentales adecuados dependiendo del elemento y de las interferencias presentes, para realizar un análisis químico correcto.",
@@ -266,7 +266,7 @@ const CoursesAQ = [
     {
         "idCourse": 5,
         "title": "Análisis instrumental por absorción molecular UV/Vis en aguas",
-        "url": 'http://zentro.pe/images/5_Analisis Inst UV Vis Aguas.pdf',
+        "url": 'http://zentro.pe/images/5 Anal Inst Abs Molec Uv vis Aguas.pdf',
         "content": "El presente curso proporciona la teoría fundamental para comprender la espectrofotometría de absorción molecular. Da las herramientas necesarias para realizar una evaluación periódica, para chequear la exactitud de longitudes de onda y de absorbancias del instrumento. Así como también mediante la realización de prácticas dirigidas el participante desarrollará métodos oficiales (APHA) de metales y aniones para desempeñarse con éxito en un laboratorio de análisis de aguas. El curso también proporcionará a los participantes los elementos necesarios para el desarrollo y aplicación de la calidad analítica total en el reporte de resultados.",
         "objetives": [
             {

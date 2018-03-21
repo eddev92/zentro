@@ -161,10 +161,10 @@ class Galeria extends Component{
                     <div id="collapseOne" className="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordionEx" >
                         <div className="card-body">
                         <button className={galeryCourse === 1 ? 'btn aqua-gradient btn-rounded waves-effect waves-light col-md-12' : 'btn btn-outline-primary waves-effect col-md-12'} onClick={this.selectGaleryCourse.bind(this, 1)}>
-                            Análisis volumétricos de minerales
+                            Análisis volumétrico de minerales
                             </button>
                             <button className={galeryCourse === 2 ? 'btn aqua-gradient btn-rounded waves-effect waves-light col-md-12' : 'btn btn-outline-primary waves-effect col-md-12'} onClick={this.selectGaleryCourse.bind(this, 2)}>
-                            Análisis volumétricos de aguas
+                            Análisis volumétrico de aguas
                             </button>
                             <button className={galeryCourse === 3 ? 'btn aqua-gradient btn-rounded waves-effect waves-light col-md-12' : 'btn btn-outline-primary waves-effect col-md-12'} onClick={this.selectGaleryCourse.bind(this, 3)}>
                             Análisis instrumental por absorción atómica en minerales
