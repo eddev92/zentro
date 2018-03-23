@@ -80,6 +80,16 @@ img.active{
     padding: 18px;
 
 }
+.btn-downloadInit button{
+    padding: 0;
+}
+.btn-downloadInit button a{
+    margin: 15px;
+}
+.main-carousel .container-fluid img{
+    position: absolute;
+    height: 100%;
+}
 @media only screen and (max-width: 700px){
     .courseFuture{
         font-size: 0.4em !important;
@@ -107,6 +117,7 @@ img.active{
 }
 .backG{
     background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
 }
 .text-black{
     color: black !important;

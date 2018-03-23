@@ -31,6 +31,9 @@ p{
 .modal.show .modal-dialog, .modal-dialog.modal-lg {
   float: right;
 }
+.eslogan {
+  background-color: white;
+}
 .navbar-dark .nav-item{
   /* padding: 1px 22px; */
   height: 41px;

@@ -9,7 +9,8 @@ class ContactForm extends Component{
             name: '',
             mail: '',
             enterprise: '',
-            phone: ''
+            phone: '',
+            message: ''
         },
         sendMail: false
     }

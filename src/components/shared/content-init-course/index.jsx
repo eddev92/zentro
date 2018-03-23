@@ -260,14 +260,14 @@ const InitCourseContent = ({index, goBack}) => {
             </div>
     <div className="row">
         <div className="col-6">
-            <button type="button" className="btn btn-primary" onClick={goBack}>
+            <button type="button" className="btn btn-primary" onClick={goBack} style={{marginTop: '-10px'}}>
             Atrás
             </button>
         </div>
-        <div className="col-6">
-            <button type="button" className="btn btn-primary">
-            <a href={content.url} download={content.url} style={{color: 'white'}}>Descargar</a>
-            </button>
+        <div className="col-6 btn-downloadInit">
+            
+            <a href={content.url} download={content.url} className="btn btn-primary" style={{color: 'white'}}>Descargar</a>
+            
         </div>
     </div>
 </div>

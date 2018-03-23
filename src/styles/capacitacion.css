@@ -46,6 +46,7 @@ button.courses.left{
 }
 .info-capa h1{
     font-size: 1.5em;
+    text-align: justify;
 }
 /* .main-capacitacion img{
     max-height: 100% !important;

@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="container text-center"> 
           <div className="row">
           
-            <p style={{margin: 'auto', fontSize: 13}}>zentro.pe &copy; 2018. Todo los derechos reservados. Realizado por <a target="_blank"><strong style={{color: 'black', fontWeight: 700}}>E.Llanca</strong></a></p>
+            <p style={{margin: 'auto', fontSize: 13}}>zentro.pe &copy; 2018. Todo los derechos reservados. Realizado por <a a href="mailto: llanca872@gmail.pe"><strong style={{color: 'black', fontWeight: 700}}>E.Llanca</strong></a></p>
             
           </div>
         </div>

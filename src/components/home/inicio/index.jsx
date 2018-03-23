@@ -84,7 +84,7 @@ class Inicio extends Component{
         switch (index) {
             case 1: img = 'actual.jpg';
             break;
-            case 2: img = 'prox1.jpg';
+            case 2: img = 'prox1.png';
             break;
             case 3: img = 'prox2.jpg';
             break;
@@ -96,7 +96,8 @@ class Inicio extends Component{
         const img = (courseIndex != 0 ) ? this.getImageBackground(courseIndex) : 'Inicio.png'
         return (
             <div className="main-carousel">
-                <div className={(courseIndex === 0) ? 'container-fluid' : 'container-fluid withCover'} style={{backgroundImage: `url(images/${img})`}}>
+                <div className="container-fluid">
+                <img src={`images/${img}`} className="img-responsive img-contentInit" />
                     {showSubtitle && <div className="content-titleweb">
                     <h1 className="titleweb">Centro especializado en capacitación y análisis</h1>
                 </div>}
