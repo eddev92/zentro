@@ -3,7 +3,7 @@ img{
     max-height: 540px;
 }
 .main-carousel{
-    margin: calc(100vh - 510px) 0 0;
+    margin: calc(100vh - 496px) 0 0;
 }
 .selects img{
     height: 40px;

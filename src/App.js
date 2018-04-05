@@ -35,6 +35,12 @@ class App extends Component {
 }
 componentDidMount() {
   this.showTitleWeb();
+  window.scrollTo(0, 0)
+}
+componentWillReceiveProps(nextProps) {
+    if (nextProps) {
+        window.scrollTo(0, 0)
+    }
 }
 showTitleWeb = () => {
   const { showTitle } = this.state;

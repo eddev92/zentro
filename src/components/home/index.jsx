@@ -79,17 +79,16 @@ class HomeComponent extends Component{
                         <Consultoria />
                     </div>
                     <div className={`carousel-item ${(sectionActive === 2) && 'active'}`}>
-                    <Capacitacion />
-                        
+                        <Capacitacion />
                     </div>
                     <div className={`carousel-item ${(sectionActive === 3) && 'active'}`}>
-                    <Publicacion />
+                        <Publicacion />
                     </div>
                     <div className={`carousel-item ${(sectionActive === 4) && 'active'}`}>
                         <img className="d-block w-100" src="images/menu5.jpg" alt="Third slide" />
                     </div>
                     <div className={`carousel-item ${(sectionActive === 5) && 'active'}`}>
-                    <ContactForm />
+                        <ContactForm />
                     </div>
                 </div>
                 {(sectionActive === 2) && <button type="button" className="btn btn-primary courses" onClick={this.openModal}>
