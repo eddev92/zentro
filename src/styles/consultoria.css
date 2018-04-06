@@ -42,6 +42,7 @@
 }
 a#element0,a#element1,a#element2,a#element3,a#element4{
     padding: 31px;
+    color: white;
 }
 .badge, .btn, .card:not([class*=card-outline-]), .chip, .jumbotron, .modal-dialog.cascading-modal .modal-c-tabs .nav-tabs, .modal-dialog.modal-notify .modal-header, .navbar, .pagination .active .page-link, .z-depth-1 {
     -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.26), 0 2px 10px 0 rgba(0,0,0,.12);

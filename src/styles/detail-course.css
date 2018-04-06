@@ -27,3 +27,13 @@ button.dowload a{
     height: 45px;
     padding-top: 12px;
 }
+.courses-content img{
+        height: 40px;
+}
+.courses-content.aux{
+    padding: 4px;
+background-color: #e5e5e5;
+}
+#title{
+    margin-top: 40px;
+}

@@ -184,11 +184,10 @@
 
 @media screen and (max-width: 740px) {
     .main-consultoria .text{
-        margin-top: calc(100vh - 912px);
-    position: relative;
-    padding: 0;
-    margin: -70px 6%;
-
+		margin-top: calc(100vh - 912px);
+		position: relative;
+		padding: 0;
+		margin: -12px auto;
 	}
 	#slides img{
 		width: 70% !important;

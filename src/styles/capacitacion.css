@@ -66,6 +66,7 @@ b{
     }
     .modal-full-height .modal-body{
         max-height: 355px !important;
+        padding: 20px 49px 77px !important;
     }
     .modal-full-height .indice{
         font-size: 12px !important;
@@ -81,4 +82,9 @@ b{
         padding-left: 5px !important;
     }
 
+}
+@media screen and (max-width: 750px) {
+    .buttons-presentials.withMargin{
+        margin-top: 0 !important;
+    }
 }

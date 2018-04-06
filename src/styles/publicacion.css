@@ -15,6 +15,9 @@
     display: block;
     margin: 15px;
 }
+.main-publicaciones b{
+    font-size: 0.8em;
+}
 .main-publicaciones .card-image{
     background-repeat: no-repeat;
     background-size: cover;

@@ -209,14 +209,14 @@
         "idCourse": 4,
         "title": "Análisis instrumental por absorción atómica en  alimentos y cosméticos",
         "content": "Los metales en los alimentos se clasifican como nutrientes, micro y macro,  (Cu, Zn, Mn, etc.) y contaminantes (Pb, Cd, Hg, etc) y ya sea si estos se consumen directamente o previamente procesados, es necesario hallar las concentraciones presentes ya por la baja presencia y/o ausencia de micro y macro nutrientes metálicos, lo cual es causa de enfermedades, así como la presencia de los contaminantes metálicos que ocasionan toxicidad.",
-        "content2": "Por otro lado, desde hace muchísimos años los seres humanos usan maquillaje para mejorar la apariencia personal, en épocas pasadas se usaban compuestos químicos tóxicos como el HgS para el brillo de los labios o el As2S3 para la sombra de los ojos, por poner unos ejemplos, hoy en día la calidad de los productos ha mejorado enormemente, pero se carece de una normativa técnica al respecto en nuestro país. Ya que la piel y las uñas son una barrera para que metales tóxicos pasen a nuestro organismo, es necesario que se realicen análisis químicos de metales en trazas para ver el nivel de toxicidad de estos productos.",
+        "content2": "Por otro lado, desde hace muchísimos años los seres humanos usan maquillaje para mejorar la apariencia personal, en épocas pasadas se usaban compuestos químicos tóxicos como el HgS para el brillo de los labios o el As₂S₃ para la sombra de los ojos, por poner unos ejemplos, hoy en día la calidad de los productos ha mejorado enormemente, pero se carece de una normativa técnica al respecto en nuestro país. Ya que la piel y las uñas son una barrera para que metales tóxicos pasen a nuestro organismo, es necesario que se realicen análisis químicos de metales en trazas para ver el nivel de toxicidad de estos productos.",
         "content3": "Este curso hará que el participante se familiarice con el tratamiento de muestras de matrices diversas en alimentos y en cosméticos, para establecer los parámetros instrumentales adecuados dependiendo del elemento y de las interferencias presentes, para realizar un análisis químico correcto.",
         "objetives": [
             {
                 "text": "Establecer los fundamentos de la Absorción Atómica (AA)."
             },
             {
-                "text": "Aplicar el pretratamiento adecuado de acuerdo a la matriz a analizar.",
+                "text": "Aplicar el pretratamiento adecuado de acuerdo a la matriz a analizar."
             },
             {
                 "text": "Aplicar la técnica de absorción atómica al análisis de alimentos y cosméticos."

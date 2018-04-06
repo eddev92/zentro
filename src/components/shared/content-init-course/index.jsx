@@ -239,6 +239,7 @@ const InitCourseContent = ({index, goBack}) => {
     {content.content3 && <p className="col-md-10">
         {content.content3}
     </p>}
+    <br/>
     <h4>Cronograma:</h4>
     <ul className="col-xs-11 col-md-6">
         <li>{content.dates}</li>

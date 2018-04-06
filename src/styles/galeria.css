@@ -51,3 +51,28 @@ display: none;
 		position: relative !important;
 	}
 }
+#collapseOne.show{
+    display: show;
+    transition: 0.7s all ease-out;
+}
+#collapseOne.none{
+    display: none;
+    transition: 0.7s all ease-out;
+}
+#collapseOne2.show{
+    display: show;
+    transition: 0.7s all ease-in-out;
+}
+#collapseOne2.none{
+    display: none;
+    transition: 0.7s all ease-in-out;
+}
+#accordionEx .card-header{
+    z-index: 99;
+    padding: 0;
+}
+#accordionEx a {
+    display: block;
+    /* margin: 12px; */
+    padding: 12px;
+}

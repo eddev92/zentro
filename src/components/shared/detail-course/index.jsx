@@ -9,6 +9,9 @@ class ContentCoursePresential extends Component {
             elem.scrollTop = elem.scrollHeight;
         }
       };
+      componentDidMount(){
+          window.scrollTo(0, 0);
+      }
     getContentCourse = ( index, courses ) => {
         let courseSelected;
         if (index && courses) {
@@ -30,7 +33,19 @@ class ContentCoursePresential extends Component {
     const temas = course && course.temary.map(e => (e.laboratories) ? <li>{e.text}<ul>{this.getLaboratories(e.laboratories)}</ul></li> : <li>{e.text}</li>)
     return (
         <div className="main-content-course">
-       
+        <div className="row footer-buttons-courses">
+                <div className="col-md-5 btn-content-course">
+                    <button type="button" className="btn btn-primary courses-content aux" onClick={closeContent}>
+                    <img src="images/back.svg" alt=""/>
+                    </button>
+                </div>
+                <div className="col-md-5 btn-content-course">
+                    <button type="button" className="btn btn-primary courses-content dowload">
+                    <a href={course.url} download={course.url} style={{color: 'white'}}>Descargar</a>
+                    </button>
+                </div>
+            </div>
+        <div id="title"><h2>{course.title}</h2></div>
         <p className="col-md-10">
             {course.content}
         </p>
@@ -53,19 +68,8 @@ class ContentCoursePresential extends Component {
                     {temas}
                 </ul>
             </div>
-            <div id="title"><h2>{course.title}</h2></div>
-            <div className="row footer-buttons-courses">
-                <div className="col-md-5 btn-content-course">
-                    <button type="button" className="btn btn-primary courses-content" onClick={closeContent}>
-                    Atrás
-                    </button>
-                </div>
-                <div className="col-md-5 btn-content-course">
-                    <button type="button" className="btn btn-primary courses-content dowload">
-                    <a href={course.url} download={course.url} style={{color: 'white'}}>Descargar</a>
-                    </button>
-                </div>
-            </div>
+      
+            
         </div>
 
     );

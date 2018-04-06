@@ -5,11 +5,20 @@ import CarouselSimple from '../../shared/carousel/simple-carousel';
 class Galeria extends Component{
     state = {
         galeryCourse: 0,
+        typeGalery1: false,
+        typeGalery2: false,
         openCollapse: false,
         reset: false
     }
     selectGaleryCourse = (index) => {
-        const { openCollapse, galeryCourse, reset } = this.state;
+        const { openCollapse, galeryCourse, reset, typeGalery1, typeGalery2 } = this.state;
+        if (typeGalery1){
+            return this.setState({galeryCourse: index, openCollapse: true, typeGalery1: false})
+        }
+        if (typeGalery2){
+            return this.setState({galeryCourse: index, openCollapse: true, typeGalery2: false})
+        }
+       
         this.setState({ galeryCourse: index, openCollapse: true });
         if (galeryCourse > 0) {
             this.setState({ reset: true });
@@ -17,7 +26,13 @@ class Galeria extends Component{
     }
     openCollapse = (index) => {
         const { openCollapse, galeryCourse, reset } = this.state;
-        this.setState({ openCollapse: true });
+        console.log(index)
+        this.setState({ typeGalery1: !this.state.typeGalery1, openCollapse: true });
+    }
+    openCollapse2 = (index) => {
+        const { openCollapse, galeryCourse, reset } = this.state;
+        console.log(index)
+        this.setState({ typeGalery2: !this.state.typeGalery2, openCollapse: true });
     }
     getImagesContent(galeryCourse) {
         let images = {
@@ -143,7 +158,7 @@ class Galeria extends Component{
             return images;
         }
     render() {
-        const { galeryCourse, openCollapse, reset } = this.state;
+        const { galeryCourse, openCollapse, reset, typeGalery1, typeGalery2 } = this.state;
         const images = this.getImagesContent(galeryCourse);
 
         return (
@@ -152,13 +167,13 @@ class Galeria extends Component{
             <div className="accordion col-md-6" id="accordionEx" role="tablist" aria-multiselectable="true">
                 <div className="card">
                     <div className="card-header" role="tab" id="headingOne">
-                        <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" onClick={this.openCollapse}>
+                        <a onClick={this.openCollapse.bind(this, 1)}>
                             <h5 className="mb-0">
                             ANÁLISIS QUÍMICO
                             </h5>
                         </a>
                     </div>
-                    <div id="collapseOne" className="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordionEx" >
+                    <div id="collapseOne" className={typeGalery1 ? 'show' : 'none'} role="tabpanel" aria-labelledby="headingOne" data-parent="#accordionEx" >
                         <div className="card-body">
                         <button className={galeryCourse === 1 ? 'btn aqua-gradient btn-rounded waves-effect waves-light col-md-12' : 'btn btn-outline-primary waves-effect col-md-12'} onClick={this.selectGaleryCourse.bind(this, 1)}>
                             Análisis volumétrico de minerales
@@ -185,13 +200,13 @@ class Galeria extends Component{
             <div className="accordion col-md-6" id="accordionEx" role="tablist" aria-multiselectable="true">
                 <div className="card">
                     <div className="card-header" role="tab" id="headingOne2">
-                        <a data-toggle="collapse" href="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">
+                        <a onClick={this.openCollapse2.bind(this, 2)}>
                             <h5 className="mb-0">
                             QUÍMICA ANALÍTICA AMBIENTAL E INGENIERÍA AMBIENTAL
                             </h5>
                         </a>
                     </div>
-                    <div id="collapseOne2" className="collapse" role="tabpanel" aria-labelledby="headingOne2" data-parent="#accordionEx" >
+                    <div id="collapseOne2" className={typeGalery2 ? 'show' : 'none'} role="tabpanel" aria-labelledby="headingOne2" data-parent="#accordionEx" >
                         <div className="card-body">
                             <button className={galeryCourse === 7 ? 'btn aqua-gradient btn-rounded waves-effect waves-light col-md-12' : 'btn btn-outline-primary waves-effect col-md-12'} onClick={this.selectGaleryCourse.bind(this, 7)}>
                             Control y tratamiento de aguas residuales

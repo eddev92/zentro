@@ -35,3 +35,14 @@
 .main-content-course-init p{
     margin: auto;
 }
+@media screen and (max-width: 650px) {
+    .main-content-course-init h1,.main-content-course-init h4 {
+        font-size: 1em !important;
+    }
+    .main-content-course-init p, .main-content-course-init ul{
+        font-size: 0.8em !important;
+    }
+    .main-content-course-init h2{
+        font-size: 1em !important;
+    }
+}

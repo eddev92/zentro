@@ -75,6 +75,7 @@
 .atras{
     width: 100%;
     margin: 6px;
+    padding: 0;
 }
 .slider li {
 	width: 100%;
@@ -89,6 +90,9 @@
     width: auto;
     max-height: 270px;
 }
+.indice .btn-primary{
+    background: #e5e5e5;
+}
 
 @keyframes cambio {
 	0% {margin-left: 0;}
@@ -102,4 +106,10 @@
 	
 	75% {margin-left: -300%;}
 	100% {margin-left: -300%;}
+}
+.buttons-presentials{
+    text-align: center;
+}
+.atras img{
+    height: 40px;
 }

@@ -108,23 +108,26 @@ class CourseContent extends Component {
                     {typeCourse === 0 && <div className="select-course text-center"><h1>SELECCIONE UN TIPO DE CURSO</h1></div>}
                         {typeCourse > 0 && <div className="row" style={{width: '100%', margin: 'auto'}}>
                             {typeCourse === 1 ? <div className={typeCourse === 1 ? (CoursePresential > 0) ? 'col-xs-12 col-md-3 indice' :'col-xs-12 col-md-12 indice' : 'col-xs-12 col-md-6 indice'}>
-                                <h3 className="text-center">CURSOS PRESENCIALES</h3>
+                            {CoursePresential > 0 && <button type="button" className="btn btn-primary atras" onClick={this.goBack}>
+                            <img src="images/back.svg" alt=""/>
+                                </button>}
+                            <h3 className="text-center">CURSOS PRESENCIALES</h3>
+                            <div className={(CoursePresential > 0) ? 'buttons-presentials' : 'buttons-presentials'}>
+                                <button type="button" className={CoursePresential === 1 ? 'btn btn-outline-primary waves-effect col-xs-12 active' : 'btn btn-outline-primary waves-effect col-xs-12'} onClick={this.selectCourse.bind(this, 1)}>Análisis químico</button>
+                            
+                                <button type="button" className={CoursePresential === 2 ? 'btn btn-outline-primary waves-effect col-xs-12 active' : 'btn btn-outline-primary waves-effect col-xs-12'} onClick={this.selectCourse.bind(this, 2)}>Química Analítica Ambiental e Ingeniería Ambiental</button>
+                                
+                                <button type="button" className={CoursePresential === 3 ? 'btn btn-outline-primary waves-effect col-xs-12 active' : 'btn btn-outline-primary waves-effect col-xs-12'} onClick={this.selectCourse.bind(this, 3)}>Estadística aplicada a la industria</button>
+                                
+                                <button type="button" className={CoursePresential === 4 ? 'btn btn-outline-primary waves-effect col-xs-12 active' : 'btn btn-outline-primary waves-effect col-xs-12'} onClick={this.selectCourse.bind(this, 4)}>Sistemas de gestión</button>
+                                
+                                <button type="button" className={CoursePresential === 5 ? 'btn btn-outline-primary waves-effect col-xs-12 active' : 'btn btn-outline-primary waves-effect col-xs-12'} onClick={this.selectCourse.bind(this, 5)}>Microbiología</button>
+                                
+                                </div>
+                                
                                 {CoursePresential === 0 && <p>Estos son cursos de capacitación donde se brinda al participante el fundamento teórico y la aplicación práctica mediante clases de laboratorio y desarrollo de talleres</p>}
                                 {!(CoursePresential > 0) && <CarouselSimple galeryCourse={images} height={height}/>}
-                            <div className={(CoursePresential > 0) ? 'buttons-presentials' : 'buttons-presentials withMargin'}>
-                                <button type="button" className={CoursePresential === 1 ? 'btn btn-outline-primary waves-effect col-12 active' : 'btn btn-outline-primary waves-effect col-12'} onClick={this.selectCourse.bind(this, 1)}>Análisis químico</button>
                             
-                                <button type="button" className={CoursePresential === 2 ? 'btn btn-outline-primary waves-effect col-12 active' : 'btn btn-outline-primary waves-effect col-12'} onClick={this.selectCourse.bind(this, 2)}>Química Analítica Ambiental e Ingeniería Ambiental</button>
-                                
-                                <button type="button" className={CoursePresential === 3 ? 'btn btn-outline-primary waves-effect col-12 active' : 'btn btn-outline-primary waves-effect col-12'} onClick={this.selectCourse.bind(this, 3)}>Estadística aplicada a la industria</button>
-                                
-                                <button type="button" className={CoursePresential === 4 ? 'btn btn-outline-primary waves-effect col-12 active' : 'btn btn-outline-primary waves-effect col-12'} onClick={this.selectCourse.bind(this, 4)}>Sistemas de gestión</button>
-                                
-                                <button type="button" className={CoursePresential === 5 ? 'btn btn-outline-primary waves-effect col-12 active' : 'btn btn-outline-primary waves-effect col-12'} onClick={this.selectCourse.bind(this, 5)}>Microbiología</button>
-                                {CoursePresential > 0 && <button type="button" className="btn btn-primary atras" onClick={this.goBack}>
-                                    Atrás
-                                </button>}
-                                </div>
                             </div>: null}
                             {typeCourse === 2 && <CourseInhouse />}
                             <div className={CoursePresential > 0 ? 'col-xs-12 col-md-4 content final' : 'col-xs-12 col-md-4 content inicial'}>
