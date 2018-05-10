@@ -18,7 +18,7 @@ class Inicio extends Component{
         const { showSubtitle } = this.state;
         setTimeout(() => {
             this.setState({  showSubtitle: !showSubtitle });
-        }, 7000)
+        }, 2500)
     }
     loadCoursesInit() {
         const { courseActive } = this.state;
@@ -30,7 +30,7 @@ class Inicio extends Component{
             this.setState({ courseActive: courseActive+2 }, () => {
                 this.loadCoursesInit();
             })
-        }, 5500)
+        }, 2500)
     }
     changeItem() {
         const {sectionActive} = this.state;

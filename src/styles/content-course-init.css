@@ -45,4 +45,8 @@
     .main-content-course-init h2{
         font-size: 1em !important;
     }
+    .btn-downloadInit a{
+        padding: 15px 0;
+        font-size: 0.7em;
+    }
 }

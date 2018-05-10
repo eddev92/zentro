@@ -46,7 +46,7 @@ showTitleWeb = () => {
   const { showTitle } = this.state;
   setTimeout(() => {
     this.setState({ showTitle: true });
-  }, 6000)
+  }, 2500)
 }
 openModal = () => {
   const {open} = this.state;

@@ -102,12 +102,6 @@ const COURSES = [
                 title: 'Presentación de normas: 17020, 17025 y 9001',
                 subtitle: 'Principios del sistema de gestión de calidad y ciclo de mejora continua.',
                 schedules: '8 horas. Teoría y taller'
-            },
-            {
-                id: 17,
-                title: 'Análisis volumétrico de aguas.',
-                subtitle: 'Sistemas de gestión ambiental, de seguridad, salud ocupacional y técnicas de auditoría de sistemas de gestión ',
-                schedules: '18 horas. Teoría y taller'
             }
         ]
     },

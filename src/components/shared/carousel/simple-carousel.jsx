@@ -41,10 +41,12 @@ class CarouselSimple extends Component {
         if (this.props.galeryCourse.total <= 4) {
             return (
                 <div className="row">
-                    {(galeryCourse.img1 || galeryCourse.img2) && <div className={index === 0 ? 'row normal' : 'row hidden'}>
-                    {galeryCourse.img1 && <div className="col-md-6 item-galery isLeftFloat">
-                        <img src={galeryCourse.img1} className={(this.props.height) ? 'max-h' : ''} alt=""/>
-                    </div>}
+                    {(galeryCourse.img1 || galeryCourse.img2)
+                        && <div className={index === 0 ? 'row normal' : 'row hidden'}>
+                            {galeryCourse.img1 && <div className="col-md-6 item-galery isLeftFloat">
+                            <img src={galeryCourse.img1} className={(this.props.height) ? 'max-h' : ''} alt=""/>
+                           </div>
+                    }
                     {galeryCourse.img2 && <div className="col-md-6 item-galery iRightFloat">
                         <img src={galeryCourse.img2} className={(this.props.height) ? 'max-h' : ''} alt=""/>
                     </div>}

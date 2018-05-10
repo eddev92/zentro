@@ -71,11 +71,11 @@ class CourseContent extends Component {
             }
             break;
             case 1: images = {
-                img1: 'images/4.jpg',
+                img1: 'images/8.png',
                 img2: 'images/5.jpg',
                 img3: 'images/6.jpg',
                 img4: 'images/7.png',
-                img5: 'images/8.png',
+                img5: 'images/3.jpg',
                 img6: 'images/9.jpg',
                 total: 6
             }
