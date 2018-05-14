@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../../../styles/inicio.css';
 import InitCourseContent from '../../shared/content-init-course';
+let time = 2500;
 
 class Inicio extends Component{
     state = {
@@ -8,20 +9,34 @@ class Inicio extends Component{
         courseActive: 1,
         showSubtitle: true,
         showDetail: false,
+        timeAux: false,
         courseIndex: 0
     }
     componentDidMount() {
-        this.loadCoursesInit();
         this.hiddenSubmessage();
+        
     }
     hiddenSubmessage = () => {
         const { showSubtitle } = this.state;
         setTimeout(() => {
+            this.setState({courseActive: 3})
+            this.loadCoursesInit();
+        }, 1800)
+        setTimeout(() => {
             this.setState({  showSubtitle: !showSubtitle });
-        }, 2500)
+        }, 2400)
+    }
+    moreTime = () => {
+        const { timeAux } = this.state;
+
+        if (timeAux) {
+            return null;
+        }
+        this.setState({ timeAux: true });
     }
     loadCoursesInit() {
-        const { courseActive } = this.state;
+        const { courseActive, showSubtitle } = this.state;
+        let tm = this.state.timeAux ? 4000 : 2000;
         setTimeout(() => {
             if (courseActive === 5) {
                 this.setState({ courseActive: 3 })
@@ -30,7 +45,7 @@ class Inicio extends Component{
             this.setState({ courseActive: courseActive+2 }, () => {
                 this.loadCoursesInit();
             })
-        }, 2500)
+        }, 4000)
     }
     changeItem() {
         const {sectionActive} = this.state;
