@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import '../../../styles/contact-form.css';
 import sendMailServices from './../../../services/sendMail'
-const api = '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';
-var helper = require('sendgrid').mail;
-var async = require('async');
-var sg = require('sendgrid')(api);
+// const api = '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';
+// var helper = require('sendgrid').mail;
+// var async = require('async');
+// var sg = require('sendgrid')(api);
 
 class ContactForm extends Component{
     state = {
@@ -58,10 +58,10 @@ class ContactForm extends Component{
     sendEmail = () => {
 
     }
-    sendMailSengrid = () => {
-        const service = new sendMailServices();
-        service.post();
-    }
+    // sendMailSengrid = () => {
+    //     const service = new sendMailServices();
+    //     service.post();
+    // }
     changeMessage() {
      setTimeout(() => {
        return this.setState({sendMail: false})
