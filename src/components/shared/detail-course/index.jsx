@@ -13,6 +13,8 @@ class ContentCoursePresential extends Component {
           window.scrollTo(0, 0);
       }
     getContentCourse = ( index, courses ) => {
+        console.log(courses)
+        console.log(index)
         let courseSelected;
         if (index && courses) {
             courseSelected = courses.find(course => course.idCourse === index);
@@ -41,7 +43,7 @@ class ContentCoursePresential extends Component {
                 </div>
                 <div className="col-md-5 btn-content-course">
                     <button type="button" className="btn btn-primary courses-content dowload">
-                    <a href={course.url} download={course.url} style={{color: 'white'}}>Descargar</a>
+                    <a href={course.url} download={course.url} target="_blank" style={{color: 'white'}}>Descargar</a>
                     </button>
                 </div>
             </div>

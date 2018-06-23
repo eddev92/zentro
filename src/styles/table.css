@@ -1,0 +1,12 @@
+.table-fixed {
+    table-layout: fixed;
+    overflow: hidden;
+    margin-top: 45px;
+}
+thead tr{
+    background: black;
+    color: white;
+}
+thead{
+    text-align: center;
+}

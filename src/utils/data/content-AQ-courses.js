@@ -697,6 +697,100 @@ const CoursesAQ = [
                 ]
             }
         ]
+    },
+    {
+        "idCourse": 17,
+        "title": "Introducción a los Sistemas de Gestión : ISO 9001, ISO 17020 e ISO 17025",
+        "url": 'http://zentro.pe/images/6 Caract y Trat Drenaj Acid Mina.pdf',
+        "content": "Los sistemas de gestión son herramientas que permiten optimizar recursos, reducir costes y mejorar la productividad de las empresas, están basados en normas internacionales que buscan la estandarización de las actividades de las empresas en relación a la calidad: ISO 9001,  ISO 17025 y a las inspecciones ISO 17020.",
+        "content2": "",
+        "objetives": [
+            {
+                "text": "Conocer el entorno de las normas 9001, 17020 y 17025 "
+            },
+            {
+                "text": "Resaltar los puntos más importantes por cada ítem de las normas para familiarizarse con dichas normas "
+            }
+        ],
+        "temary": [
+            {
+                "text": "1. Introducción a un sistema de gestión: aspectos generales."
+            },
+            {
+                "text": "2. Requisitos administrativos, técnicos y de gestión de la norma ISO 9001. "
+            },
+            {
+                "text": "3. Requisitos administrativos, técnicos y de gestión de la norma ISO 17020."
+            },
+            {
+                "text": "4. Requisitos administrativos, técnicos y de gestión de la norma ISO 17025. "
+            }
+        ]
+    },
+    {
+        "idCourse": 21,
+        "title": "Técnicas Microbiológicas para el Análisis de Aguas",
+        "url": 'http://zentro.pe/images/6 Caract y Trat Drenaj Acid Mina.pdf',
+        "content": "La microbiología es una ciencia en proceso de expansión que estudia los microorganismos, bacterias, hongos y otros agentes como los virus.",
+        "content2": "Los microorganismos son de gran interés por su importancia clínica, ambiental y biotecnológica. Algunos de ellos son agentes causales de diversas enfermedades infecciosas (tuberculosis, diversas enfermedades en plantas y animales, etc.) y otros producen compuestos que combaten infecciones (antibióticos). En el campo ambiental son usados para el desarrollo de tecnologías limpias y sostenibles, como por ejemplo la producción de biocombustibles y bioinsumos agrícolas, y procesos de biorremediación, control biológico y reciclaje. En la industria alimenticia son fundamentales en la producción de vinos, quesos, pan, entre otros, pero también pueden causar deterioro en los alimentos.  \n\n La Microbiología permite conocer el mundo de los microorganismos, entender su importancia y aprovechar la diversidad de sus funciones para mejorar la calidad de vida del hombre.",
+        "objetives": [
+            {
+                "text": "Conocer las características básicas de los microorganismos "
+            },
+            {
+                "text": "Aprender a reconocer, cultivar e identificar, microorganismos que pueden afectar negativamente al agua"
+            },
+            {
+                "text": "Adquirir los conceptos y técnicas necesarios para determinar su presencia "
+            }
+        ],
+        "temary": [
+            {
+                "text": "1. Introducción a la microbiología:",
+                "laboratories": [
+                    {
+                        "text": "1.1 Historia de la microbiología",
+                    },
+                    {
+                        "text": "1.2 Historia de la microbiología",
+                    },
+                    {
+                        "text": "1.3 Clasificación de los microorganismos",
+                    },
+                    {
+                        "text": "1.4 Tinción de microorganismos",
+                    }
+                ]
+            },
+            {
+                "text": "2. Bacteriología:",
+                "laboratories": [
+                    {
+                        "text": "2.1 Morfología y fisiología de las bacterias"
+                    },
+                    {
+                        "text": "2.2 Cultivo, reproducción y crecimiento de las bacterias"
+                    },
+                    {
+                        "text": "2.3 Bioquímica y metabolismo de las bacterias Práctica"
+                    }
+                ]
+            },
+            {
+                "text": "3. Métodos de análisis microbiológicos de agua:",
+                "laboratories": [
+                    {
+                        "text": "3.1 Microbiología del agua"
+                    },
+                    {
+                        "text": "3.2 Métodos de análisis en medio sólido: Recuento en placa de aerobios mesófilos y coliformes"
+                    },
+                    {
+                        "text": "3.3 Método en medio líquido: Número más probable para coliformes totales, fecales y E. coli."
+                    }
+                ]
+            }
+        ]
     }
 ];
 

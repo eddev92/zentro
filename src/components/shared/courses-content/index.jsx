@@ -51,6 +51,7 @@ class CourseContent extends Component {
     renderContentCourse() {
         const { CoursePresential, courses } = this.state;
         const courseSelected = this.validateCourseSelected(CoursePresential);
+        console.log('courseSelected', courseSelected)
         return (
             <CourseItem item={courseSelected} courses={courses} selectCourseAQ={this.selectCourseAQ} />
         )

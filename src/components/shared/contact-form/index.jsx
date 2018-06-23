@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import '../../../styles/contact-form.css';
 import sendMailServices from './../../../services/sendMail'
-// const api = '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';
-// var helper = require('sendgrid').mail;
-// var async = require('async');
-// var sg = require('sendgrid')(api);
+import axios from 'axios';
+// const Mailer = require('../services/mailer');
+window.axios = axios;
 
 class ContactForm extends Component{
     state = {
@@ -33,6 +32,7 @@ class ContactForm extends Component{
     
     sendMail = () => {
         const {model, sendMail} = this.state;
+        // const mail = new Mailer(model);
         const newModel = {
             name: '',
             mail: '',
@@ -40,6 +40,7 @@ class ContactForm extends Component{
             phone: '',
             message: ''
         }
+        // axios.post('/api/send', model);
         const service = new sendMailServices();
 
         service.sendMailContact(model)

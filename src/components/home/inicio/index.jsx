@@ -40,11 +40,11 @@ class Inicio extends Component{
         setTimeout(() => {
             if (courseActive === 5) {
                 this.setState({ courseActive: 3 })
-                return this.loadCoursesInit()
+                // return this.loadCoursesInit()
             }
-            this.setState({ courseActive: courseActive+2 }, () => {
-                this.loadCoursesInit();
-            })
+            // this.setState({ courseActive: courseActive+2 }, () => {
+            //     this.loadCoursesInit();
+            // })
         }, 4000)
     }
     changeItem() {
@@ -84,16 +84,6 @@ class Inicio extends Component{
         this.setState({ courseIndex: index, showDetail: !showDetail });
 
     }
-    renderCarousel() {
-        const {sectionActive} = this.state;
-
-        return (
-            <div>
-                    {this.renderImage()}
-            </div>
-
-        )
-    }
     getImageBackground(index) {
         let img;
         switch (index) {
@@ -103,12 +93,14 @@ class Inicio extends Component{
             break;
             case 3: img = 'prox2.jpg';
             break;
+            case 4: img = 'Inicio.jpg';
+            break;
         }
         return img;
     }
     render() {
         const { courseActive, showSubtitle, showDetail, courseIndex } = this.state;
-        const img = (courseIndex != 0 ) ? this.getImageBackground(courseIndex) : 'Inicio.png'
+        const img = (courseIndex != 0 ) ? this.getImageBackground(courseIndex) : 'Inicio.jpg'
         return (
             <div className="main-carousel">
                 <div className="container-fluid">
@@ -118,7 +110,7 @@ class Inicio extends Component{
                 </div>}
                 {courseIndex < 1 ?
                 <div>
-                    <div className={(courseActive === 3) ? 'row final' : 'row blue'} style={{height: '100%'}}>
+                    {/* <div className={(courseActive === 3) ? 'row final' : 'row blue'} style={{height: '100%'}}>
                         <div className="content-row col-xs-12 col-md-10 backG">
                             <h3>Curso teórico - práctico de</h3>
                             <h1>ANÁLISIS VOLUMÉTRICO DE MINERALES</h1>
@@ -126,8 +118,20 @@ class Inicio extends Component{
                             Ver detalle
                             </button>
                         </div>
+                    </div> */}
+                    <div className={(courseActive === 3) ? 'row final' : 'row blue'} style={{height: '100%'}}>
+                        <div className="content-row col-xs-12 col-md-10 backG">
+                            <h3 style={{fontWeight: 700}}>CURSOS TEÓRICO-PRÁCTICOS</h3>
+                            <h1>2018</h1>
+                            <button type="button" className="btn btn-primary courses-content vacantes">
+                            Vacantes limitadas
+                            </button>
+                            <button type="button" className="btn btn-primary courses-content info-aqui" onClick={this.showDetailCourseInit.bind(this, 4)}>
+                            Información aquí
+                            </button>
+                        </div>
                     </div>
-                    <div className={(courseActive === 5) ? 'row final' : 'row red'} style={{height: '100%'}}>
+                    {/* <div className={(courseActive === 5) ? 'row final' : 'row red'} style={{height: '100%'}}>
                         <div className="col-xs-12 col-md-5 courseFuture">
                         <div className="course-content-init">
                             <h2 className="text-black">Próximamente...</h2>
@@ -148,7 +152,7 @@ class Inicio extends Component{
                                 </button>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
                 : this.renderCourseDetail()}
                 </div>

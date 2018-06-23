@@ -48,7 +48,16 @@ img.active{
     background-size: contain;
 }
 .content-row{
-    margin: calc(20vh - -24px) auto;
+    margin: calc(20vh - 60px) auto;
+    padding: 50px;
+}
+.vacantes{
+    position: absolute;
+    margin-left: -10%;
+}
+.info-aqui{
+    float: right;
+    margin-top: 78px;
 }
 .row.red{
     margin-left: -2359px;

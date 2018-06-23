@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import '../../../styles/content-course-init.css';
+import {ROWS_COURSE_INIT} from '../../../constants/constants';
+import TableComponent from '../table';
 
 const getContentCourseInit = ( index ) => {
     let content = {
@@ -211,6 +213,10 @@ const getContentCourseInit = ( index ) => {
                 }
             ]
         }
+        break;
+        case 4:
+        return ROWS_COURSE_INIT;
+        break;
     }
     return content;
 }
@@ -223,55 +229,81 @@ const getLaboratories = (laboratories = []) => {
 }
 const InitCourseContent = ({index, goBack}) => {
     const content = getContentCourseInit(index)
-    const objetives = content && content.objetives.map(e => <li>{e.text}</li>)
-    const temas = content && content.temary.map(e => (e.laboratories) ? <li>{e.text}<ul>{getLaboratories(e.laboratories)}</ul></li> : <li>{e.text}</li>)
+    const objetives = (index === 4) ? '' : content && content.objetives.map(e => <li>{e.text}</li>)
+    const temas = (index === 4) ? '' : content && content.temary.map(e => (e.laboratories) ? <li>{e.text}<ul>{getLaboratories(e.laboratories)}</ul></li> : <li>{e.text}</li>)
+    console.log(content)
     return (
-<div className="main-content-course-init">
-<div className="row">
-        <div className="col-6">
-            <button type="button" className="btn btn-primary" onClick={goBack} style={{marginTop: '-10px'}}>
-            Atrás
-            </button>
-        </div>
-        <div className="col-6 btn-downloadInit">
-            
-            <a href={content.url} download={content.url} className="btn btn-primary" style={{color: 'white'}}>Descargar</a>
-            
-        </div>
-    </div>
-    <h2 className="text-center">{content.title}</h2>
-    <h1 className="text-center">{content.subtitle}</h1>
-    <p className="col-md-10">
-        {content.content}
-    </p>
-    {content.content2 && <p className="col-md-10">
-        {content.content2}
-    </p>}
-    {content.content3 && <p className="col-md-10">
-        {content.content3}
-    </p>}
-    <br/>
-    <h4>Cronograma:</h4>
-    <ul className="col-xs-11 col-md-6">
-        <li>{content.dates}</li>
-        <li>{content.schedules}</li>
-        {content.schedulesLab && <li>{content.schedulesLab}</li>}
-        <li>{content.duration}</li>
-        <li>{content.sponsor}</li>
-    </ul>
-    <div className="row objetivos left-text block-div col-md-12">
-                <h4>Objetivos:</h4>
-                <ul>
-                    {objetives}
-                </ul>
+        index === 4 ?
+        <div className="main-content-course-init">
+         <div className="row">                
+                <div className="col-6 btn-downloadInit">
+                    
+                    <a href="#main-contactenos" className="btn btn-primary" style={{color: 'white'}}>Contáctenos</a>
+                    
+                </div>
             </div>
-            <div className="row temario left-text block-div col-md-12">
-                <h4>Temario:</h4>
-                <ul>
-                    {temas}
-                </ul>
+        <TableComponent courses={content}/>
+        <div className="row">
+                <div className="col-6">
+                    <button type="button" className="btn btn-primary" onClick={goBack} style={{marginTop: '-10px'}}>
+                    Atrás
+                    </button>
+                </div>
+                <div className="col-6 btn-downloadInit">
+                    
+                    <a href="http://zentro.pe/images/Ficha_ZENTRO_Junio_2018_inscripcion.docx" download="Ficha_ZENTRO_Junio_2018_inscripcion" className="btn btn-primary" style={{color: 'white'}}>Ficha de inscripción</a>
+                    
+                </div>
             </div>
-</div>
+        </div>
+        :
+            <div className="main-content-course-init">
+                <div className="row">
+                        <div className="col-6">
+                            <button type="button" className="btn btn-primary" onClick={goBack} style={{marginTop: '-10px'}}>
+                            Atrás
+                            </button>
+                        </div>
+                        <div className="col-6 btn-downloadInit">
+                            
+                            <a href={content.url} download={content.url} className="btn btn-primary" style={{color: 'white'}}>Descargar</a>
+                            
+                        </div>
+                    </div>
+                    <h2 className="text-center">{content.title}</h2>
+                    <h1 className="text-center">{content.subtitle}</h1>
+                    <p className="col-md-10">
+                        {content.content}
+                    </p>
+                    {content.content2 && <p className="col-md-10">
+                        {content.content2}
+                    </p>}
+                    {content.content3 && <p className="col-md-10">
+                        {content.content3}
+                    </p>}
+                    <br/>
+                    <h4>Cronograma:</h4>
+                    <ul className="col-xs-11 col-md-6">
+                        <li>{content.dates}</li>
+                        <li>{content.schedules}</li>
+                        {content.schedulesLab && <li>{content.schedulesLab}</li>}
+                        <li>{content.duration}</li>
+                        <li>{content.sponsor}</li>
+                    </ul>
+                    <div className="row objetivos left-text block-div col-md-12">
+                            <h4>Objetivos:</h4>
+                            <ul>
+                                {objetives}
+                            </ul>
+                        </div>
+                        <div className="row temario left-text block-div col-md-12">
+                            <h4>Temario:</h4>
+                            <ul>
+                                {temas}
+                            </ul>
+                        </div>
+                </div>
     )
+ 
 }
 export default InitCourseContent;

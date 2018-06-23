@@ -102,6 +102,11 @@ const COURSES = [
                 title: 'Presentación de normas: 17020, 17025 y 9001',
                 subtitle: 'Principios del sistema de gestión de calidad y ciclo de mejora continua.',
                 schedules: '8 horas. Teoría y taller'
+            },
+            {
+                id: 17,
+                title: 'Introducción a los Sistemas de Gestión : ISO 9001, ISO 17020 e ISO 17025',
+                url: 'http://zentro.pe/images/6 Caract y Trat Drenaj Acid Mina.pdf'
             }
         ]
     },
@@ -121,6 +126,10 @@ const COURSES = [
             {
                 id: 20,
                 title: 'Métodos de análisis microbiológicos 12 h'
+            },
+            {
+                id: 21,
+                title: 'Técnicas Microbiológicas para el Análisis de Aguas'
             }
         ]
     }
