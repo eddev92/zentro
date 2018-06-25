@@ -121,6 +121,11 @@ renderModalPublicaciones() {
     <ContentPublication closeModalPublicacion={this.closeModalPublicaciones}/>
   )
 }
+goToContactUs = () => {
+    const {sectionActive} = this.state;
+
+    this.setState({sectionActive: 5});
+}
 render() {
     const { sectionActive, open, dropdownShow, initIndex, aux, selected, codContentCarousel, publicacionType, showTitle } = this.state;
 
@@ -185,7 +190,7 @@ render() {
         </div>
             <div className="carousel-inner" role="listbox">
                 <div className={`carousel-item ${(sectionActive === 0) ? 'active' : ''}`} onMouseOver={this.reset}>
-                    <Inicio/>
+                    <Inicio goToContactUs={this.goToContactUs}/>
                 </div>
                 <div className={`carousel-item ${(sectionActive === 1) && 'active'}`}>
                     <Consultoria />

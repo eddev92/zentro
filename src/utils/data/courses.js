@@ -97,12 +97,12 @@ const COURSES = [
         title: 'Sistemas de gestión',
         text: 'Conjunto de reglas y principios que permite optimizar recursos, reducir costes y mejorar la productividad en una empresa; a través de la aplicación de la mejora continua y el cumplimiento de requisitos. Dichos sistemas están asociados a normas y técnicas para evaluar el estado de cumplimiento de los mismos.',
         itemCourses: [
-            {
-                id: 16,
-                title: 'Presentación de normas: 17020, 17025 y 9001',
-                subtitle: 'Principios del sistema de gestión de calidad y ciclo de mejora continua.',
-                schedules: '8 horas. Teoría y taller'
-            },
+            // {
+            //     id: 16,
+            //     title: 'Presentación de normas: 17020, 17025 y 9001',
+            //     subtitle: 'Principios del sistema de gestión de calidad y ciclo de mejora continua.',
+            //     schedules: '8 horas. Teoría y taller'
+            // },
             {
                 id: 17,
                 title: 'Introducción a los Sistemas de Gestión : ISO 9001, ISO 17020 e ISO 17025',
@@ -115,18 +115,18 @@ const COURSES = [
         title: 'Microbiología',
         text: 'La microbiología estudia microorganismos como las bacterias, virus y hongos con capacidad de provocar alteraciones en diferentes sustratos. Así mismo contempla la forma de realizar la determinación de los mismos a través de métodos estandarizados.',
         itemCourses: [
-            {
-                id: 18,
-                title: 'Introducción a la microbiología. 6 horas.'
-            },
-            {
-                id: 19,
-                title: 'Bacteriología. 6 horas'
-            },
-            {
-                id: 20,
-                title: 'Métodos de análisis microbiológicos 12 h'
-            },
+            // {
+            //     id: 18,
+            //     title: 'Introducción a la microbiología. 6 horas.'
+            // },
+            // {
+            //     id: 19,
+            //     title: 'Bacteriología. 6 horas'
+            // },
+            // {
+            //     id: 20,
+            //     title: 'Métodos de análisis microbiológicos 12 h'
+            // },
             {
                 id: 21,
                 title: 'Técnicas Microbiológicas para el Análisis de Aguas'

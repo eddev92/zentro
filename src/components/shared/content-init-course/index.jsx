@@ -227,7 +227,7 @@ const getLaboratories = (laboratories = []) => {
     }
     return result;
 }
-const InitCourseContent = ({index, goBack}) => {
+const InitCourseContent = ({index, goBack, goToContactUs}) => {
     const content = getContentCourseInit(index)
     const objetives = (index === 4) ? '' : content && content.objetives.map(e => <li>{e.text}</li>)
     const temas = (index === 4) ? '' : content && content.temary.map(e => (e.laboratories) ? <li>{e.text}<ul>{getLaboratories(e.laboratories)}</ul></li> : <li>{e.text}</li>)
@@ -238,7 +238,7 @@ const InitCourseContent = ({index, goBack}) => {
          <div className="row">                
                 <div className="col-6 btn-downloadInit">
                     
-                    <a href="#main-contactenos" className="btn btn-primary" style={{color: 'white'}}>Contáctenos</a>
+                    <a className="btn btn-primary contactenos-info" style={{color: 'white'}} onClick={goToContactUs}>Contáctenos</a>
                     
                 </div>
             </div>

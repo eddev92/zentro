@@ -2,10 +2,12 @@
     table-layout: fixed;
     overflow: hidden;
     margin-top: 45px;
+    overflow-x: auto;
 }
 thead tr{
     background: black;
     color: white;
+    text-align: center;
 }
 thead{
     text-align: center;

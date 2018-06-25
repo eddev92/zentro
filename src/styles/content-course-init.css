@@ -35,6 +35,10 @@
 .main-content-course-init p{
     margin: auto;
 }
+.contactenos-info{
+    position: absolute;
+    margin: -23px 28%;
+}
 @media screen and (max-width: 650px) {
     .main-content-course-init h1,.main-content-course-init h4 {
         font-size: 1em !important;

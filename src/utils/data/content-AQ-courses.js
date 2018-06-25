@@ -700,8 +700,8 @@ const CoursesAQ = [
     },
     {
         "idCourse": 17,
-        "title": "Introducción a los Sistemas de Gestión : ISO 9001, ISO 17020 e ISO 17025",
-        "url": 'http://zentro.pe/images/6 Caract y Trat Drenaj Acid Mina.pdf',
+        "title": "Introducción a los Sistemas de Gestión: ISO 9001, ISO 17020 e ISO 17025",
+        "url": 'http://zentro.pe/images/3 Gestion_PDF.pdf',
         "content": "Los sistemas de gestión son herramientas que permiten optimizar recursos, reducir costes y mejorar la productividad de las empresas, están basados en normas internacionales que buscan la estandarización de las actividades de las empresas en relación a la calidad: ISO 9001,  ISO 17025 y a las inspecciones ISO 17020.",
         "content2": "",
         "objetives": [
@@ -730,7 +730,7 @@ const CoursesAQ = [
     {
         "idCourse": 21,
         "title": "Técnicas Microbiológicas para el Análisis de Aguas",
-        "url": 'http://zentro.pe/images/6 Caract y Trat Drenaj Acid Mina.pdf',
+        "url": 'http://zentro.pe/images/5_Temario_MICROBIOL_PDF.pdf',
         "content": "La microbiología es una ciencia en proceso de expansión que estudia los microorganismos, bacterias, hongos y otros agentes como los virus.",
         "content2": "Los microorganismos son de gran interés por su importancia clínica, ambiental y biotecnológica. Algunos de ellos son agentes causales de diversas enfermedades infecciosas (tuberculosis, diversas enfermedades en plantas y animales, etc.) y otros producen compuestos que combaten infecciones (antibióticos). En el campo ambiental son usados para el desarrollo de tecnologías limpias y sostenibles, como por ejemplo la producción de biocombustibles y bioinsumos agrícolas, y procesos de biorremediación, control biológico y reciclaje. En la industria alimenticia son fundamentales en la producción de vinos, quesos, pan, entre otros, pero también pueden causar deterioro en los alimentos.  \n\n La Microbiología permite conocer el mundo de los microorganismos, entender su importancia y aprovechar la diversidad de sus funciones para mejorar la calidad de vida del hombre.",
         "objetives": [

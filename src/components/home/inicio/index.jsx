@@ -10,11 +10,22 @@ class Inicio extends Component{
         showSubtitle: true,
         showDetail: false,
         timeAux: false,
-        courseIndex: 0
+        courseIndex: 0,
+        statement: false
     }
     componentDidMount() {
         this.hiddenSubmessage();
+        this.changeStatement();
         
+    }
+    changeStatement = () => {
+        const { statement } = this.state;
+
+        setTimeout(() => {
+            this.setState({ statement: !statement }, () => {
+                this.changeStatement();
+            })
+        }, 1000)
     }
     hiddenSubmessage = () => {
         const { showSubtitle } = this.state;
@@ -69,8 +80,9 @@ class Inicio extends Component{
     }
     renderCourseDetail() {
         const { courseIndex } = this.state;
+        const { goToContactUs } = this.props;
 
-        return <InitCourseContent index={courseIndex} goBack={this.goBack}/>
+        return <InitCourseContent index={courseIndex} goBack={this.goBack} goToContactUs={goToContactUs}/>
     }
     goBack = () => {
         const { courseIndex } = this.state;
@@ -99,7 +111,7 @@ class Inicio extends Component{
         return img;
     }
     render() {
-        const { courseActive, showSubtitle, showDetail, courseIndex } = this.state;
+        const { courseActive, showSubtitle, showDetail, courseIndex, statement } = this.state;
         const img = (courseIndex != 0 ) ? this.getImageBackground(courseIndex) : 'Inicio.jpg'
         return (
             <div className="main-carousel">
@@ -123,7 +135,7 @@ class Inicio extends Component{
                         <div className="content-row col-xs-12 col-md-10 backG">
                             <h3 style={{fontWeight: 700}}>CURSOS TEÓRICO-PRÁCTICOS</h3>
                             <h1>2018</h1>
-                            <button type="button" className="btn btn-primary courses-content vacantes">
+                            <button type="button" className={(statement) ? 'btn btn-primary courses-content vacantes active-statement' : 'btn btn-primary courses-content vacantes normal-statement'}>
                             Vacantes limitadas
                             </button>
                             <button type="button" className="btn btn-primary courses-content info-aqui" onClick={this.showDetailCourseInit.bind(this, 4)}>

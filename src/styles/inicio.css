@@ -54,6 +54,7 @@ img.active{
 .vacantes{
     position: absolute;
     margin-left: -10%;
+    font-size: 0.9em;
 }
 .info-aqui{
     float: right;
@@ -146,4 +147,24 @@ img.active{
     .row.final h1{
         font-size: 1.8em;
     }
+}
+/* efecto boton contactenos */
+.normal-statement{
+    background-color:#4285F4;
+    cursor: none;
+    font-weight: 700;
+    color:red !important;
+    -webkit-transition: background-color 1000ms linear !important;
+    -ms-transition: background-color 1000ms linear !important;
+    transition: background-color 1000ms linear !important;
+}
+
+.active-statement{
+    background-color: greenyellow !important;
+    cursor: none;
+    font-weight: 700;
+    color:red !important;
+    -webkit-transition: background-color 1000ms linear !important;
+    -ms-transition: background-color 1000ms linear !important;
+    transition: background-color 1000ms linear !important;
 }
