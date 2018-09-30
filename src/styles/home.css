@@ -32,11 +32,19 @@
     position: relative;
     width: 100%;
     overflow: hidden;
+    height: 100%;
     /* max-height: 707px; */
 }
 .carousel-fade .active.carousel-item-left, .carousel-fade .active.carousel-item-prev, .carousel-fade .carousel-item-next, .carousel-fade .carousel-item-prev, .carousel-fade .carousel-item.active {
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
+    height: 100%;
+}
+.carousel-item{
+    height: 100%;
+}
+.carousel{
+    height: auto;
 }
 /* .carousel-fade .carousel-item {
     opacity: 0;
@@ -156,3 +164,8 @@ background-color: transparent !important;
     overflow: scroll;
 } */
 /*  media queries */
+@media screen and (max-width: 1000px) {
+    .modal.fade.right {
+        margin-top: -400px;
+    }
+}

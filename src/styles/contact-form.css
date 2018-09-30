@@ -72,7 +72,7 @@
 .form-dark{
     position: absolute;
     z-index: 99999999;
-    top: 0;
+    top: 30px;
     right: 3%;
 }
 .content-form{
@@ -135,7 +135,7 @@
 
 @media screen and (max-width: 550px) {
   .form-dark{
-    /* margin-top: calc(100vh - 700px); */
+    margin-top: -102px;
     position: relative;
     width: 100%;
     right: 0;

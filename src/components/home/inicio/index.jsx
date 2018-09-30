@@ -122,7 +122,7 @@ class Inicio extends Component{
                 </div>}
                 {courseIndex < 1 ?
                 <div>
-                    {/* <div className={(courseActive === 3) ? 'row final' : 'row blue'} style={{height: '100%'}}>
+                    {/* <div className={(courseActive === 3) ? 'row final' : 'row blue'} style={{height: 'auto'}}>
                         <div className="content-row col-xs-12 col-md-10 backG">
                             <h3>Curso teórico - práctico de</h3>
                             <h1>ANÁLISIS VOLUMÉTRICO DE MINERALES</h1>
@@ -143,7 +143,7 @@ class Inicio extends Component{
                             </button>
                         </div>
                     </div>
-                    {/* <div className={(courseActive === 5) ? 'row final' : 'row red'} style={{height: '100%'}}>
+                    {/* <div className={(courseActive === 5) ? 'row final' : 'row red'} style={{height: 'auto'}}>
                         <div className="col-xs-12 col-md-5 courseFuture">
                         <div className="course-content-init">
                             <h2 className="text-black">Próximamente...</h2>

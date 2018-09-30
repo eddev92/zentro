@@ -251,7 +251,7 @@ const InitCourseContent = ({index, goBack, goToContactUs}) => {
                 </div>
                 <div className="col-6 btn-downloadInit">
                     
-                    <a href="http://zentro.pe/images/Ficha_ZENTRO_Junio_2018_inscripcion.docx" download="Ficha_ZENTRO_Junio_2018_inscripcion" className="btn btn-primary" style={{color: 'white'}}>Ficha de inscripción</a>
+                    <a href="http://zentro.pe/images/Ficha_ZENTRO_SEPTIEM_2018.docx" download="Ficha_ZENTRO_SEPTIEM_2018" className="btn btn-primary" style={{color: 'white'}}>Ficha de inscripción</a>
                     
                 </div>
             </div>
