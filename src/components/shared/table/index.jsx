@@ -10,8 +10,30 @@ class TableComponent extends Component {
     const coursesAux = courses.map((course) => {
        return <tr>
             <td>{course.curse}</td>
-            <td>{course.date_inscrp}</td>
-            <td>{course.date_start}</td>
+            {
+                (course.date_inscrp2 && course.date_inscrp3 && course.date_inscrp4)
+                ?
+                <td><ul>
+                    <li>{course.date_inscrp1}</li>
+                    <li>{course.date_inscrp2}</li>
+                    <li>{course.date_inscrp3}</li>
+                    <li>{course.date_inscrp4}</li>
+                    </ul></td>
+                :
+                <td>{course.date_inscrp1}</td>
+            }
+            {
+                (course.date_start2 && course.date_start3 && course.date_start4)
+                ?
+                <td><ul>
+                    <li>{course.date_start1}</li>
+                    <li>{course.date_start2}</li>
+                    <li>{course.date_start3}</li>
+                    <li>{course.date_start4}</li>
+                    </ul></td>
+                :
+                <td>{course.date_start1}</td>
+                }
             <td>{course.hours}</td>
             <td><a href={course.urlPdf} target="_blank" style={{cursor: 'pointer'}}>Ver ficha de curso</a></td>
         </tr>
