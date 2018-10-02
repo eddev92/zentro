@@ -9,7 +9,7 @@ module.exports = (app) => {
         function (callback) {
           sendEmail(
             callback,
-            'informes@zentro.pe',
+            'capacitacionquimica@gmail.com',
             {email: 'edwarllanca@hotmail.com'},
             'Subject Line',
             'Text Content',
@@ -45,7 +45,7 @@ async.parallel([
           // Add from emails
           const senderEmail = new helper.Email(from);
           // Add to email
-          const toEmail = new helper.Email('informes@zentro.pe');
+          const toEmail = new helper.Email('capacitacionquimica@gmail.com');
           // HTML Content
           const content = new helper.Content('text/html', value);
           const mail = new helper.Mail(senderEmail, subject, toEmail, content);

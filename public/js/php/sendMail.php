@@ -9,7 +9,7 @@
 	$mensaje = $request->message;
 	$name = $request->name;
  
-	$to_email = "informes@zentro.pe";
+	$to_email = "capacitacionquimica@gmail.com";
  
 	$contact = "<p><strong>Nombres:</strong> $name</p>
 				<p><strong>Email:</strong> $email</p>";
@@ -28,7 +28,7 @@
 	$headers .= "From: $email". "\r\n";
 	$headers .= "Cc: marixa_zegarra@yahoo.com". "\r\n";
 	$headers .= "Cc: hzapatagamarra@gmail.com". "\r\n";
-	$headers .= "Cc: informes@zentro.pe". "\r\n";
+	$headers .= "Cc: capacitacionquimica@gmail.com". "\r\n";
 	$headers .= "Reply-To: $email". "\r\n";
 	$headers .= "X-Mailer: PHP/" . phpversion();
  
