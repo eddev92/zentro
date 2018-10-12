@@ -11,7 +11,7 @@ class Mailer extends helper.Mail {
         this.from_email = new helper.Email('no-reply@emaily.com');
         this.subject = 'Contacto desde la web';
         this.body = new helper.Content('text/html', content);
-        this.recipients = 'informes@zentro.pe'
+        this.recipients = 'capacitacionquimica@gmail.com'
 
         this.addContent(this.body);
         this.addClickTracking();
