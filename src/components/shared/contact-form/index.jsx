@@ -96,7 +96,7 @@ class ContactForm extends Component{
                                 <input type="text" class="form-control" id="enterprise" value={model.enterprise} onChange={this.handleChange.bind(this, 'enterprise')} placeholder="Empresa o Institución" />
                             </div>
                             <div className="md-form">
-                                <input type="text" class="form-control" id="phone" value={model.phone} onChange={this.handleChange.bind(this, 'phone')} placeholder="Teléfono" />
+                                <input type="number" class="form-control" id="phone" value={model.phone} onChange={this.handleChange.bind(this, 'phone')} placeholder="Teléfono" />
                             </div>
                             <div className="md-form">
                                 <textarea type="text" class="form-control" id="message" value={model.message} onChange={this.handleChange.bind(this, 'message')} placeholder="Mensaje" />

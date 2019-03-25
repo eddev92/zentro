@@ -24,12 +24,14 @@
 	$email_body .= '</body></html>';
  
 	$headers .= "MIME-Version: 1.0". "\r\n";
-	$headers .= "Content-Type: text/html; charset=UTF-8". "\r\n";
-	$headers .= "From: $email". "\r\n";
+	$headers .= "Content-Type: text/html". "\r\n";
+	$headers .= "Content-Type: charset=UTF-8". "\r\n";
+	$headers .= "From: informes@no-reply.com". "\r\n";
 	$headers .= "Cc: marixa_zegarra@yahoo.com". "\r\n";
 	$headers .= "Cc: hzapatagamarra@gmail.com". "\r\n";
+	$headers .= "Cc: llanca872@gmail.com". "\r\n";
 	$headers .= "Cc: capacitacionquimica@gmail.com". "\r\n";
-	$headers .= "Reply-To: $email". "\r\n";
+	$headers .= "Reply-To: capacitacionquimica@gmail.com". "\r\n";
 	$headers .= "X-Mailer: PHP/" . phpversion();
  
 	mail($to_email,$email_subject,$email_body,$headers);
